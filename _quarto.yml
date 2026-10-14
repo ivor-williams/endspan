@@ -14,11 +14,12 @@ website:
   description: "{{< var tagline >}}"
   search: false
   navbar:
+    collapse: false
     title: "{{< var name >}}"
     right:
       - text: Read the report
         href: report/index.qmd
-      - text: Get involved
+      - text: Stay updated
         href: index.qmd#get-involved
 
 format:

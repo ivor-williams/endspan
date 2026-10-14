@@ -122,7 +122,7 @@ toc: false
       <figure><img src="assets/img/ft-proper-conversation-about-death.jpg" width="960" height="540" loading="lazy"
         alt="Illustration of a woman with an empty wheelchair looking up at an older man sitting in the top of an autumn tree at sunset"></figure>
       <span class="credit">Illustration © Andy Carter</span>
-      <span class="meta">Financial Times · Polly Mackenzie · 13 October 2026</span>
+      <span class="meta">Polly Mackenzie · 13 October 2026</span>
       <span class="title">Why we need a proper conversation about death</span>
       <span class="sub">Philanthropy needs to step up to meet the needs that a National Care Service never will</span>
       <span class="more">Read in the Financial Times →</span>
@@ -153,5 +153,5 @@ toc: false
   </div></div>
 </section>
 </div>
-<script src="assets/home.js" defer></script>
+<script src="assets/home.js?v=1792016809" defer></script>
 ```

@@ -102,14 +102,14 @@ html { scroll-padding-top: 96px; }
 .bdf-sec.right .bdf-wrap { justify-content: flex-end; }
 .bdf-sec .copy { position: relative; max-width: 540px; isolation: isolate; }
 // a soft wash behind the words so passing lines never cut through the text
-.bdf-sec .copy::before, .bdf-hero .copy::before { content: ""; position: absolute; inset: -36px -44px; z-index: -1; border-radius: 40px;
-  background: rgba($white, .93); filter: blur(22px); }
+.bdf-sec .copy::before, .bdf-hero .copy::before { content: ""; position: absolute; inset: -14px -18px; z-index: -1; border-radius: 28px;
+  background: rgba($white, .62); filter: blur(16px); }
 .bdf-hero .copy { position: relative; isolation: isolate; }
 .bdf-sec h2 { font-size: clamp(1.7rem, 3.3vw, 2.5rem); line-height: 1.14; font-weight: 500; letter-spacing: -0.015em; margin: 0 0 22px; border: 0; padding: 0; color: $ink; }
 .bdf-sec p { color: $ink-75; font-size: 1.04rem; line-height: 1.65; margin: 0 0 14px; }
 .bdf-sec .btn-bdf { margin-top: 14px; }
-.bdf-sec .copy, .bdf-hero .copy { opacity: 0; transform: translateY(18px); transition: opacity 1.6s var(--ease), transform 1.6s var(--ease); }
-.in .copy { opacity: 1; transform: none; }
+.bdf-sec .copy, .bdf-hero .copy { opacity: 0; transition: opacity 1.6s var(--ease); }  // fade only: no movement, so dots never drift off their lines
+.in .copy { opacity: 1; }
 
 // Watercolour blobs
 .blobs { position: absolute; inset: -8% 0; z-index: 0; pointer-events: none; }
@@ -131,7 +131,7 @@ html { scroll-padding-top: 96px; }
 .sat.role i { width: 9px; height: 9px; }   // roles and people
 .sat { left: var(--x); top: var(--y); opacity: 0; transition: opacity 1.6s var(--ease); transition-delay: var(--d, .3s); }
 .sat.flip { flex-direction: row-reverse; left: auto; right: calc(100% - var(--x)); }
-.sat .t { padding: 4px 9px; margin: -4px -9px; border-radius: 999px; background: rgba($white, .72);
+.sat .t { padding: 4px 9px; margin: -4px -9px; border-radius: 999px; background: rgba($white, .42);
   -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
 .in .sat { opacity: 1; }
 .in .node i, .in .sat i { transform: scale(1); }
@@ -266,3 +266,32 @@ a.bdf-article:hover .more { text-decoration: underline; text-underline-offset: 4
 body { font-feature-settings: "ss06" 1; }
 .navbar, .btn-bdf, .bdf-form, .sat, .node, .bdf-article .meta, .bdf-article .credit, .bdf-article .more, #TOC, .sidebar,
 .bdf-chart, .bdf-report-meta, .bdf-pdf, .bdf-tip, .bdf-press-sec .label { font-feature-settings: normal; }
+
+// Nav on small screens: no menu button, everything on one line
+#quarto-header .navbar-toggler { display: none !important; }
+@media (max-width: 991.98px) {
+  #quarto-header .navbar-collapse { display: flex !important; flex-basis: auto; }
+  #quarto-header .navbar-nav { flex-direction: row; align-items: center; }
+  #quarto-header .navbar-container { flex-wrap: nowrap; }
+}
+@media (max-width: 380px) {
+  .navbar-brand .navbar-title { font-size: 0.84rem !important; }
+  .navbar .nav-link { font-size: 0.72rem !important; padding: 0.4rem 0.25rem !important; }
+  .navbar-nav .nav-item:last-child .nav-link { padding: 0.4rem 0.5rem !important; margin-left: 0.1rem !important; }
+}
+@media (max-width: 520px) {
+  #quarto-header { padding: 10px 8px 0; }
+  #quarto-header .navbar { padding: 5px 5px 5px 12px; border-radius: 12px; }
+  .navbar-brand-container { max-width: none !important; flex-shrink: 0; margin: 0 !important; }
+  .navbar-brand { margin-right: 4px; overflow: visible; text-overflow: clip; }
+  #quarto-header .navbar-collapse { margin-left: auto; }
+  .navbar-brand .navbar-title { font-size: 0.92rem; overflow: visible; text-overflow: clip; white-space: nowrap; }
+  .navbar .nav-link { font-size: 0.76rem; padding: 0.4rem 0.35rem !important; white-space: nowrap; }
+  .navbar-nav .nav-item:last-child .nav-link { padding: 0.42rem 0.6rem !important; margin-left: 0.2rem; }
+}
+@media (max-width: 340px) {
+  #quarto-header .navbar { padding: 4px 4px 4px 9px !important; }
+  .navbar-brand .navbar-title { font-size: 0.76rem !important; }
+  .navbar .nav-link { font-size: 0.66rem !important; padding: 0.38rem 0.2rem !important; }
+  .navbar-nav .nav-item:last-child .nav-link { padding: 0.38rem 0.42rem !important; }
+}

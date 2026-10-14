@@ -5,173 +5,150 @@ section-divs: false
 toc: false
 ---
 
-::: {.bdf-home}
-
-::: {.bdf-hero}
-::: {.bdf-wrap}
-# [{{< var name >}}]{.name} [New money for a palliative and end-of-life care system that works for everyone]{.claim}
-
-[People working in end-of-life care have been saying it for years: the system was built for a way of dying that is disappearing. We are bringing new philanthropic money to back the changes they are calling for.]{.lede}
-:::
-:::
-
-::: {.bdf-wrap}
-::: {.bdf-beats}
-
-::: {.bdf-beat}
-::: {.rail}
-[1]{.num}
-:::
-::: {.card}
-## The ways we die have changed faster than the systems built to care for us
-
-[Understand the context →](report/index.qmd#chapter-1-the-palliative-and-end-of-life-care-system-today){.btn-bdf .ghost}
-:::
-::: {.text}
-The patterns are clear for people caring for the sickest in society: dementia and frailty have displaced the rapid decline from cancer that the hospice movement was built around, and the final phase of life can now last years. Care homes are on track to become the most common place of death by 2040, yet they have no duty to provide end-of-life care. By then roughly 150,000 more people will need palliative care than do today, while care in the community gets harder, with district nursing numbers having fallen 43% since 2009.
-:::
-:::
-
-::: {.bdf-beat}
-::: {.rail}
-[2]{.num}
-:::
-::: {.card}
-## Good care is everywhere. It just isn't widespread.
-:::
-::: {.text}
-Hospice-at-home teams, community nurses, care home staff, end-of-life doulas and compassionate neighbours are doing remarkable work up and down the country, and despite incredibly challenging conditions, the field is full of energy for change. But we have heard the same thing again and again: people hit a ceiling. A model that works stays in the place that built it, and the people who made it work move on to the next funding bid.
-:::
-:::
-
-::: {.bdf-beat}
-::: {.rail}
-[3]{.num}
-:::
-::: {.card}
-## It is difficult to get good work to grow long-term
-:::
-::: {.text}
-New approaches run out of grant money before they can produce the evidence that would justify keeping them. The benefits of better care often land in someone else's budget, so no one has a reason to pay for it. The information that would let care follow a person from hospice to hospital to care home to home is largely missing. Every organisation can improve its own part, but no organisation is set up to fix the joins.
-:::
-:::
-
-::: {.bdf-beat}
-::: {.rail}
-[4]{.num}
-:::
-::: {.card}
-## There is real generosity, but almost none of it is aimed at changing how the system works
-
-[See where the money goes →](report/index.qmd#public-money){.btn-bdf .ghost}
-:::
-::: {.text}
-Around £22bn of public money is spent each year on people in their last year of life. Over the past decade, major foundations have given about £92m to adult palliative care, spread across 3,500 grants, and most of it has kept existing services running. That is not a failure of the people giving it, but it is a gap. Philanthropic money is the only kind that can work across hospices, the NHS, care homes and communities at once, stay long enough for the evidence to mature, and plan its own exit. Used that way, it goes much further.
-:::
-:::
-
-::: {.bdf-beat}
-::: {.rail}
-[5]{.num}
-:::
-::: {.card}
-## The {{< var name >}}
-
-[Read the report →](report/index.qmd){.btn-bdf}
-:::
-::: {.text}
-We're not here to take more of a limited supply of financial support. We work with philanthropic donors to bring a different kind of capital into end-of-life care and use it to accelerate what already works, build new approaches long enough to prove themselves, and build the shared pieces no single organisation can.
-
-Our report maps where the system is stuck and identifies five places where we believe this money can make the biggest difference.
-
-The fund is being built by ZIP, the social innovation agency, drawing on a track record of building and accelerating solutions to complex social challenges. It is led by Polly Mackenzie, CEO of Zinc Innovation Partners and former CEO of Demos, and Ivor Williams, end-of-life care designer and former Lead for End-of-Life Care at Imperial College London.
-:::
-:::
-
-:::
-:::
-
-::: {#get-involved .bdf-contact}
-::: {.bdf-wrap}
-
-::: {.head}
-## Help shape what comes next
-
-Our report is a first position, not a finished plan. Over the coming months we are bringing together funders, practitioners and the wider public to test these ideas and decide what to back first. Register your interest to follow the work and find out how to take part.
-:::
-
-::: {.formcol}
 ```{=html}
-<!-- Interest list form.
-     To collect sign-ups, paste a form endpoint into action="" below
-     (for example a Formspree URL: https://formspree.io/f/xxxxxxx).
-     Until then, submitting opens a pre-filled email to the address in data-fallback-email. -->
-<form class="bdf-form" id="interest-form" action="" method="POST"
-      data-fallback-email="polly@zinc.vc" novalidate>
-  <div class="bdf-form-body">
-    <div class="field">
-      <label for="f-name">Name</label>
-      <input id="f-name" name="name" type="text" autocomplete="name" required>
-      <span class="err" id="f-name-err"></span>
+<div class="bdf-home">
+<div class="bdf-system" id="system">
+  <svg class="bdf-lines" aria-hidden="true"></svg>
+  <span class="edge" data-a="L0" style="position:absolute;left:-3%;top:1.2%"></span>
+  <span class="edge" data-a="R0" style="position:absolute;left:103%;top:7%"></span>
+  <span class="edge" data-a="L1" style="position:absolute;left:-3%;top:47%"></span>
+  <span class="edge" data-a="R1" style="position:absolute;left:103%;top:64%"></span>
+  <span class="edge" data-a="L2" style="position:absolute;left:-3%;top:83%"></span>
+
+  <section class="bdf-hero" data-sec>
+    <div class="blobs" aria-hidden="true">
+      <span class="blob" style="--c:#D3E4DB;--x:44%;--y:2%;--w:44vw;--r:-12deg;--dx:-2vw;--dy:2vh"></span>
+      <span class="blob" style="--c:#D3E1F1;--x:-6%;--y:40%;--w:36vw;--r:18deg;--d:.6s"></span>
+      <span class="blob" style="--c:#FBD9D3;--x:66%;--y:30%;--w:34vw;--r:8deg;--d:1.2s;--o:.7"></span>
     </div>
-    <div class="field">
-      <label for="f-email">Email</label>
-      <input id="f-email" name="email" type="email" autocomplete="email" required>
-      <span class="err" id="f-email-err"></span>
-    </div>
-    <div class="field">
-      <label for="f-org">Organisation <span class="opt">Optional</span></label>
-      <input id="f-org" name="organisation" type="text" autocomplete="organization">
-    </div>
-    <fieldset class="field">
-      <legend>I am</legend>
-      <div class="chips">
-        <label class="chip"><input type="radio" name="role" value="A funder" required><span>A funder</span></label>
-        <label class="chip"><input type="radio" name="role" value="Working in end-of-life care"><span>Working in end-of-life care</span></label>
-        <label class="chip"><input type="radio" name="role" value="Other"><span>Other</span></label>
+    <span class="sat hide-sm" data-a="h-com" style="--x:66%;--y:15%;--c:#0F2B26;--d:.8s"><i></i>Community</span>
+    <span class="sat hide-sm" data-a="h-fam" style="--x:84%;--y:44%;--c:#C45A3C;--d:1.1s"><i></i>Family</span>
+    <span class="sat hide-sm" data-a="h-care" style="--x:72%;--y:74%;--c:#7B6AA8;--d:1.4s"><i></i>Care</span>
+    <div class="bdf-wrap">
+      <div class="copy">
+        <h1><span class="name">{{< var name >}}</span> <span class="claim">Building and accelerating a better palliative and end-of-life care system that works for everyone</span></h1>
+        <span class="lede">Our end-of-life care system in the UK was built for a different experience of death and dying. We are bringing philanthropic money to help shift the way communities and organisations support people and families, and meet the challenges of today, and tomorrow.</span>
       </div>
-      <span class="err" id="f-role-err"></span>
-    </fieldset>
-    <label class="check">
-      <input type="checkbox" name="updates" value="yes">
-      <span>Keep me updated by email</span>
-    </label>
-    <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-    <div class="actions">
-      <button type="submit" class="btn-bdf">Register interest →</button>
-      <p class="status" role="status" aria-live="polite"></p>
     </div>
-    <p class="fine">We will only use your details to contact you about the Better Dying Fund, and will remove them whenever you ask.</p>
+  </section>
+
+  <section class="bdf-sec left" data-sec>
+    <div class="blobs" aria-hidden="true">
+      <span class="blob" style="--c:#D3E1F1;--x:48%;--y:6%;--w:42vw;--r:10deg"></span>
+      <span class="blob" style="--c:#D3E4DB;--x:62%;--y:42%;--w:30vw;--r:-20deg;--d:.8s;--o:.75"></span>
+    </div>
+    <span class="sat" data-a="s1a" style="--x:70%;--y:28%;--c:#0F2B26"><i></i>Home</span>
+    <span class="sat hide-sm" data-a="s1b" style="--x:84%;--y:66%;--c:#D4A24C;--d:.7s"><i></i>Care homes</span>
+    <div class="bdf-wrap"><div class="copy">
+      <span class="node" data-a="n1" style="--c:#C45A3C"><i></i></span>
+      <h2>The ways we die have changed faster than the systems built to care for us</h2>
+      <p>The patterns are clear for people caring for the sickest in society: dementia and frailty have displaced the rapid decline from cancer that the hospice movement was built around, and the final phase of life can now last years. Care homes are on track to become the most common place of death by 2040, yet they have no duty to provide end-of-life care. By then roughly 150,000 more people will need palliative care than do today, while care in the community gets harder, with district nursing numbers having fallen 43% since 2009.</p>
+    </div></div>
+  </section>
+
+  <section class="bdf-sec right" data-sec>
+    <div class="blobs" aria-hidden="true">
+      <span class="blob" style="--c:#FBD9D3;--x:-4%;--y:4%;--w:40vw;--r:-8deg;--o:.75"></span>
+      <span class="blob" style="--c:#E1D8F0;--x:14%;--y:40%;--w:34vw;--r:22deg;--d:.8s"></span>
+    </div>
+    <span class="sat flip" data-a="s2a" style="--x:22%;--y:26%;--c:#2E6F5E"><i></i>Hospices</span>
+    <span class="sat flip hide-sm" data-a="s2b" style="--x:34%;--y:70%;--c:#4A6FA8;--d:.7s"><i></i>Neighbours</span>
+    <div class="bdf-wrap"><div class="copy">
+      <span class="node" data-a="n2" style="--c:#2E6F5E"><i></i></span>
+      <h2>Good care is everywhere. It just isn’t widespread</h2>
+      <p>Hospice-at-home teams, community nurses, care home staff, end-of-life doulas and compassionate neighbours are doing remarkable work up and down the country, and despite incredibly challenging conditions, the field is full of energy for change. But we have heard the same thing again and again: people hit a ceiling. A model that works stays in the place that built it, and the people who made it work move on to the next funding bid.</p>
+    </div></div>
+  </section>
+
+  <section class="bdf-sec left" data-sec>
+    <div class="blobs" aria-hidden="true">
+      <span class="blob" style="--c:#E1D8F0;--x:52%;--y:0%;--w:40vw;--r:14deg"></span>
+      <span class="blob" style="--c:#D3E1F1;--x:70%;--y:46%;--w:28vw;--r:-6deg;--d:.8s;--o:.7"></span>
+    </div>
+    <span class="sat" data-a="s3a" style="--x:68%;--y:24%;--c:#4A6FA8"><i></i>Evidence</span>
+    <span class="sat hide-sm" data-a="s3b" style="--x:82%;--y:68%;--c:#7B6AA8;--d:.7s"><i></i>Information</span>
+    <div class="bdf-wrap"><div class="copy">
+      <span class="node" data-a="n3" style="--c:#4A6FA8"><i></i></span>
+      <h2>It is difficult to get good work to grow long-term</h2>
+      <p>New approaches run out of grant money before they can produce the evidence that would justify keeping them. The benefits of better care often land in someone else’s budget, so no one has a reason to pay for it. The information that would let care follow a person from hospice to hospital to care home to home is largely missing. Every organisation can improve its own part, but no organisation is set up to fix the joins.</p>
+    </div></div>
+  </section>
+
+  <section class="bdf-sec right" data-sec>
+    <div class="blobs" aria-hidden="true">
+      <span class="blob" style="--c:#F3E3C4;--x:-2%;--y:8%;--w:38vw;--r:-14deg;--o:.8"></span>
+      <span class="blob" style="--c:#D3E4DB;--x:18%;--y:44%;--w:32vw;--r:16deg;--d:.8s"></span>
+    </div>
+    <span class="sat flip" data-a="s4a" style="--x:20%;--y:30%;--c:#D4A24C"><i></i>Funders</span>
+    <span class="sat flip hide-sm" data-a="s4b" style="--x:32%;--y:72%;--c:#0F2B26;--d:.7s"><i></i>Public money</span>
+    <div class="bdf-wrap"><div class="copy">
+      <span class="node" data-a="n4" style="--c:#D4A24C"><i></i></span>
+      <h2>There is real generosity, but almost none of it is aimed at changing how the system works</h2>
+      <p>Around £22bn of public money is spent each year on people in their last year of life. Over the past decade, major foundations have given about £92m to adult palliative care, spread across 3,500 grants, and most of it has kept existing services running. That is not a failure of the people giving it, but it is a gap. Philanthropic money is the only kind that can work across hospices, the NHS, care homes and communities at once, stay long enough for the evidence to mature, and plan its own exit. Used that way, it goes much further.</p>
+    </div></div>
+  </section>
+
+  <section class="bdf-sec left" data-sec>
+    <div class="blobs" aria-hidden="true">
+      <span class="blob" style="--c:#FBD9D3;--x:50%;--y:4%;--w:42vw;--r:6deg;--o:.75"></span>
+      <span class="blob" style="--c:#E1D8F0;--x:66%;--y:40%;--w:32vw;--r:-18deg;--d:.6s"></span>
+      <span class="blob" style="--c:#D3E4DB;--x:40%;--y:56%;--w:26vw;--r:12deg;--d:1.2s;--o:.7"></span>
+    </div>
+    <span class="sat" data-a="s5a" style="--x:72%;--y:26%;--c:#C45A3C"><i></i>Innovation</span>
+    <span class="sat hide-sm" data-a="s5b" style="--x:64%;--y:70%;--c:#2E6F5E;--d:.7s"><i></i>People</span>
+    <div class="bdf-wrap"><div class="copy">
+      <span class="node" data-a="n5" style="--c:#0F2B26"><i></i></span>
+      <h2>The {{< var name >}}</h2>
+      <p>We’re not here to take more of a limited supply of financial support. We work with philanthropic donors to bring a different kind of capital into end-of-life care and use it to accelerate what already works, build new approaches long enough to prove themselves, and build the shared pieces no single organisation can.</p>
+      <p>Our report maps where the system is stuck and identifies five places where we believe this money can make the biggest difference.</p>
+      <p>The fund is being built by ZIP, the social innovation agency, drawing on a track record of building and accelerating solutions to complex social challenges. It is led by Polly Mackenzie, CEO of Zinc Innovation Partners and former CEO of Demos, and Ivor Williams, end-of-life care designer and former Lead for End-of-Life Care at Imperial College London.</p>
+      <a class="btn-bdf" href="report/index.html">Read the report →</a>
+    </div></div>
+  </section>
+</div>
+
+<section class="bdf-involve" id="get-involved" data-sec>
+  <div class="blobs" aria-hidden="true">
+    <span class="blob" style="--c:#D3E1F1;--x:8%;--y:10%;--w:40vw;--r:-10deg;--o:.6"></span>
+    <span class="blob" style="--c:#FBD9D3;--x:54%;--y:20%;--w:38vw;--r:14deg;--d:.8s;--o:.6"></span>
   </div>
-  <div class="bdf-form-done" hidden tabindex="-1">
-    <p class="done-title">Thank you<span class="done-name"></span>.</p>
-    <p>You're on the list. We'll be in touch as the work develops.</p>
+  <div class="bdf-wrap">
+    <h2>Help shape what comes next</h2>
+    <p class="intro">Our report is a first position, not a finished plan. Over the coming months we are bringing together funders, practitioners and the wider public to test these ideas and decide what to back first. Register your interest to follow the work and find out how to take part.</p>
+    <!-- To collect sign-ups, paste a form endpoint (e.g. https://formspree.io/f/xxxxxxx) into action="".
+         Until then, the button opens a pre-filled email to the address in data-fallback-email. -->
+    <form class="bdf-form" id="interest-form" action="" method="POST" data-fallback-email="polly@zinc.vc" novalidate>
+      <div class="body">
+        <div class="row">
+          <label for="f-email" class="visually-hidden">Email address</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" placeholder="Your email address" required aria-describedby="f-email-err">
+          <button type="submit" class="btn-bdf">Keep me updated by email</button>
+        </div>
+        <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <p class="err" id="f-email-err" role="alert"></p>
+        <p class="status" role="status" aria-live="polite"></p>
+        <p class="fine">We’ll only use your email to send you updates about the Better Dying Fund. Your details are held by Zinc Innovation Partners, and you can unsubscribe at any time.</p>
+      </div>
+      <div class="done" hidden tabindex="-1"><p><strong>Thank you.</strong> We’ll be in touch as the work develops.</p></div>
+    </form>
+    <p class="bdf-contact-line">Or write to Polly Mackenzie at <a href="mailto:polly@zinc.vc">polly@zinc.vc</a></p>
   </div>
-</form>
+</section>
+
+<section class="bdf-press-sec" data-sec>
+  <div class="bdf-wrap">
+    <h2>{{< var name >}} in the press</h2>
+    <a class="bdf-article" href="https://www.ft.com/content/900ff462-3cbb-41af-9a29-1e4aa3d0ab4e" target="_blank" rel="noopener">
+      <figure><img src="assets/img/ft-proper-conversation-about-death.jpg" width="960" height="540" loading="lazy"
+        alt="Illustration of a woman with an empty wheelchair looking up at an older man sitting in the top of an autumn tree at sunset"></figure>
+      <span class="credit">Illustration © Andy Carter</span>
+      <span class="meta">Financial Times · Polly Mackenzie · 13 October 2026</span>
+      <span class="title">Why we need a proper conversation about death</span>
+      <span class="sub">Philanthropy needs to step up to meet the needs that a National Care Service never will</span>
+      <span class="more">Read in the Financial Times →</span>
+    </a>
+  </div>
+</section>
+</div>
+<script src="assets/home.js" defer></script>
 ```
-:::
-
-::: {.side}
-```{=html}
-<a class="bdf-press" href="https://www.ft.com/content/900ff462-3cbb-41af-9a29-1e4aa3d0ab4e" target="_blank" rel="noopener">
-  <span class="thumb">
-    <img src="assets/img/ft-proper-conversation-about-death.jpg" width="960" height="540" loading="lazy"
-         alt="Illustration of a woman with an empty wheelchair looking up at an older man sitting in the top of an autumn tree at sunset">
-  </span>
-  <span class="body">
-    <span class="kicker">Financial Times · 13 Oct 2026</span>
-    <span class="title">Read <cite>Why we need a proper conversation about death</cite>, by Polly Mackenzie in the Financial Times</span>
-    <span class="credit">Illustration © Andy Carter</span>
-  </span>
-</a>
-```
-
-[{{< var contact-name >}}]{.who}
-
-[{{< var contact-email >}}](mailto:{{< var contact-email >}})
-:::
-
-:::
-:::
-
-:::

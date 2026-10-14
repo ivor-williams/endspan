@@ -3,6 +3,7 @@ project:
   output-dir: _site
   resources:
     - assets/fonts/*.woff
+    - assets/home.js
   render:
     - index.qmd
     - report/index.qmd
@@ -15,10 +16,8 @@ website:
   navbar:
     title: "{{< var name >}}"
     right:
-      - text: Report
+      - text: Read the report
         href: report/index.qmd
-      - text: Propositions
-        href: "#propositions"
       - text: Get involved
         href: index.qmd#get-involved
 

@@ -86,9 +86,7 @@ html { scroll-padding-top: 96px; }
 .bdf-wrap { max-width: 1120px; margin-inline: auto; padding-inline: var(--gutter); position: relative; }
 .bdf-system { position: relative; }
 .bdf-lines { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; overflow: visible; }
-.bdf-lines path { fill: none; stroke: rgba($ink, 0.34); stroke-width: 1.6; stroke-linecap: round; }
-.bdf-lines path.soft { stroke: rgba($ink, 0.26); stroke-width: 1.4; stroke-dasharray: 1 7; opacity: 0; transition: opacity 2.4s var(--ease); }
-.bdf-lines path.soft.on { opacity: 1; }
+.bdf-lines path { fill: none; stroke: #D3D8DB; stroke-width: 1.6; stroke-linecap: round; }
 
 // Hero
 .bdf-hero { position: relative; min-height: min(100vh, 980px); display: flex; align-items: center; padding-block: 140px 96px; }
@@ -105,7 +103,7 @@ html { scroll-padding-top: 96px; }
 .bdf-sec .copy { position: relative; max-width: 540px; isolation: isolate; }
 // a soft wash behind the words so passing lines never cut through the text
 .bdf-sec .copy::before, .bdf-hero .copy::before { content: ""; position: absolute; inset: -36px -44px; z-index: -1; border-radius: 40px;
-  background: rgba($white, .82); filter: blur(26px); }
+  background: rgba($white, .93); filter: blur(22px); }
 .bdf-hero .copy { position: relative; isolation: isolate; }
 .bdf-sec h2 { font-size: clamp(1.7rem, 3.3vw, 2.5rem); line-height: 1.14; font-weight: 500; letter-spacing: -0.015em; margin: 0 0 22px; border: 0; padding: 0; color: $ink; }
 .bdf-sec p { color: $ink-75; font-size: 1.04rem; line-height: 1.65; margin: 0 0 14px; }
@@ -132,7 +130,9 @@ html { scroll-padding-top: 96px; }
 .sat.org i { width: 16px; height: 16px; }   // organisations
 .sat.role i { width: 9px; height: 9px; }   // roles and people
 .sat { left: var(--x); top: var(--y); opacity: 0; transition: opacity 1.6s var(--ease); transition-delay: var(--d, .3s); }
-.sat.flip { flex-direction: row-reverse; transform: translateX(-100%); }
+.sat.flip { flex-direction: row-reverse; left: auto; right: calc(100% - var(--x)); }
+.sat .t { padding: 4px 9px; margin: -4px -9px; border-radius: 999px; background: rgba($white, .72);
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
 .in .sat { opacity: 1; }
 .in .node i, .in .sat i { transform: scale(1); }
 .copy > .node { position: absolute; left: -34px; top: .72em; }

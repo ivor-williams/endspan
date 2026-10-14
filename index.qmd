@@ -22,9 +22,9 @@ toc: false
       <span class="blob l3" style="--c:#FBD9D3;--x:64%;--y:28%;--w:30vw;--r:8deg;--d:1.0s"></span>
       <span class="blob l3" style="--c:#E1D8F0;--x:22%;--y:62%;--w:22vw;--r:-20deg;--d:1.5s"></span>
     </div>
-    <span class="sat role" data-a="car" style="--x:64%;--y:16%;--c:#C45A3C;--d:0.50s"><i></i>Unpaid carers</span>
-    <span class="sat role" data-a="gp" style="--x:86%;--y:40%;--c:#4A6FA8;--d:0.85s"><i></i>GPs</span>
-    <span class="sat role" data-a="fam" style="--x:72%;--y:72%;--c:#7B6AA8;--d:1.20s"><i></i>Families</span>
+    <span class="sat role" data-a="car" style="--x:64%;--y:16%;--c:#C45A3C;--d:0.50s"><i></i><span class="t">Unpaid carers</span></span>
+    <span class="sat role" data-a="gp" style="--x:86%;--y:40%;--c:#4A6FA8;--d:0.85s"><i></i><span class="t">GPs</span></span>
+    <span class="sat role" data-a="fam" style="--x:72%;--y:72%;--c:#7B6AA8;--d:1.20s"><i></i><span class="t">Families</span></span>
     <div class="bdf-wrap">
       <div class="copy">
         <h1><span class="name">{{< var name >}}</span> <span class="claim">Building and accelerating a better palliative and end-of-life care system that works for everyone</span></h1>
@@ -39,8 +39,8 @@ toc: false
       <span class="blob l2" style="--c:#D3E4DB;--x:62%;--y:30%;--w:32vw;--r:-20deg;--d:0.5s"></span>
       <span class="blob l3" style="--c:#F3E3C4;--x:78%;--y:64%;--w:18vw;--r:14deg;--d:1.0s"></span>
     </div>
-    <span class="sat role" data-a="dn" style="--x:68%;--y:24%;--c:#2E6F5E;--d:0.50s"><i></i>District nurses</span>
-    <span class="sat org" data-a="ch" style="--x:84%;--y:62%;--c:#D4A24C;--d:0.85s"><i></i>Care homes</span>
+    <span class="sat role" data-a="dn" style="--x:68%;--y:24%;--c:#2E6F5E;--d:0.50s"><i></i><span class="t">District nurses</span></span>
+    <span class="sat org" data-a="ch" style="--x:84%;--y:62%;--c:#D4A24C;--d:0.85s"><i></i><span class="t">Care homes</span></span>
     <div class="bdf-wrap"><div class="copy">
       <span class="node" data-a="n1" style="--c:#C45A3C"><i></i></span>
       <h2>The ways we die have changed faster than the systems built to care for us</h2>
@@ -54,9 +54,9 @@ toc: false
       <span class="blob l2" style="--c:#E1D8F0;--x:12%;--y:36%;--w:34vw;--r:22deg;--d:0.5s"></span>
       <span class="blob l3" style="--c:#D3E1F1;--x:30%;--y:10%;--w:16vw;--r:-12deg;--d:1.0s"></span>
     </div>
-    <span class="sat org flip" data-a="hos" style="--x:26%;--y:22%;--c:#2E6F5E;--d:0.50s"><i></i>Hospices</span>
-    <span class="sat role flip" data-a="dou" style="--x:24%;--y:52%;--c:#7B6AA8;--d:0.85s"><i></i>End-of-life doulas</span>
-    <span class="sat role flip" data-a="cn" style="--x:36%;--y:76%;--c:#C45A3C;--d:1.20s"><i></i>Compassionate neighbours</span>
+    <span class="sat org flip" data-a="hos" style="--x:26%;--y:22%;--c:#2E6F5E;--d:0.50s"><i></i><span class="t">Hospices</span></span>
+    <span class="sat role flip" data-a="dou" style="--x:24%;--y:52%;--c:#7B6AA8;--d:0.85s"><i></i><span class="t">End-of-life doulas</span></span>
+    <span class="sat role flip" data-a="cn" style="--x:36%;--y:76%;--c:#C45A3C;--d:1.20s"><i></i><span class="t">Compassionate neighbours</span></span>
     <div class="bdf-wrap"><div class="copy">
       <span class="node" data-a="n2" style="--c:#2E6F5E"><i></i></span>
       <h2>Good care is everywhere. It just isn’t widespread</h2>
@@ -70,9 +70,9 @@ toc: false
       <span class="blob l2" style="--c:#D3E1F1;--x:66%;--y:40%;--w:30vw;--r:-6deg;--d:0.5s"></span>
       <span class="blob l3" style="--c:#D3E4DB;--x:56%;--y:12%;--w:16vw;--r:20deg;--d:1.0s"></span>
     </div>
-    <span class="sat role" data-a="cns" style="--x:64%;--y:20%;--c:#4A6FA8;--d:0.50s"><i></i>Community nurse specialists</span>
-    <span class="sat org" data-a="hosp" style="--x:86%;--y:48%;--c:#0F2B26;--d:0.85s"><i></i>Hospitals</span>
-    <span class="sat org" data-a="icb" style="--x:70%;--y:78%;--c:#7B6AA8;--d:1.20s"><i></i>Integrated care boards</span>
+    <span class="sat role" data-a="cns" style="--x:64%;--y:20%;--c:#4A6FA8;--d:0.50s"><i></i><span class="t">Community nurse specialists</span></span>
+    <span class="sat org" data-a="hosp" style="--x:86%;--y:48%;--c:#0F2B26;--d:0.85s"><i></i><span class="t">Hospitals</span></span>
+    <span class="sat org" data-a="icb" style="--x:70%;--y:78%;--c:#7B6AA8;--d:1.20s"><i></i><span class="t">Integrated care boards</span></span>
     <div class="bdf-wrap"><div class="copy">
       <span class="node" data-a="n3" style="--c:#4A6FA8"><i></i></span>
       <h2>It is difficult to get good work to grow long-term</h2>
@@ -86,8 +86,8 @@ toc: false
       <span class="blob l2" style="--c:#D3E4DB;--x:16%;--y:40%;--w:32vw;--r:16deg;--d:0.5s"></span>
       <span class="blob l3" style="--c:#FBD9D3;--x:6%;--y:62%;--w:18vw;--r:-8deg;--d:1.0s"></span>
     </div>
-    <span class="sat org flip" data-a="fdn" style="--x:30%;--y:26%;--c:#D4A24C;--d:0.50s"><i></i>Charitable foundations</span>
-    <span class="sat org flip" data-a="la" style="--x:24%;--y:70%;--c:#0F2B26;--d:0.85s"><i></i>Local authorities</span>
+    <span class="sat org flip" data-a="fdn" style="--x:30%;--y:26%;--c:#D4A24C;--d:0.50s"><i></i><span class="t">Charitable foundations</span></span>
+    <span class="sat org flip" data-a="la" style="--x:24%;--y:70%;--c:#0F2B26;--d:0.85s"><i></i><span class="t">Local authorities</span></span>
     <div class="bdf-wrap"><div class="copy">
       <span class="node" data-a="n4" style="--c:#D4A24C"><i></i></span>
       <h2>There is real generosity, but almost none of it is aimed at changing how the system works</h2>
@@ -101,8 +101,8 @@ toc: false
       <span class="blob l2" style="--c:#E1D8F0;--x:64%;--y:34%;--w:32vw;--r:-18deg;--d:0.5s"></span>
       <span class="blob l3" style="--c:#D3E4DB;--x:46%;--y:58%;--w:20vw;--r:12deg;--d:1.0s"></span>
     </div>
-    <span class="sat role" data-a="phil" style="--x:70%;--y:24%;--c:#C45A3C;--d:0.50s"><i></i>Philanthropists</span>
-    <span class="sat role" data-a="vol" style="--x:84%;--y:66%;--c:#2E6F5E;--d:0.85s"><i></i>Volunteers</span>
+    <span class="sat role" data-a="phil" style="--x:70%;--y:24%;--c:#C45A3C;--d:0.50s"><i></i><span class="t">Philanthropists</span></span>
+    <span class="sat role" data-a="vol" style="--x:84%;--y:66%;--c:#2E6F5E;--d:0.85s"><i></i><span class="t">Volunteers</span></span>
     <div class="bdf-wrap"><div class="copy">
       <span class="node" data-a="n5" style="--c:#0F2B26"><i></i></span>
       <h2>The {{< var name >}}</h2>

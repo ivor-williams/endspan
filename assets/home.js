@@ -21,30 +21,32 @@
   }
 
   /* ---------- 2. Lines between nodes ----------
-     [from, to, bend, style]. bend pushes the curve sideways (as a share of the page width);
-     'soft' lines are dotted and fade in rather than draw. */
+     [from, to, bend]. bend pushes the curve sideways (as a share of the page width);
+     Every line is solid and draws itself as you scroll. */
   var EDGES = [
     // people and families at home
-    ['L0', 'car', 0.10], ['car', 'fam', -0.14, 'soft'], ['R0', 'gp', -0.08], ['car', 'dn', 0.16], ['fam', 'dou', -0.20],
+    ['L0', 'car', 0.10], ['car', 'fam', -0.14], ['R0', 'gp', -0.08], ['car', 'dn', 0.16], ['fam', 'dou', -0.20],
     ['gp', 'ch', 0.12], ['fam', 'n1', -0.16],
     // care homes, nursing, hospices
-    ['dn', 'n1', 0.10], ['dn', 'cns', 0.18], ['ch', 'hosp', -0.14], ['ch', 'la', 0.20, 'soft'], ['ch', 'n2', 0.14],
-    ['hos', 'n2', -0.12], ['hos', 'cn', 0.12], ['hos', 'cns', -0.18], ['dou', 'cn', -0.10, 'soft'], ['L1', 'dou', 0.12],
+    ['dn', 'n1', 0.10], ['dn', 'cns', 0.18], ['ch', 'hosp', -0.14], ['ch', 'la', 0.20], ['ch', 'n2', 0.14],
+    ['hos', 'n2', -0.12], ['hos', 'cn', 0.12], ['hos', 'cns', -0.18], ['dou', 'cn', -0.10], ['L1', 'dou', 0.12],
     // the system around them
-    ['hos', 'icb', 0.20, 'soft'], ['cns', 'n3', 0.12], ['icb', 'hosp', 0.12], ['icb', 'la', -0.16], ['hosp', 'n3', -0.14, 'soft'],
-    ['hos', 'fdn', -0.14], ['fdn', 'n4', 0.12], ['la', 'n4', -0.12], ['R1', 'hosp', -0.10, 'soft'],
+    ['hos', 'icb', 0.20], ['cns', 'n3', 0.12], ['icb', 'hosp', 0.12], ['icb', 'la', -0.16], ['hosp', 'n3', -0.14],
+    ['hos', 'fdn', -0.14], ['fdn', 'n4', 0.12], ['la', 'n4', -0.12], ['R1', 'hosp', -0.10],
     // funders and the fund
-    ['fdn', 'phil', 0.18], ['phil', 'n5', -0.12], ['cn', 'vol', 0.16, 'soft'], ['vol', 'phil', -0.10],
-    ['L2', 'n5', 0.10], ['n2', 'n4', 0.20, 'soft']
+    ['fdn', 'phil', 0.18], ['phil', 'n5', -0.12], ['cn', 'vol', 0.16], ['vol', 'phil', -0.10],
+    ['L2', 'n5', 0.10], ['n2', 'n4', 0.20]
   ];
   var paths = [];
 
+  // Position of a node's dot inside the system, from layout offsets. Offsets ignore CSS transforms,
+  // so the fade-in movement of the text and the dots growing in never shift where a line starts or ends.
   function anchor(id) {
     var el = system.querySelector('[data-a="' + id + '"]');
     if (!el || !el.offsetParent) return null;           // hidden (e.g. on small screens)
-    var dot = el.querySelector('i') || el;
-    var r = dot.getBoundingClientRect(), base = system.getBoundingClientRect();
-    return { x: r.left + r.width / 2 - base.left, y: r.top + r.height / 2 - base.top };
+    var dot = el.querySelector('i') || el, x = dot.offsetWidth / 2, y = dot.offsetHeight / 2, n = dot;
+    while (n && n !== system) { x += n.offsetLeft; y += n.offsetTop; n = n.offsetParent; }
+    return n === system ? { x: x, y: y } : null;
   }
 
   function build() {
@@ -69,11 +71,10 @@
         ' ' + b.x.toFixed(1) + ' ' + b.y.toFixed(1);
       var p = document.createElementNS(NS, 'path');
       p.setAttribute('d', d);
-      if (e[3] === 'soft') p.setAttribute('class', 'soft');
       svg.appendChild(p);
-      var len = e[3] === 'soft' ? 0 : p.getTotalLength();
+      var len = p.getTotalLength();
       if (len) { p.style.strokeDasharray = len; p.style.strokeDashoffset = reduce ? 0 : len; }
-      paths.push({ el: p, len: len, top: a.y, bottom: b.y, soft: e[3] === 'soft' });
+      paths.push({ el: p, len: len, top: a.y, bottom: b.y });
     });
     update();
   }
@@ -88,14 +89,13 @@
       var span = Math.max(p.bottom - p.top, 1);
       var t = Math.min(Math.max((line - p.top) / (span + window.innerHeight * 0.25), 0), 1);
       t = 1 - Math.pow(1 - t, 2.2);                    // ease out
-      if (p.soft) { if (t > 0.35) p.el.classList.add('on'); }
-      else if (!reduce) p.el.style.strokeDashoffset = (p.len * (1 - t)).toFixed(1);
+      if (!reduce) p.el.style.strokeDashoffset = (p.len * (1 - t)).toFixed(1);
     });
   }
   /* Watercolour shapes: three layers per section. Each drifts at its own speed (parallax)
      and grows as its section reaches the middle of the screen, then shrinks away again. */
   var layers = [].slice.call(document.querySelectorAll('.blob')).map(function (el) {
-    var depth = el.classList.contains('l3') ? 1 : el.classList.contains('l2') ? 0.6 : 0.3;
+    var depth = el.classList.contains('l3') ? 1.3 : el.classList.contains('l2') ? 0.8 : 0.4;
     return { el: el, sec: el.closest('[data-sec]'), depth: depth, r: parseFloat(getComputedStyle(el).getPropertyValue('--r')) || 0 };
   });
   function shapes() {
@@ -105,9 +105,9 @@
       if (r.bottom < -vh || r.top > vh * 2) return;               // off screen: leave alone
       var p = ((r.top + r.height / 2) - vh / 2) / vh;             // -1 above … 0 centred … 1 below
       p = Math.max(-1.5, Math.min(1.5, p));
-      var y = -p * o.depth * 140;
+      var y = -p * o.depth * 300;
       var near = 1 - Math.min(Math.abs(p), 1);                    // 1 when centred, 0 when a screen away
-      var scale = 0.78 + 0.32 * (near * near * (3 - 2 * near));    // smooth grow and shrink
+      var scale = 0.62 + 0.55 * (near * near * (3 - 2 * near));    // smooth grow and shrink
       o.el.style.transform = 'translate3d(0,' + y.toFixed(1) + 'px,0) scale(' + scale.toFixed(3) + ') rotate(' + (p * o.depth * 8).toFixed(2) + 'deg)';
     });
   }

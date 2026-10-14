@@ -394,7 +394,15 @@ def main():
         for fname in files:
             f.write("{{< include chapters/%s >}}\n\n" % fname)
     with open(os.path.join(ROOT, "report", "_version.yml"), "w", encoding="utf-8") as f:
-        f.write('report-version: "%s"\nreport-updated: "%s"\nreport-source: "%s"\n' % (version, updated, os.path.basename(docx)))
+        month_year = updated
+        for fmt in ("%b %d, %Y", "%B %d, %Y", "%d %B %Y", "%d %b %Y", "%Y-%m-%d"):
+            try:
+                import datetime
+                month_year = datetime.datetime.strptime(updated, fmt).strftime("%B %Y")
+                break
+            except ValueError:
+                pass
+        f.write('report-version: "%s"\nreport-updated: "%s"\nreport-date: "%s"\nreport-source: "%s"\n' % (version, updated, month_year, os.path.basename(docx)))
 
     print("Version %s (last updated %s)" % (version, updated or "unknown"))
     print("Chapters: %d -> report/chapters/" % len(files))

@@ -1,0 +1,209 @@
+# Chapter 2: What \'good\' looks like
+
+A coalition of funders needs to agree what it is trying to achieve before it can decide what to back. In end-of-life care, that is harder than it sounds. There is excellent care being provided by hospices, NHS and other charities in every region of the country, but people who work in the field disagree whether the palliative and end-of-life sector should focus on providing specialised care for the few with complex conditions - with unique training and skills that is required, or provide something more generalised, so that they can support more people who need care at the end of life. The measures in use today mostly track what services do rather than what dying people and their families experience, so they offer little help in settling the question.
+
+Without a shared goal, funding follows the priorities of individual institutions, which is largely what happens now (see Chapter 4). With a shared goal, funders can judge very different kinds of work (a hospice-at-home service, training for care home staff, a community project) against the same outcomes, and see where the gaps are.
+
+That is why this chapter sets out a working definition for the 'good' this donor coalition will work towards: seven qualities of good palliative and end-of-life care, drawn from existing frameworks, our interviews and our survey.
+
+It is inevitably imperfect. Each quality comes with tensions that can be managed but not resolved, and we set those out alongside it. We then look at how these qualities are measured today, where measurement is missing, and what this means for how a coalition should invest.
+
+We are aware that the term \"a good death\" is a term that is critiqued and debated within the end of life sector. Some experts reject the premise of a \'good death\' itself.
+
+::: pullquote
+*\"I don\'t believe in a good death. It\'s an oxymoron. There\'s not much good about death. \[\...\]\"*
+
+**Professor Allan Kellehear, Northumbria University**
+:::
+
+::: pullquote
+*\"Increasingly it feels to me that when we think about what a good death looks like, we need to think about what a good life looks like.\"*
+
+**Dr Heather Richardson, St Christopher\'s Hospice**
+:::
+
+We recognise that a system built around a single model of a good death risks perpetuating exclusion and marginalisation. Nevertheless we believe that a working and shared - if imperfect - description of a \'good death\' is needed to provide a unifying goal for investment and work in the sector. Without this, coordination and focus become almost impossible.
+
+### 7 defining qualities we have identified
+
+Here, we set out the seven qualities we have identified in the literature and our field work that will shape the objectives of the donor coalition. Our goal is that palliative and end-of-life care with these qualities should be available to everyone regardless of diagnosis, class, ethnicity, geography, age or disability.\
+
+| Awareness of death, dying and loss is cultivated as a core competency in life | Dying and caring are social experiences, held in community |
+|----|----|
+| A person\'s agency and preferences are sustained and honoured through an ongoing, relational and family-inclusive process | Care is connected and coordinated across formal services and the informal networks around a person |
+| People experience physical comfort and safety | People experience existential and psychological peace |
+| Death is recognised as having lasting meaning and value for everyone affected |  |
+
+Below, we set out the rationale for these choices, the tensions inherent in them, and how we will approach measuring progress against these goals during the lifetime of this donor coalition.
+
+### The tensions of a \'good death\' 
+
+1.  ***A medical model vs. a social model of death***
+
+*awareness of death, dying and loss is cultivated as a core competency in life*
+
+::: pullquote
+*\"Death, dying, loss and caregiving is a social issue with a medical component, not the other way around. "***Dr Julian Abel, Compassionate Communities UK**
+:::
+
+::: pullquote
+*\"People do die in hospitals, and actually sometimes that\'s okay. Not everybody is able to die at home. \"*
+
+**Sharon Hudson, Birmingham Community Healthcare**
+:::
+
+We have chosen objectives that are not confined to the health system, but take a broader scope. We have framed death as a social experience with a medical component.
+
+However, there are valid critiques and pitfalls within this approach. First, it risks replacing clearly defined operational measures with something that is challenging to consistently measure. Second, it risks implicitly undermining the importance of good specialist medical care and making a death in a healthcare setting seem wrong or shameful. Good public health and community approaches do not remove the need for expert symptom management or timely help in a crisis.
+
+We will navigate these tensions by seeking progress and improvements within the medical system as well as more broadly, with a particular focus on primary care, most often the bridge between health system and community.
+
+2.  ***Services vs. \'communities\'***
+
+*Dying and caring are social experiences, held in community*
+
+::: pullquote
+*\"For care to be impactful, it needs to tap into that 95% of time dying people spend away from services.\"*
+
+**Dr Emma Clare, End of Life Doula UK**
+:::
+
+::: pullquote
+*\"People left alone to die was always the most terrible aspect to experience. There should be professional people, funded by the tax that a lot of these patients have paid for, all of their lives, to sit beside them, limiting the fear of unknown and inevitable future.\"*
+
+**Elliot Garnett, person with lived experience**
+:::
+
+Most of a dying person\'s time is spent away from services, with family, friends and neighbours. We have therefore chosen to treat the people and networks around someone as part of their care, not only as bystanders to it.
+
+But it is easy to idealise \'communities\', assuming they are coherent, place-based and willing to do the hard work. Families are increasingly dispersed, not everyone has people they want support from, and leaders of the Compassionate Communities movement acknowledge that their model does not work in every neighbourhood. Many families also assume that caring for a dying person is the NHS\'s job rather than theirs. And some people, as Elliot Garnett\'s words show, want professional support because they have no one else.
+
+Services are unevenly distributed too. People in England\'s least deprived areas are more likely to die in a hospice than those in the most deprived, and rural and more deprived areas are consistently under-served by hospice provision. Neither services nor communities alone reach everyone.
+
+We will navigate this tension by treating community as an asset that is unevenly distributed and sometimes absent, backing work that strengthens it where it is weak rather than assuming it is there. Some of the most promising models bridge the two, as the Anne Robson Trust shows.
+
+::: case-study
+**Case study: The Anne Robson Trust**
+
+The only UK charity dedicated to supporting people who are dying alone in hospital. It trains and supports NHS trusts to run their own teams of \'Butterfly Volunteers\' who sit with patients in their final days, and runs a free pre-bereavement helpline. Founded by Liz Pryor after her mother\'s death in 2018, it now works with over 20 healthcare organisations; by the end of 2025, more than 50,000 people have been supported.
+:::
+
+3.  ***Agency vs. relationality***
+
+> *A person\'s agency and preferences are sustained and honoured through an ongoing, relational and family-inclusive process*
+
+::: pullquote
+*\"A good death reflects so far as possible the preferences and values of each individual whilst remembering the importance of relationships with others in terms of shaping preferences.\"*
+
+**Mark Hazelwood, Scottish Partnership for Palliative Care**
+:::
+
+::: pullquote
+*\"If Advance care planning was a medication, it would have been chucked off the prescribing list. There\'s no evidence that it does anything.\"*
+
+**Dr Libby Sallnow, University College London**
+:::
+
+People\'s wishes about how they die are shaped by the people around them, and often change as illness progresses. We have therefore framed agency as something sustained through ongoing conversation that includes family, rather than a set of decisions recorded once on a form.
+
+This carries risks in both directions. The language of agency can assume a rational consumer making clear choices, which few people facing death are. Including the family can mean the family overrides the person: relatives or faith communities may insist on treatment the dying person would not want, or the burden of decisions may fall on relatives who would rather not carry it. Formalising wishes can also backfire. Advance care planning is widely promoted, but the evidence that it changes the care people receive is weak, and written plans can become a source of dispute when circumstances change.
+
+We will navigate this tension by recognising that agency is not the same as autonomy, and that including the family is not always the same as honouring the person. We will judge success by whether people\'s wishes were known and respected as they changed, not by whether a plan was completed. Models that make carers full partners in care, such as the Carers Trust\'s Triangle of Care, show what this could look like. Triangle of Care has not yet been extended to palliative care.
+
+::: case-study
+**Case study:** **Triangle of Care, Carers Trust**
+
+A national standard that makes the unpaid carer a full partner alongside the patient and the professional. Developed by carers and launched in 2010, it holds providers to six \'carers included\' standards, assessed through a star-rated accreditation scheme. Now working with over 40 NHS mental health trusts and extending into dementia and acute care, but not palliative care yet.
+:::
+
+4.  ***Physical comfort vs. psycho-spriritual peace***
+
+People experience physical comfort and safety
+
+People experience existential and psychological peace
+
+::: pullquote
+*\"If you walk into the room and there is a sense of peace - there may be a bit of pain, there may be an aspect of information not being met - \[that is when\] you know that things are okay.\"*
+
+**Professor Katherine Sleeman, Kings College London**
+:::
+
+::: pullquote
+*\"I would say a good death is actually one that just aligns with how people want their death to be, and that might be that somebody\'s priorities are to be in a bit of discomfort, but to be able to have conversations.\"*
+
+**Dr Emma Clare, End of Life Doula UK**
+:::
+
+Good symptom control is the foundation of end-of-life health care, but it is not the whole of it. People can be free of pain and still frightened, isolated or unresolved. We have therefore made physical comfort and psychological peace two separate qualities, with equal weight.
+
+This creates problems of its own. Peace is subjective and culturally specific, and hard to define: Katherine Sleeman, while endorsing it, calls it a broad and somewhat vague term. It can also be manufactured. A heavily sedated death can look peaceful to family and staff without having been a good experience for the person dying. And the two qualities can conflict. For some people, staying lucid, whether for prayer, for conversation or to say goodbye, matters more than being free of pain.
+
+We will navigate this tension by treating the balance between comfort and alertness as the dying person\'s choice, not a clinical default, and by measuring both qualities from the perspective of the person and those closest to them rather than how the death looked to others.
+
+5.  ***Trauma vs. meaning***
+
+> *Death is recognised as having lasting meaning and value for everyone affected*
+
+::: pullquote
+*\"Loss is just at its core distressing. The idea of people who we love dying is just* *something that no amount of death café and death positivism will make better.\"*
+
+**Libby Sallnow, University College London**
+:::
+
+A death does not end with the person who dies. It shapes the lives of family, friends, carers and staff, sometimes for years. We have therefore included meaning as a quality of a good death, so that what happens to those left behind counts as part of the outcome, not something that starts afterwards.
+
+But expecting death to have meaning for everyone is optimistic, and can become a burden of its own. Some deaths are traumatic, and approaching death can bring old trauma back to the surface. The rituals that once helped individuals make sense of loss - communal grief practices or regular religious attendance - have faded for many, and no amount of openness about death removes the pain of losing someone.
+
+Some grief also goes unrecognised. Care home and healthcare staff can be left bereaved or even traumatised by a death, but are rarely treated as mourners. This 'disenfranchised' grief was most potently felt during the COVID-19 pandemic[^c2-1]. While for people belonging to the LGBTQIA+ community or other marginalised groups - indigenous communities, immigrants, religious minorities - have often had their grief minimised or ignored, especially when their relationship to the person who died was not formally recognised.
+
+We will navigate this tension by aiming for grief to be recognised and supported, rather than for meaning to be found. That includes the people whose grief is most often overlooked: staff, chosen family and those outside the formal circle of next of kin. Distress after a death is not a sign that care has failed.
+
+## Measuring a \'good death\'
+
+Measures and targets are widely used within the healthcare system to drive performance improvement - they aid strategic clarity, benchmarking, learning and accountable resource allocation. However, narrow KPIs can distort how a service or system works by creating false incentives or moving focus away from substantively important work that is harder to measure. The resulting \'performance culture\'[^c2-2] can undermine outcomes-driven, experimental work
+
+::: pullquote
+*\"There is a lack of routine measurement and data, or a lack of use of what is collected, leading to few places developing iterative, experimental cultures with tight feedback loops.\"*
+
+**Tom Wein, IDinsight Dignity initiative**
+:::
+
+Measures and numerical targets are particularly challenging in complex, non-linear systems like end of life care. They risk flattening complexity, and creating downstream unintended consequences if applied as blunt tools or performance goals. Accordingly, any work in this space needs to carefully define clear, shared outcomes in a way that enables innovation and learning.
+
+::: pullquote
+*\"Thank you cards are not an adequate way of demonstrating the good that is done in any sector. We need to have a much more structured, robust way of collecting information about what was good and what was not good, and what improved and what didn\'t.\"*
+
+**Professor Katherine Sleeman, Kings College London**
+:::
+
+**What is measured now**
+
+Different approaches and metrics are currently being used to measure outcomes at end of life. Hospices UK provides an overview,[^c2-3] and our analysis suggests the most important ones are:
+
+[TABLE]
+
+Alongside these headline measures, there are also research and audit programmes that review outcomes to drive best practice. The National Audit of Care at the End of Life is the most important, though the measures it provides are largely about the medical system as proxies for a good death (e.g. proportion of deaths expected by clinical staff, proportion of clinical notes with evidence that the patient had participated in personalised care conversations).[^c2-4] The National Survey of Bereaved People (VOICES) once offered a more complete population-level view of quality but no longer runs, a loss several interviewees noted.
+
+**Possible measures for learning and improvement**
+
+Developing appropriate outcomes to measure a \'good death\' will require careful work and iteration, which will be a core part of how our donor coalition operates in the years to come. However, provisionally, we offer some illustrative suggestions below with the aim of clarifying what we mean and what kind of interventions may be effective.
+
+| **Quality** | **Measure** |
+|----|----|
+| Awareness of death, dying and loss is cultivated as a core competency in life | Death literacy index[^c2-5] |
+| Dying and caring are social experiences, held in community | VOICES survey (now discontinued) |
+| Care is connected and coordinated across formal services and the informal networks around a person | Continuity of care. Whether the same people who knew a person when they could still speak for themselves are the ones advocating for them later. |
+| A person\'s agency and preferences are sustained and honoured through an ongoing, relational and family-inclusive process | Advance Decision to Refuse Treatment (ADRT), Recommended Summary Plan for Emergency Care and Treatment (ReSPECT); Advance Care Planning (ACP) |
+| People experience existential and psychological peace | Psycho-existential Symptom Assessment Scale (PeSAS) |
+| People experience physical comfort and safety | The Quality of Dying in Long-Term Care (QOD-LTC); Integrated Palliative Outcome Scale (IPOS) |
+| Death is recognised as having lasting meaning and value for everyone affected | VOICES survey (now discontinued) |
+
+[^c2-1]: [Witnesses and Victims Both: Healthcare Workers and Grief in the Time of COVID-19](https://pmc.ncbi.nlm.nih.gov/articles/PMC7864782/)
+
+[^c2-2]: [Written evidence from Mariana Mazzucato (MIG 20) Public Administration and Constitutional Affairs Committee Mission Government i](https://committees.parliament.uk/writtenevidence/140376/pdf/)
+
+[^c2-3]: [Measuring what matters \| Hospice UK](https://www.hospiceuk.org/innovation-hub/clinical-care-support/extending-frailty-care-programme/measuring-what-matters)
+
+[^c2-4]: <https://www.nacel.nhs.uk/outputs>
+
+[^c2-5]: [Understanding death literacy across the United Kingdom \| King\'s College London](https://www.kcl.ac.uk/research/understanding-death-literacy-across-the-united-kingdom)

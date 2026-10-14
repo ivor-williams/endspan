@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - report/index.qmd
+
+website:
+  title: "{{< var name >}}"
+  site-url: https://ivor-williams.github.io/endspan/
+  description: "{{< var tagline >}}"
+  search: false
+  navbar:
+    title: "{{< var name >}}"
+    right:
+      - text: Report
+        href: report/index.qmd
+      - text: Propositions
+        href: "#propositions"
+      - text: Get involved
+        href: index.qmd#get-involved
+
+format:
+  html:
+    theme: [cosmo, assets/theme.scss]
+    include-after-body: assets/site-scripts.html
+    toc: false
+    smooth-scroll: true
+    link-external-newwindow: true
+    grid:
+      body-width: 760px
+      sidebar-width: 280px
+      margin-width: 0px

@@ -1,0 +1,231 @@
+/*-- scss:defaults --*/
+// Brand palette (matches the Figma file "Endspan — Brand & Website", Primitives collection)
+$white: #FFFFFF;
+$mist: #F4F6F7;
+$stone: #E6E9EC;
+$fog: #C7CDD1;
+$ink: #0F2B26;
+$ink-75: #4B605C;   // derived: secondary text
+$ink-68: #5C6F6B;   // derived: muted text
+$sage: #DDEAE4;
+$sky: #DCE7F4;
+$lilac: #E7E0F3;
+$blush: #FDE3E0;
+$pine: #2E6F5E;
+$indigo: #4A6FA8;
+$plum: #7B6AA8;
+$ochre: #D4A24C;
+$terracotta: #C45A3C;
+
+// Type. ABC Arizona needs a web licence: drop the .woff2 files into assets/fonts and
+// uncomment the @font-face block below. Until then the free fallbacks are used.
+$font-text: "ABC Arizona Text", "Source Serif 4", Georgia, serif;
+$font-sans: "ABC Arizona Sans", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+$web-font-path: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap";
+
+$body-bg: $white;
+$body-color: $ink;
+$link-color: $terracotta;
+$primary: $terracotta;
+$font-family-sans-serif: $font-text;
+$headings-font-family: $font-text;
+$headings-font-weight: 500;
+$headings-color: $ink;
+$font-size-root: 17px;
+$line-height-base: 1.6;
+$border-color: $stone;
+$navbar-bg: $white;
+$navbar-fg: $ink;
+$navbar-hl: $ink;
+$footer-bg: $white;
+$toc-color: $ink-75;
+$toc-active-border: $terracotta;
+
+/*-- scss:rules --*/
+// @font-face { font-family: "ABC Arizona Text"; src: url("fonts/ABCArizonaText-Regular.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+// @font-face { font-family: "ABC Arizona Text"; src: url("fonts/ABCArizonaText-Medium.woff2") format("woff2"); font-weight: 500; font-display: swap; }
+// @font-face { font-family: "ABC Arizona Sans"; src: url("fonts/ABCArizonaSans-Medium.woff2") format("woff2"); font-weight: 500; font-display: swap; }
+
+:root {
+  --ink: #{$ink}; --ink-2: #{$ink-75}; --muted: #{$ink-68}; --line: #{$stone}; --strong: #{$fog};
+  --surface: #{$mist}; --accent: #{$terracotta}; --wash: #{$blush};
+  --chart-health-care: #{$indigo}; --chart-social-care: #{$pine}; --chart-social-security: #{$ochre};
+  --chart-grid: #{$stone};
+  --sans: #{$font-sans};
+}
+body { -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4 { text-wrap: balance; letter-spacing: -0.01em; }
+
+// ---------- Header ----------
+.navbar { border-bottom: 1px solid $stone; box-shadow: none; }
+.navbar-brand .navbar-title { font-weight: 500; font-size: 1.1rem; letter-spacing: -0.01em; }
+.navbar .nav-link { font-family: $font-sans; font-size: 0.9rem; font-weight: 500; color: $ink-75; }
+.navbar .nav-link.active { color: $ink; box-shadow: inset 0 -2px 0 $ink; }
+.navbar-nav .nav-item:nth-child(2) .nav-link { color: $ink-68; pointer-events: none; }
+.navbar-nav .nav-item:last-child .nav-link {
+  background: $terracotta; color: $white; border-radius: 6px; padding: 0.45rem 0.85rem; margin-left: 0.5rem;
+  &:hover { filter: brightness(1.06); }
+}
+
+// ---------- Buttons ----------
+.btn-bdf, a.btn-bdf {
+  display: inline-flex; align-items: center; gap: 0.5em; font-family: $font-sans; font-weight: 500; font-size: 0.92rem;
+  padding: 0.65em 1.05em; border-radius: 6px; border: 1.5px solid $terracotta; background: $terracotta; color: $white; text-decoration: none;
+  &:hover { filter: brightness(1.06); color: $white; }
+  &.ghost { background: transparent; color: $terracotta; &:hover { background: $blush; filter: none; } }
+}
+
+// ---------- Home ----------
+.bdf-home { --gutter: clamp(16px, 4vw, 40px); }
+.bdf-wrap { max-width: 1120px; margin-inline: auto; padding-inline: var(--gutter); }
+.bdf-hero { padding-block: clamp(48px, 9vw, 112px) clamp(40px, 7vw, 88px); border-bottom: 1px solid $stone; }
+.bdf-hero h1 { font-size: clamp(2.2rem, 6vw, 4.5rem); line-height: 1.04; font-weight: 400; letter-spacing: -0.02em; margin: 0; border: 0; }
+.bdf-hero h1 .name { display: block; color: $ink; }
+.bdf-hero h1 .claim { display: block; color: $ink-68; max-width: 20ch; }
+.bdf-hero .lede { max-width: 46ch; color: $ink-75; font-size: 1.05rem; margin-top: clamp(24px, 3.5vw, 40px); }
+.bdf-beats { --beat-gap: clamp(56px, 8vw, 104px); display: flex; flex-direction: column; gap: var(--beat-gap); padding-block: clamp(48px, 7vw, 96px); }
+.bdf-beat {
+  display: grid; grid-template-columns: 44px minmax(0, 1.1fr) minmax(0, 0.9fr); grid-template-areas: "rail card text";
+  column-gap: clamp(16px, 2.5vw, 32px);
+  > .rail { grid-area: rail; position: relative; }
+  > .rail::after { content: ""; position: absolute; left: 50%; top: 52px; bottom: calc(-1 * var(--beat-gap) + 8px); width: 1px; background: $fog; }
+  &:last-child > .rail::after { display: none; }
+  .num { width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid $ink; display: flex; align-items: center; justify-content: center; font-family: $font-sans; font-weight: 600; margin: 0; }
+  > .card { grid-area: card; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 14px; border: 0; background: none; }
+  > .card h2 { font-size: clamp(1.55rem, 3.1vw, 2.3rem); line-height: 1.15; font-weight: 500; margin: 0; border: 0; padding: 0; max-width: 22ch; }
+  > .card .sub { font-size: clamp(1.05rem, 1.6vw, 1.3rem); line-height: 1.3; margin: 0; max-width: 26ch; }
+  > .card p { margin: 0; }
+  > .text { grid-area: text; min-width: 0; color: $ink-75; max-width: 42ch; justify-self: end; padding-top: 6px; }
+}
+@media (max-width: 760px) {
+  .bdf-beat { grid-template-columns: 36px minmax(0, 1fr); grid-template-areas: "rail card" "rail text"; row-gap: 16px;
+    .num { width: 36px; height: 36px; } > .rail::after { top: 44px; } > .text { justify-self: start; padding-top: 0; } }
+}
+.bdf-contact { border-top: 1px solid $stone; padding-block: clamp(48px, 7vw, 88px) clamp(64px, 9vw, 120px);
+  .bdf-wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-areas: "head form" "side form";
+    grid-template-rows: auto 1fr; gap: 28px clamp(28px, 6vw, 88px); align-items: start; }
+  .head { grid-area: head; } .formcol { grid-area: form; min-width: 0; } .side { grid-area: side; min-width: 0; }
+  h2 { font-size: clamp(1.75rem, 4vw, 2.6rem); font-weight: 500; max-width: 16ch; margin: 0 0 18px; border: 0; }
+  p { color: $ink-75; max-width: 44ch; }
+  .who { color: $ink; font-weight: 600; margin: 28px 0 2px; padding-top: 18px; border-top: 1px solid $fog; font-family: $font-sans; max-width: 44ch; }
+}
+@media (max-width: 760px) { .bdf-contact .bdf-wrap { grid-template-columns: minmax(0, 1fr); grid-template-areas: "head" "form" "side"; grid-template-rows: auto; } }
+
+// ---------- Interest form ----------
+.bdf-form { background: $mist; border-radius: 12px; padding: clamp(20px, 3.2vw, 36px); font-family: $font-sans;
+  .bdf-form-body { display: flex; flex-direction: column; gap: 20px; }
+  .field { display: flex; flex-direction: column; gap: 6px; border: 0; margin: 0; padding: 0; min-width: 0; }
+  label, legend { font-size: 0.85rem; font-weight: 600; color: $ink; margin: 0; padding: 0; float: none; width: auto; }
+  .opt { font-weight: 400; color: $ink-68; margin-left: 6px; }
+  input[type=text], input[type=email] { width: 100%; font: inherit; font-size: 1rem; color: $ink; background: $white;
+    border: 1.5px solid $fog; border-radius: 6px; padding: 0.7em 0.85em; transition: border-color .15s, box-shadow .15s;
+    &:hover { border-color: $ink-68; }
+    &:focus { outline: none; border-color: $ink; box-shadow: 0 0 0 3px $blush; } }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2px; }
+  .chip { position: relative; font-weight: 500; cursor: pointer;
+    input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+    span { display: inline-block; padding: 0.5em 0.95em; border: 1.5px solid $fog; border-radius: 999px; background: $white; color: $ink-75; font-size: 0.9rem; transition: all .15s; }
+    &:hover span { border-color: $ink-68; color: $ink; }
+    input:checked + span { background: $ink; border-color: $ink; color: $white; }
+    input:focus-visible + span { box-shadow: 0 0 0 3px $blush; border-color: $ink; } }
+  .check { display: flex; align-items: center; gap: 10px; font-weight: 500; cursor: pointer;
+    input { width: 18px; height: 18px; accent-color: $terracotta; margin: 0; flex: none; } }
+  .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+  .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
+  .btn-bdf { font-size: 1rem; padding: 0.75em 1.25em; cursor: pointer; &[disabled] { opacity: .6; cursor: progress; } }
+  .status { margin: 0; font-size: 0.85rem; color: $ink-75; }
+  .status.error { color: $terracotta; }
+  .fine { margin: 0; font-size: 0.78rem; line-height: 1.45; color: $ink-68; max-width: 46ch; }
+  .err { font-size: 0.8rem; color: $terracotta; min-height: 0; &:empty { display: none; } }
+  .invalid input[type=text], .invalid input[type=email] { border-color: $terracotta; }
+  .invalid .chip span { border-color: $terracotta; }
+  .bdf-form-done { outline: none; padding-block: 8px;
+    .done-title { font-family: $font-text; font-size: clamp(1.5rem, 3vw, 2rem); color: $ink; margin: 0 0 6px; }
+    p { margin: 0; color: $ink-75; } }
+}
+
+// ---------- Press card ----------
+a.bdf-press { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 14px; align-items: center; max-width: 44ch;
+  padding: 10px; margin-top: 4px; border: 1px solid $stone; border-radius: 10px; background: $white; text-decoration: none; color: $ink;
+  transition: border-color .15s, background .15s;
+  &:hover { border-color: $fog; background: $mist; color: $ink; .title cite { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: $terracotta; } }
+  .thumb { display: block; aspect-ratio: 1 / 1; border-radius: 6px; overflow: hidden; background: $blush; }
+  .thumb img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 58% 40%; }
+  .body { display: flex; flex-direction: column; gap: 4px; min-width: 0; font-family: $font-sans; }
+  .kicker { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: $ink-68; }
+  .title { font-size: 0.9rem; line-height: 1.35; color: $ink; }
+  .title cite { font-family: $font-text; font-style: italic; font-size: 1.02em; }
+  .credit { font-size: 0.7rem; color: $ink-68; }
+}
+
+// ---------- Report ----------
+.bdf-report-meta { font-family: $font-sans; font-size: 0.85rem; color: $ink-75; display: flex; flex-wrap: wrap; gap: 6px 16px; margin-bottom: 1.5rem; }
+#quarto-content h1 { font-weight: 500; margin-top: 3.5rem; padding-bottom: 0; border-bottom: 0; }
+#quarto-content h2 { font-weight: 500; margin-top: 2.6rem; border-bottom: 0; }
+#quarto-content h3 { font-weight: 600; font-size: 1.15rem; margin-top: 2rem; }
+#quarto-content h4 { font-weight: 600; font-size: 1.02rem; margin-top: 1.6rem; }
+.quarto-title .title { font-weight: 500; }
+#TOC, .sidebar nav[role="doc-toc"] { font-family: $font-sans; font-size: 0.85rem; }
+@media (min-width: 992px) { #quarto-sidebar { display: flex; flex-direction: column; } }
+@media (max-width: 991.98px) { .bdf-pdf { margin-top: 12px; } }
+#quarto-content a.uri, .footnotes a, #quarto-content p, #quarto-content li { overflow-wrap: anywhere; }
+.bdf-pdf { margin-top: auto; padding-top: 18px; border-top: 1px solid $stone; font-family: $font-sans; font-size: 0.85rem;
+  .label { text-transform: uppercase; letter-spacing: 0.07em; font-size: 0.72rem; font-weight: 600; color: $ink-68; margin-bottom: 6px; }
+  a { font-weight: 600; } p { margin: 0 0 4px; } }
+
+.pullquote { border-left: 2px solid $terracotta; padding: 0.2rem 0 0.2rem 1.1rem; margin: 1.8rem 0; color: $ink;
+  p:first-child { font-size: 1.12rem; line-height: 1.5; }
+  p:last-child { font-family: $font-sans; font-size: 0.82rem; color: $ink-75; margin-bottom: 0; }
+  strong { font-weight: 500; } }
+.case-study, .callout-box { background: $mist; border-radius: 8px; padding: 1.2rem 1.4rem; margin: 1.8rem 0; font-size: 0.95rem;
+  > p:first-child strong { font-family: $font-sans; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: $terracotta; display: block; margin-bottom: 0.2rem; }
+  p:last-child { margin-bottom: 0; } }
+.definitions { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 1.5rem 0; }
+.definition { background: $sage; border-radius: 8px; padding: 1rem 1.1rem; font-size: 0.92rem; p:last-child { margin-bottom: 0; } }
+#quarto-content table:not(.bdf-chart-table) { font-size: 0.88rem; }
+.footnotes { font-size: 0.85rem; color: $ink-75; }
+
+// ---------- Charts ----------
+.bdf-chart { background: $mist; border-radius: 8px; padding: 18px clamp(14px, 3vw, 22px) 14px; margin: 1.8rem 0; line-height: 1.35; font-family: $font-sans; }
+.bdf-chart-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 8px 16px; margin-bottom: 14px; }
+.bdf-chart-title { font-size: 0.92rem; font-weight: 600; color: $ink; max-width: 40ch; caption-side: top; }
+.bdf-chart-tools { display: flex; gap: 6px; }
+.bdf-chart-tools button { cursor: pointer; background: transparent; border: 1px solid $fog; border-radius: 999px; font-size: 0.75rem; font-weight: 500; padding: 3px 10px; color: $ink-75; }
+.bdf-chart-tools button:hover { background: $blush; color: $ink; }
+.bdf-chart-source { font-size: 0.75rem; color: $ink-68; margin: 12px 0 0; }
+.bdf-chart-table { width: 100%; font-size: 0.82rem; font-variant-numeric: tabular-nums; td, th { padding: 6px 8px; border-bottom: 1px solid $stone; } .r { text-align: right; } }
+.bdf-rows { list-style: none; margin: 0; padding: 0; font-size: 0.8rem; --label-w: 10.5rem; --reserve: 7rem; }
+.bdf-row { display: grid; grid-template-columns: var(--label-w) minmax(0, 1fr); border-radius: 4px; }
+.bdf-row .lab { display: flex; align-items: center; justify-content: flex-end; text-align: right; padding-right: 10px; color: $ink-75; min-width: 0; }
+.bdf-row.total .lab { font-weight: 600; color: $ink; }
+.bdf-row .track { position: relative; margin-right: var(--reserve); display: flex; align-items: center; min-height: 40px;
+  border-left: 1px solid $fog; background-image: linear-gradient(to right, var(--chart-grid) 1px, transparent 1px); background-size: 25% 100%; background-position: -1px 0; box-shadow: 1px 0 0 var(--chart-grid); }
+.bdf-row .bar { flex: none; height: 22px; width: calc(var(--p) * 1%); min-width: 2px; border-radius: 0 4px 4px 0; background: var(--c);
+  transition: width 1.8s cubic-bezier(0.2, 0.75, 0.2, 1), opacity 0.2s; transition-delay: calc(var(--i) * 180ms), 0s; }
+.bdf-row.total .bar { opacity: 0.32; }
+.bdf-row .val { flex: none; margin-left: 8px; white-space: nowrap; color: $ink; font-weight: 500; font-variant-numeric: tabular-nums; }
+.bdf-row .val .pct { color: $ink-68; font-weight: 400; }
+.bdf-chart.pre .bar { width: 0; min-width: 0; }
+.bdf-rows.hovering .bdf-row:not(.on) .bar { opacity: 0.35; }
+.bdf-rows.hovering .bdf-row.total.on .bar { opacity: 0.32; }
+.bdf-axis { display: grid; grid-template-columns: var(--label-w) minmax(0, 1fr); }
+.bdf-axis .ticks { position: relative; margin-right: var(--reserve); height: 22px; font-size: 0.68rem; color: $ink-68; font-variant-numeric: tabular-nums; }
+.bdf-axis .ticks span { position: absolute; top: 6px; transform: translateX(-50%); white-space: nowrap; }
+.bdf-axis .ticks span:first-child { transform: none; }
+@media (max-width: 620px) {
+  .bdf-rows { --reserve: 6.5rem; }
+  .bdf-row, .bdf-axis { grid-template-columns: minmax(0, 1fr); }
+  .bdf-row { padding-top: 6px; }
+  .bdf-row .lab { justify-content: flex-start; text-align: left; padding: 0 0 2px; }
+  .bdf-row .track { min-height: 30px; }
+}
+.bdf-tip { position: fixed; z-index: 1100; pointer-events: none; max-width: 240px; background: $ink; color: $white; border-radius: 6px; padding: 8px 10px; font-family: $font-sans; font-size: 0.75rem; line-height: 1.35; box-shadow: 0 6px 20px rgba(0,0,0,.18);
+  b { display: block; font-size: 0.86rem; font-weight: 600; } .k { display: flex; align-items: center; gap: 6px; opacity: .85; }
+  .k i { width: 12px; height: 3px; border-radius: 2px; background: var(--c); flex: none; } .d { display: block; opacity: .75; margin-top: 4px; } }
+@media (prefers-reduced-motion: reduce) { .bdf-row .bar { transition: none; } }
+
+// Home overrides (beat the report heading rules)
+#quarto-content .bdf-beat > .card h2, #quarto-content .bdf-contact h2 { margin-top: 0; }
+.bdf-hero .lede { display: block; }
+.bdf-contact .who, .bdf-contact .who + a { display: block; }
+#quarto-content .bdf-contact .side p { margin: 0; }

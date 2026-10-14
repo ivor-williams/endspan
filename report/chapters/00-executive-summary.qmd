@@ -1,0 +1,40 @@
+# Executive Summary
+
+The way we die in the UK has changed faster than the systems built to care for us. This report is the first stage of an effort to respond to that, by bringing together philanthropists who want to fund the changes the system needs but is currently not set up to deliver.
+
+It sets out how we understand the system today, where we think change would matter most, and the kinds of funding that could support it. It is a starting position, not a finished plan. Over the coming months we will shape it with the practitioners, researchers, families and funders who know this field best, and this report is an invitation into that work.
+
+**Context:** People are living longer and dying more slowly The historical end-of-life trajectory the modern hospice movement is built around - a relatively predictable decline over months due to cancer - is being displaced by dementia, frailty and multimorbidities, where the final phase can last years and it can be difficult to pinpoint when \'end-of-life\' begins. Where we die is changing too: care homes already account for ⅕ of deaths and are on track to become the most common place of death in the UK by 2040. By that time, roughly 150,000 more people will need palliative care than they do today. This is in large part a consequence of medical successes. People are now living longer, surviving diseases and conditions that used to kill them, and are dying later.
+
+But the infrastructure and systems have not kept up with these changes. Care homes carry no statutory duty to provide palliative and end-of-life care. A third of palliative medicine consultants will retire within a decade and cannot be realistically replaced. In the community, district nurses have fallen 43% since 2009. Around 80% of people who die in hospices have cancer, though cancer accounts for 25% of all deaths. These were not intended failures, but they are what happens when the problems change but the structures and systems do not change with them.
+
+At the same time, there is more excellence than there has ever been. Excellent hospice-at-home and community palliative care services are running in every region of the UK. Many care homes are already doing good palliative and end-of-life care work without being widely recognised or often properly resourced for it. Outside of the formal health system, a new movement around death care is taking place - death cafes, end of life doulas, 'compassionate communities', public death literacy work - with growing evidence behind it. Social finance has proven that integrated community health models work and can be handed over and sustained: RIPEL, REACT and Hillingdon are now sustained on mainstream NHS funding. Government policy is, for the first time in years, pointing the same way the sector has argued for decades: move from hospital to community, from treatment to prevention and analogue to digital.
+
+**A stuck system:** The gap is not between good practice and bad practice. It is between what already exists, what is emerging and where almost nothing currently connects the two. Proven community models stay in the place that produced them. New approaches reach the end of a 3-year grant before they can generate the evidence that would justify continuing them. The digital infrastructure that would let care follow a person across hospice, hospital, care home and home is largely unbuilt. Hospice data is not linked to NHS data at all, and across a decade of UK grants to the palliative and end-of-life care sector, very little includes digital technology. There is a great deal to build, but no one is currently building it.
+
+**Where philanthropy goes now.** There is real generosity in this field, but very little of it is aimed at changing how the system works. Roughly £92m of grant funding from trusts and foundations reached UK palliative care over the past decade: about £9.2m a year, in grants averaging £3,800 that have typically focused on core services or capital projects. This is less an ecosystem than hundreds of separate relationships, almost all aimed at keeping existing services running. The gap is a strategic investor and coordinator, able to connect what already works, back new approaches long enough to prove themselves, and build the shared infrastructure no single organisation can.
+
+As a first step towards building that strategic investor, this report maps the stuck system and identifies where philanthropic investment could yield the maximum impact.
+
+**Chapter 1** describes the context of the system. We briefly set out what palliative and end-of-life care mean and over what span, how dying has changed since the founding of the NHS, where and how people now die, and who pays for what.
+
+**Chapter 2** describes the definitions of good. We set out seven defining qualities of a good death, drawn from existing frameworks, the interviews and survey. We explore these qualities through tensions that are navigated (rather than resolved): medical and social, services and community, agency and relationality, comfort and peace, trauma and meaning.
+
+**Chapter 3** Identifies where innovations would have the most impact. It applies systems thinking methodology to build a map of palliative and end-of-life care.The map surfaces example loops that shape poor outcomes across the rest of the system - the nodes where most harm is caused, and therefore where change would be most valuable.
+
+**Chapter 4** defines the funding picture in detail, analysing ten years of grant data and 17 individual hospice-level accounts.
+
+**Chapter 5** presents a taxonomy of emerging opportunities - hypotheses rather than clear-cut solutions that describe practical starting points to explore.
+
+We also make the case for a new \'philanthropic stack\' combining multiple investment approaches - from time-bound problem-orientated funding to recyclable finance - drawing on approaches from other sectors.
+
+Our core belief is that philanthropic capital - deployed as a disciplined collaborative rather than a set of siloed, one-off programmes without coordination - can act as an agent of change this current approach struggles to achieve.
+
+**Strategic philanthropy:** Good palliative and end-of-life care, as we define it, is delivered by hospices, NHS community teams, GPs, for-profit care home chains, neighbourhood organisations and families, often simultaneously. We believe any intervention worth making should move between them, that philanthropy can fund across all of those settings breaking down siloes - because by default it does not need the saving to return - and fund work long enough for the evidence to mature, which will enable sustainable and effective scaling of solutions.
+
+We believe a coordinated pool of philanthropic capital, deployed with a coherent proposition that moves between system level awareness and intervention level detail would be highly effective given the historical contributions that have had far less strategic ambition.
+
+This is a first position, not a conclusion. If you are building something in this space, funding it, or have lived it - tell us where this is wrong, what it is missing, and what you would back first. The next phase is deliberately open.
+
+Polly Mackenzie, Ivor Williams, Matilda Agace, with input from Michael Clark and Nigel Ball.\
+<polly@zinc.vc>

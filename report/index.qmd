@@ -1,0 +1,42 @@
+---
+title: "Phase 1 report"
+subtitle: "Palliative and end-of-life care: where philanthropy can change the system"
+author: "Polly Mackenzie, Ivor Williams and Matilda Agace, with input from Michael Clark and Nigel Ball"
+metadata-files:
+  - _version.yml
+format:
+  html:
+    toc: true
+    toc-location: left
+    toc-depth: 3
+    toc-title: Contents
+    number-sections: false
+    format-links: false
+    anchor-sections: true
+    footnotes-hover: true
+  typst:
+    toc: true
+    toc-depth: 2
+    papersize: a4
+    margin:
+      x: 2.2cm
+      y: 2.4cm
+    fontsize: 10.5pt
+    font-paths: ../assets/fonts
+    include-in-header: ../assets/report-pdf.typ
+    output-file: report
+---
+
+::: {.content-visible when-format="html"}
+::: {.bdf-report-meta}
+Version {{< meta report-version >}} · Last updated {{< meta report-updated >}} · [Previous versions](https://github.com/ivor-williams/endspan/releases)
+:::
+
+::: {.bdf-pdf hidden=""}
+[Other formats]{.label}
+
+[Download PDF](report.pdf)
+:::
+:::
+
+{{< include _chapters.qmd >}}

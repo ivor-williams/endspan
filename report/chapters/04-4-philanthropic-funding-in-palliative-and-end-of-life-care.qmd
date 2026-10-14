@@ -1,0 +1,299 @@
+# Chapter 4: Philanthropic funding in palliative and end-of-life care
+
+Chapter 3 showed where the system is stuck. This chapter asks what role money plays in keeping it there, and what a coalition\'s money could do differently. The coalition needs to know four things before it commits financially.
+
+-   The first is scale. Around £22bn of public money is spent each year on people in their last year of life. Any philanthropic fund will be small by comparison, so it cannot replace public spending. Its value lies in changing how that spending is used - acting as first loss capital that can take risks on innovation that public funding cannot.
+
+-   The second is where philanthropic money goes now, so our coalition can see the gaps and avoid duplicating what others already fund.
+
+-   The third is what other funding instruments have achieved in this field, and where they have fallen short.
+
+-   The fourth is what principles should guide a coalition\'s investment as a result.
+
+We take these in turn. We begin with the money around the system: public spending, what households pay, and private capital. We then look at philanthropy in detail, drawing on a decade of grants data and the published accounts of 17 hospices, and at what social investment has taught the field. Our central finding is that almost all of this money sustains the system as it is or improves it at the margins. Very little backs the experiments that could change it. This missing middle is the space we think a coalition should fill. The chapter closes with the principles for doing that, and examples of funders elsewhere who have tried.
+
+## How end of life care is funded today
+
+The funding model for end of life care - including how philanthropy currently works - is both a contributor to and condition of the failures in today\'s dominant end of life care system. For the system to change, funding models and philanthropic discipline also needs to change.
+
+Funding for home-based end of life care comes predominantly from public funding and households\' own money. Broadly speaking, philanthropic and money plays a key role in maintaining the hospice sector, venture capital is active in the care home sector, and outcomes-based social finance is enabling innovation in primary and secondary health care.
+
+In this chapter we first look at overall financial flows in the space, before focusing in on the philanthropic funding landscape and two important social finance programmes. We aim to detail the principles by which new disciplined philanthropic investment could be deployed.
+
+### Public money
+
+The primary source of funding for end of life care is public money. The Nuffield Trust and the Health Economics Unit estimate that around £22 billion of public money is spent on people in the last year of life in the UK[^c4-1]. This is roughly as much as the Home Office\'s entire budget, covering everything from policing to counter-terrorism to borders.[^c4-2]
+
+Over half of this total expenditure (almost £12 billion) was on health care, 22% (almost £5 billion) was on social care, and 25% (£5.5 billion) was on social security like state pension payments.
+
+{{< chart public-spend >}}
+
+The NHS spends £11.9bn on end of life healthcare annually. For comparison NHS maternity services are funded In 2021/22, overall spend on NHS maternity and neonatal care was around £4.9 billion.[^c4-3]
+
+Within healthcare, the UK spends five times as much on supporting people in the final year of life as hospital inpatients, as we do supporting them with primary care, community health and hospice care. The vast majority of money is concentrated in emergency reactive care. Healthcare spending is nominally directed by Integrated Care Board commissioning decisions, though in practice much of it, particularly emergency and acute activity, is driven by national payment mechanisms and demand rather than by deliberate local choices.
+
+{{< chart health-care-spend >}}
+
+For social care expenditure, the largest element is residential and nursing home care (63%), paid for by local authorities. Local authorities have a statutory duty to assess and arrange residential and nursing care for those with eligible needs, but they only fund it for people who fall below the means-test thresholds. Continuing Healthcare (CHC) is a package of care funded by the NHS. And the £170m \'other\' covers things like the home adaptations and equipment.
+
+{{< chart social-care-spend >}}
+
+Many of the dynamic loops described in Chapter 2 are tied to public funding models.
+
+### Household money
+
+Individuals and their families also contribute both as charitable givers and as private customers within end of life care.
+
+A key funding source for hospices is individual donations (e.g. money raised through donation campaigns and fun runs). Evidence from hospices UK shows that on average 27% of independent hospices\' total income is from donations (£351m, though this figure also covers grants from trusts and foundations), and 18% is from legacies (£234m).[^c4-4]
+
+Contribution as private customers is more challenging to calculate. However, the ONS estimates that 37% of care home residents are self-funders in England.[^c4-5] LaingBuisson values the private pay market for care homes in the UK at £14.1 billion, though only part of this will be for end of life care.[^c4-6]
+
+### Venture and private finance
+
+A third pool of capital circulates around end of life care. Though this is wider than end of life care it is a useful context. UK healthcare real estate attracted £12 billion of investment in 2025, around four times the five-year average, driven overwhelmingly by US REITs acquiring care home portfolios. Welltower alone deployed over £7 billion in the UK care sector that year.[^c4-7] LaingBuisson values the wider UK care home market for older people at £27.3 billion,[^c4-8] and the homecare and supported living market at a further £12.4 billion (this also includes care for all ages),[^c4-9] much of it consolidated under private equity ownership.
+
+There is some venture capital aimed more directly at death and dying, but has struggled to find a workable return: Farewill, the best known UK \'death tech\' start-up, raised around £30-39 million from investors including Augmentum Fintech and Highland Europe, but was sold in 2024 for just £12.9 million.[^c4-10] This illustrates some of the challenges for commercial capital in the case, and therefore the key role for philanthropy.
+
+More developed commercial innovation pathways are also active within the medications, technologies and devices that support people at end of life.
+
+::: case-study
+**Funding case study: Seed funding for high-potential early stage innovations**
+
+Cancer Research UK found that discoveries stalled in a specific gap: too early for venture capital, too commercial for research grants. Its Seed Fund began with a £15m cornerstone commitment from the charity and has grown beyond £25m through a £10m donation from the Garfield Weston Foundation and other philanthropic gifts. It invests £50k to £1.5m across pre-seed, seed and follow-on stages, alongside venture-creation support. Returns are recycled into the fund and further research, which allows it \'to take risks others cannot\'. To date £8m committed across 26 investments has secured £32.9m in co-investment, roughly four to one leverage, and other investors treat its presence as validation.
+:::
+
+::: case-study
+**Funding case study: Venture-building for healthy aging**
+
+Zinc builds commercial ventures against defined social missions, on the conviction that a mission can be both a social and a commercial opportunity. Its Later Life mission set an explicit goal of adding five high-quality years to later life. Each mission recruits a cohort of 50 to 70 entrepreneurs before there is a company to join, running a nine-month programme: three months finding a co-founder and settling on a problem, three prototyping, three preparing for investment. Zinc takes an 8% equity stake in the companies formed. Its second fund closed a first tranche at €32.9m, backing around 100 businesses, with investors including Big Society Capital and Dunhill Medical Trust. Over 300 entrepreneurs have been backed and more than 60 ventures built. The Later Life mission also created Ageing Champions, older adults who shaped products by sharing their own experience of growing older.
+:::
+
+### Philanthropic money
+
+*Patterns of funding*
+
+Our analysis for this report, using the 360Giving database. found that philanthropic funding of UK palliative care amounted to approximately £92m over the last 10 years (2015-2025) across 3,494 grants.[^c4-11] This is a comparatively small amount of money - just £9.2m a year on average for a sector supporting more than 500,000 dying people a year. This is a partial assessment only of grant funders who contribute to the database.
+
+Excluding a spike of grant-making by The Julia Rausing Trust in 2023, the underlying grant-making trend from 2019--2025 is flat or declining in real terms.The field is also dominated in volume by very small grants, just £3,8000 on average. A few larger grants however make up the majority of the value.
+
+![](media/figure-ea74bac638.png)
+
+Geographically speaking, London and the South East dominate funding. For example, We identified £23m of grants within London over the period, compared to£3.6m for the North East and £2.8m for the West Midlands. Funding in Northern Ireland appears to have collapsed over the period to just £280k.
+
+There is no large strategic systems-change funder for the field. The biggest philanthropic player by value is the National Lottery Community Fund at £48.6m, but with a median grant of £10k it is essentially a service delivery and community grants programme, not a systems investment fund.
+
+Grant-making is almost entirely directed at institutions -- e.g hospices, national charities (Hospice UK, Marie Curie, Sue Ryder) -- rather than at innovation, infrastructure or system-level change projects. In our searches for example, only 2 grants mention \'digital\', and just 10 mention \'dementia\' despite it being the dominant condition at end of life.
+
+Many people we spoke to as part of the research described how current philanthropic funding approaches are failing the system.
+
+::: pullquote
+*\"Innovation in end-of-life care doesn\'t fail because of a lack of good ideas. It often fails because funding and systems favour short-term projects, organisational silos and clinical interventions over long-term cultural change\"*
+
+**Dr Katy Vigurs, DEAD GOOD**
+:::
+
+::: pullquote
+*\"The model of what we do \[in the NHS\] has not changed and is not open to change because \[philanthropic funders\] like what third sector do, so this then suppresses change \[elsewhere\]. Palliative care delivered by hospices could be so much more ambitious but funding concerns do not allow for it.\"*
+
+**Lisa Kennedy, NHS Greater Glasgow and Clyde**
+:::
+
+*Grant recipients***\
+**Looking directly at funded organisations\' accounts gives us a richer picture beyond the 360 Giving database. Our analysis of a sample of 17 hospices surfaces 262 unique named funders. Of these, only 22 (7%) appear at more than one hospice, and only 8 (2.5%) appear at four or more. Very few are on 360Giving. The pattern is predominantly one-to-one: a funder gives to one hospice. The philanthropic ecosystem is not coordinated but an aggregation of hundreds of independent bilateral relationships.
+
+::: case-study
+**Case study: Compassionate Neighbours, St Joseph\'s Hospice, London\
+**Local people were trained as \"Compassionate Neighbours\" and matched with isolated people near the end of life to build ordinary, reciprocal friendships. Begun at St Joseph\'s Hospice, Hackney, in 2014 and scaled with Nesta/DCMS funding; the 2019 evaluation counted 901 neighbours supporting 541 community members across eight hospices, now around 14. Its own evaluation found the volunteers gained as much as those they visited.
+:::
+
+The funding is dominated by small-to-medium trusts with no apparent strategic intent around EOL specifically. Many named grants fund discrete, tangible items - beds, scanners, syringe drivers, IT equipment, staff training bursaries - or core costs - rather than service models, infrastructure or innovation. This reflects funders responding to hospice asks rather than deploying capital against a theory of change.
+
+Our evidence surfaces almost no visible capital directed at community-based or systems-change work. A few exceptions are the Edward Gostling Foundation\'s £1.5m virtual ward grant to Thames Hospice, the Hadley Trust\'s work with Royal Trinity, and the City Bridge Foundation\'s multi-year bereavement therapy commitment to St Christopher\'s.
+
+Geographic concentration is notable. St Christopher\'s alone names over 80 funders - more than all the non-London hospices combined. London hospices attract a distinct funder profile: major City law firms, investment banks, auction houses, and large national foundations. Regional and Scottish hospices draw almost entirely on local trusts and community foundations, with much smaller individual grant values.
+
+::: case-study
+**Funder profiles**
+
+The following are indicative of philanthropic funders that range from family trusts to national foundations.
+
+**National Lottery Community Foundation**
+
+TNLCF is the biggest single funder by volume. It has two giving modes: a high-frequency small grants machine (190 grants under £25k, just 10% of value), and a much smaller but more interesting innovation funder at the £300k--£500k level. The large grants (56 grants over £100k delivering 75% of value) include Compassionate Neighbours, Inside-Out Hospice, Palliative Care Coordinator for Homeless People but those programmes peaked in 2015--2019 and haven\'t returned at scale. Interestingly they funded the End of Life Care Incubator, an innovative model which received £1.88m across 3 grants from TNLCF in 2017--18.
+
+**Julia Rausing Trust**
+
+Julia Rausing Trust has two giving models - targeted grants, and then a single round of \'core costs\' funding in 2023. No grants have been made since. The 2023 grants look like a focussed sector stabilisation effort post-COVID.
+
+**Wolfson Foundation**
+
+Wolfson is the most consistent and systematic funder in the dataset. It funds a series of hospices every year across a broad geographic reach. It is largely an infrastructure and workforce funder: buildings, equipment direct to hospices, and sector-wide workforce development channelled through Hospice UK (£1.4m across three grants).
+
+**Garfield Weston Foundation**
+
+Garfield Weston has a wide reach - funding 80+ distinct organisations with a median of £25k. The one exception is a £280k grant to Cicely Saunders International - a research and policy body rather than a direct service provider.
+
+**Albert Hunt Trust**
+
+Funds 8 of the 17 hospices in the sample with no clear geographic constraint. Grant values appear to be in the £10k--£25k range.
+
+**Edward Gostling Foundation**
+
+A funder in the sample of hospice accounts making a grant explicitly designed to fund a service model (Thames Hospice\'s virtual ward, £1.5m over several years) rather than a capital item or staff cost. Also appears at Overgate\'s Big Build Appeal.
+
+**City Bridge Foundation**
+
+London-focused but making multi-year, programme-level grants (£231k over 5 years to St Christopher\'s for child bereavement therapy; £49k to St Joseph\'s for welfare benefits). Appears at 4 hospices. It gives multi-year, service-level funding.
+
+**St James\'s Place Foundation**
+
+Appears on 4 sampled hospices\' accounts and operates a named programme through Hospice UK (Dying at Home with Dignity, 14 grants in one year). This is a corporate foundation using a national intermediary to deploy at scale across the sector, rather than giving directly.\
+\
+![](media/figure-f454dccc55.png)
+
+*This Donor Map (v1) plots the 10 largest funders of adult palliative and end-of-life care (2015--2025) on two axes: (horizontally) whether their grants sustain the existing system or shift it, against (vertically) how much capital they deployed, with dot area showing average grant size.*
+:::
+
+**Social finance**\
+Repayable, social capital is also at play in the sector. There are two significant examples both run as a partnership between Macmillan and Social Finance UK, with outcomes-linked top-up support from government Commissioning Better Outcomes Fund and the Life Chances Fund: £12m Care and Wellbeing Fund; £36m Macmillan Social Investment Programme for End of Life Care (2021-present). Both funds use outcomes-based contracting to try and fix systemic issues in end of life care: spend concentrated in acute care, little capacity within the system for innovation, and poor join-up between health and social care.
+
+::: pullquote
+*\"Without that social investment, we couldn\'t do it \[RIPEL\], because the social investment gave us the additional workforce, it gave us the head space. It also gave us the permission to fail, we could design something and modify it as we went along, rather than most grants where you have to decide what you\'re going to deliver upfront.\"*
+
+**Dr Bee Wee, Oxford University Hospitals NHS Trust**
+:::
+
+The Care and Wellbeing Fund\'s evaluation provides a useful insight into the successes and challenges of the model. It has produced sector-leading initiatives (see box-out). However, financially, it did not deliver the return investors were promised: against an original projection of 4% annual returns, it was tracking toward an IRR of -11% a year once all costs were accounted for.[^c4-12] Outcomes-based contracts cap the returns at the value of the underlying contract, so a handful of successful projects cannot make up for the losses that innovative, higher-risk work will produce. Three-to-five year contracts rarely generate enough return to fund the full cost of innovation on their own. Top-up philanthropic funding, layered on from outcomes-linked government programmes, helped offset this.
+
+Social finance approaches work relatively well for interventions with a bankable, near-term outcome, something like a single point of access service or advance care planning at scale, where a reduction in bed-days can be measured and, in principle, repaid. It is a more challenging fit for paradigm-level, community-infrastructure and death-literacy work because that work rarely produces contractable, cash-releasing savings for a single organisation. Indeed, while the Care and Wellbeing fund initially set out to support innovative social enterprises in this space, it found its best strategic opportunities lay in primary care instead.
+
+The evaluation also suggests that what commissioners and delivery partners valued most was not the capital itself, but the capability and capacity that came with it: the discipline of an outcomes contract that clearly linked funding to results, and the partnerships the fund\'s team could broker.
+
+::: case-study
+**Case study: Social Finance/Macmillan funded projects**
+
+*RIPEL (Oxfordshire)* combines hospital rapid response, home hospice care, virtual ward outreach and a telephone hub as a coordinated set of services, run out of Oxford University Hospitals in partnership with Sobell House. It has cared for over 4,500 patients, enabling 23,445 extra days at home rather than in hospital in their last year of life. The hospital trust now funds the service directly.
+
+*REACT (Bradford)* places clinicians inside Bradford\'s Emergency Department to catch dying patients and get them home, backed by a 24/7 community rapid-response team. Launched 2022 and funded through a social impact bond, it saved 18,416 hospital bed-days and gave 1,282 people access to personalised palliative care in its first 2.5 years - roughly halving the time REACT patients spent in hospital in their last year. Now sustained on mainstream NHS funding.
+
+*Hillingdon (Your Life Line)* is a single 24-hour phone line for palliative support in Hillingdon supported 2,275 people under Social Finance investment. 93% of patients died in their preferred place, up from a 65% baseline. When the investment ended in 2021, the local commissioning group chose to fund the service permanently.
+
+*End of Life Care Incubator (North West London)* gave care home staff telephone access to clinical advice and support, supporting 9,016 people cumulatively. At its peak, in March 2022, it avoided 303 non-elective admissions in a single month, a 25.8% reduction from baseline. It was ultimately decommissioned, overlapping with other emerging services and falling short of both its planned capacity and its planned effectiveness.
+:::
+
+## Philanthropy as discipline
+
+Taken together, our analysis indicates that the majority of money active within end of life care is working to sustain and improve the system as-is. This primarily resources the dominant medical paradigm of dying. High quality medical and social care provided by well-run and joined up services is vital. However the concentration of money in this part of the system means that system-changing work - like redesigning human systems, building relational infrastructure - is underfunded and subject to \'death by pilot\' \[Hayley Hans\]. This leaves a missing, messy middle where smart, disciplined philanthropy could act.
+
+### Funding systems change in end of life care
+
+The best way to understand this \'messy, missing middle\' is through the three horizons systems change framework developed by Bill Sharpe.[^c4-13] All three horizons are always present at any one point in time.
+
+![](media/figure-828ec04e01.png)
+
+**The first horizon \'business as usual\'** refers to the prevailing, dominant system.This horizon is under increasing pressure and showing signs of strain because the world is changing. In the end of life care system this is the pattern of emergency A&E admissions, unmet palliative care needs, chronic under-funding of hospices, and over-burdened carers. This is what public money runs, and what legacies and donations typically go into sustaining. Much private finance is also active here, financing clinical innovation and proven products like care homes. And this is the system that individuals pay to receive care within.
+
+**The third horizon \'emerging futures\'** is the space of emerging paradigms, ideas and innovation. It is the system waiting to be born. But this future is contested. Through one lens (what our research indicates is most promising) seeds of that future for end of life care in the present look like the Death Doula movement, compassionate communities, and a cultural shift to realise the value of death. Another set of people might be working to bring a privately-funded technologically-driven end of life care system into being. Work in this horizon today is often riskier and unproven. In our model, what little funding goes into it at the moment is usually in the form of short-term charitable grants.
+
+**The second horizon \'disruptive innovation\'** is the space of both incremental adjustments and transformational experiments. In this space are opportunities - all kinds of novel things might work in this moment to shift the system. Work in this space can either be captured to sustain business as usual or harnessed to bring forward the emerging future. In the end of life care system disruption is coming from new technologies, changing social norms, government healthcare policy and much more. Currently some public money and social finance goes into this space for service transformation, and venture capital works to harness the upside of disruption by funding innovation.
+
+**The missing middle.** The space of the second horizon is where we think philanthropists could have some of the greatest impact in the space - it is where there is genuine leverage to shift the system. However, our analysis indicates that much of this money is going into bridging the first and second horizon (important, incremental adjustments) in a way that leaves the bridging of the second and third horizon (transformational experiments) largely unfunded.
+
+Between these two kinds of disruptive innovation are several tensions:
+
+-   **Evidence.** The value of incremental adjustments can be proved within the language of the dominant system and with clinical/service outcomes. Transformational experiments often express value in different terms, such as cultural change and psychosocial wellbeing, that can be more diffuse and abstract.
+
+-   **Who the customer is**. The former has a \'buyer\' already within the actors of the dominant system. The latter needs to create a \'buyer\' or might not have one at all.
+
+-   **Financial mechanisms**. The former has more guaranteed and legible returns (financial or social) and so is fundable by public money, private finance, and philanthropists expecting set outcomes. The latter is experimental and so is only really fundable by philanthropists with a high risk appetite or private individuals.
+
+Our donor coalition will seek to tackle these tensions head-on and fund this missing middle.
+
+### Principles for new philanthropic investment
+
+The evidence suggests a case for a new kind of philanthropist investment in this space. And while interviewees and survey respondents had different suggestions for where this money should go (the \'what\' is explored in Chapter 3), there was strong consensus around a set of underlying principles for a donor collaborative:
+
+| **Current philanthropy** | **Emerging, future philanthropy** |
+|----|----|
+| Propping up a system in crisis | Stewarding a system in transition |
+| \'Crazy paving\' of small, uncoordinated grants | Coordinated architecture of larger grants |
+| Short term (1-3 year funding) | Medium term (3-10+ year funding) |
+| Fund services | Fund problems |
+| Funds organisations | Funds ecosystems |
+| Funds pilots | Funds conditions and spreadable models |
+| Individual as beneficiaries | Communities as beneficiaries |
+| Grant funding cliff-edges | Philanthropic exit designed-in |
+| Fills public funding gaps | First-loss capital builds case for public investment |
+| Charitable-only | Blended stack of charitable, recyclable, public and private finance as needed |
+
+::: pullquote
+*\"\[We need\] long term, 10 years plus, funding programmes that allow time for authentically building relational models and multiple cycles of innovation.\"*
+
+**Dr Sarah Yardley, University College London Hospitals NHS Foundation Trust**
+:::
+
+::: pullquote
+*\"Investing in the capability to develop and spread innovation is likely to have a greater long-term impact than funding individual innovations in isolation\"*
+
+**Dr Lucy Pollock, Somerset NHS Foundation Trust**
+:::
+
+::: pullquote
+*\"Philanthropy is uniquely placed to fund ideas that statutory systems often cannot: creative experimentation, community-led approaches, ecological innovation and cross-sector partnerships\"*
+
+**Dr Katy Vigurs, DEAD GOOD**
+:::
+
+We can look outside of the end of life care system to find promising models for philanthropy, investment and public innovation funding working in the mould of that \'emerging\' model.
+
+::: case-study
+**Funding case study: Field-building for end of life care in America**
+
+George Soros established Project on Death in America (Open Society Institute, 1994--2003) after his parents\' deaths, at a point when research showed half or more of dying Americans reported uncontrolled pain, their wishes unknown or unhonoured, and half of families bankrupted by hospitalisation. The judgement was that the decisive intervention lay in changing the *culture of medicine* in hospitals and nursing homes, where 80% of Americans die. It ran for nine years, distributed \$45m, and closed on completion, publishing a report written specifically for other funders. Its central instrument was field-building rather than service delivery: a network of 87 faculty scholars developed as palliative care leaders and role models, and more than half the fund went to professional education. The scholars became prominent figures in US palliative care.
+:::
+
+::: case-study
+**Funding case study: Long-term funding for outcomes rather than projects**
+
+The Solidarity Fund is the National Lottery Community Foundation\'s flagship new fund. It aims to shift the organisation from funding community projects to funding community power. It invests in the building blocks of community-led change rather than in defined services. Almost £60m was awarded to the first 13 organisations in June 2026, for example the Black South West Network receiving £5m over ten years. The fund backs organisations that already hold strong community relationships, giving them stability to build on existing work, and convenes grantees as a cohort rather than funding them in isolation. It is too recent for outcome data.
+:::
+
+::: case-study
+**Funding case study: Deep, partnership support for promising organisation**
+
+Purposeful Ventures works from the premise that existing non-profits often struggle to scale, that no single organisation can solve a complex social problem, and that what is needed is an ecosystem of effective organisations working toward a shared goal. It defines and diagnoses an issue, analyses the evidence, then selects, accelerates and, where it finds a gap, incubates organisations to address it. Funding is the smaller part of the offer: expertise, operational experience and networks are provided as hands-on support, with new ventures often held inside the organisation before being spun out as independent charities. Fifteen charities were incubated between 2012 and 2023 under its predecessor model at Ark, including Frontline, Now Teach and Ambition Institute.
+:::
+
+::: case-study
+**Philanthrop case study: A pooled funder platform**
+
+The Thriving Communities Fund for National Academy for Social Prescribing brought seven national bodies: Arts Council, Sport England, Natural England, NHS England and others into a single £1.8m pot to fund community social-prescribing groups, blended with local money. It backed 37 projects reaching over 10,000 people, deliberately concentrated on the most deprived and underserved communities. The fund helped build drive the rapid uptake of social prescribing at a time when it was still a new and innovative concept for many people and was only just being written into national health policy, and had wider benefits for the connectivity of health and funder ecosystems.[^c4-14]
+:::
+
+[^c4-1]: 2022 figures. [Public expenditure in the last year of life \| Nuffield Trust](https://www.nuffieldtrust.org.uk/research/public-expenditure-in-the-last-year-of-life)
+
+[^c4-2]: Home office budget was £20.3bn in 2022--23.
+
+[^c4-3]: This calculation excludes A&E, ambulance and 111 calls associated with maternity and neonatal care [Investment in maternity and neonatal services in England](https://jointpolicyunit.org.uk/wp-content/uploads/2025/09/Sands-and-Tommys-JPU-Investment-in-maternity-and-neonatal-services.pdf)
+
+[^c4-4]: [Analysis of the statutory accounts of UK charitable hospices for the year ended 31 March 2024](https://hospiceuk-files-prod.s3.eu-west-2.amazonaws.com/s3fs-public/2025-12/J2164%20huk-Hospice-Accounts-2025-04.pdf)
+
+[^c4-5]: [Care homes and estimating the self-funding population, England - Office for National Statistics](https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/socialcare/articles/carehomesandestimatingtheselffundingpopulationengland/2022to2023)
+
+[^c4-6]: 2026\. [Care Homes for Older People UK Market Report 36th Edition](https://go.laingbuisson.com/care-home-report-36)
+
+[^c4-7]: [UK Healthcare Roundup and 2026 Outlook](https://www.savills.co.uk/research_articles/229130/386666-0)
+
+[^c4-8]: [Care Homes for Older People UK Market Report 36th Edition](https://go.laingbuisson.com/care-home-report-36)
+
+[^c4-9]: [Homecare and Supported Living UK Market Report 7th Edition](https://go.laingbuisson.com/homecare-report-7)
+
+[^c4-10]: [UK digital \'end-of-life\' services startup Farewill acquired for \$16.8M \| TechCrunch](https://techcrunch.com/2024/10/17/uk-digital-end-of-life-services-startup-farewill-acquired-for-16-8m/)
+
+[^c4-11]: Giving360 search. Excluding government funding (e.g. DHSC channeled £530m in emergency Covid and capacity funds through Hospice UK) and funding focused on palliative care for children and young people
+
+[^c4-12]: [Care and Wellbeing Fund](https://www.socialfinance.org.uk/assets/documents/care_and_wellbeing_fund.pdf)
+
+[^c4-13]: [Three Horizons \| International Futures Forum](https://www.internationalfuturesforum.com/three-horizons)
+
+[^c4-14]: [Evaluation of the Thriving Communities Fund](https://socialprescribingacademy.org.uk/media/u3tloh54/thriving-communities-fund-report-final.pdf)

@@ -1,0 +1,201 @@
+<script>
+/* Better Dying Fund: animated report charts and small page helpers.
+   Each chart comes from the chart shortcode, which writes its data into data-chart. */
+(function () {
+  'use strict';
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var DUR = 1800, STAGGER = 180;
+
+  function fmt(v, unit) {
+    if (unit === 'bn') return '£' + v.toFixed(1) + 'bn';
+    return '£' + Math.round(v).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') + 'm';
+  }
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function niceTicks(max, unit) {
+    var step = max / 4, out = [];
+    for (var i = 0; i <= 4; i++) out.push(step * i);
+    return out.map(function (t) {
+      if (unit === 'bn') return { t: t, label: t ? '£' + Math.round(t) + 'bn' : '£0' };
+      return { t: t, label: t ? '£' + (t / 1000).toFixed(0) + 'bn' : '£0' };
+    });
+  }
+
+  var tip = el('div', 'bdf-tip'); tip.hidden = true; tip.setAttribute('role', 'status');
+  document.body.appendChild(tip);
+  function showTip(d, unit, x, y) {
+    tip.textContent = '';
+    tip.style.setProperty('--c', 'var(--chart-' + d.colour + ')');
+    tip.appendChild(el('b', null, fmt(d.v, unit) + (d.pct ? '  ·  ' + d.pct : '')));
+    var k = el('span', 'k'); k.appendChild(el('i')); k.appendChild(document.createTextNode(d.label)); tip.appendChild(k);
+    if (d.note) tip.appendChild(el('span', 'd', d.note));
+    tip.hidden = false;
+    var w = tip.offsetWidth, h = tip.offsetHeight;
+    tip.style.left = Math.max(8, Math.min(x + 14, innerWidth - w - 8)) + 'px';
+    tip.style.top = Math.max(8, y + 16 + h > innerHeight ? y - h - 10 : y + 16) + 'px';
+  }
+  function hideTip() { tip.hidden = true; }
+
+  function build(fig) {
+    var cfg;
+    try { cfg = JSON.parse(fig.getAttribute('data-chart')); } catch (e) { return null; }
+    var table = fig.querySelector('.bdf-chart-table');
+    var head = el('div', 'bdf-chart-head');
+    var title = fig.querySelector('.bdf-chart-title');
+    head.appendChild(title);
+    var tools = el('div', 'bdf-chart-tools');
+    var replay = el('button', null, 'Replay'); replay.type = 'button';
+    var toggle = el('button', null, 'Table'); toggle.type = 'button'; toggle.setAttribute('aria-pressed', 'false');
+    if (!reduce) tools.appendChild(replay);
+    tools.appendChild(toggle);
+    head.appendChild(tools);
+    fig.insertBefore(head, fig.firstChild);
+
+    var list = el('ul', 'bdf-rows');
+    var vals = [];
+    cfg.rows.forEach(function (d, i) {
+      var row = el('li', 'bdf-row' + (d.total ? ' total' : ''));
+      row.tabIndex = 0;
+      row.setAttribute('aria-label', d.label + ': ' + fmt(d.v, cfg.unit) + (d.pct ? ', ' + d.pct : ''));
+      row.appendChild(el('span', 'lab', d.label));
+      var track = el('span', 'track');
+      var bar = el('span', 'bar');
+      bar.style.setProperty('--p', (d.v / cfg.max * 100).toFixed(3));
+      bar.style.setProperty('--i', i);
+      bar.style.setProperty('--c', 'var(--chart-' + d.colour + ')');
+      var val = el('span', 'val');
+      var num = el('span', 'num', fmt(d.v, cfg.unit));
+      val.appendChild(num);
+      if (d.pct) { val.appendChild(document.createTextNode(' ')); val.appendChild(el('span', 'pct', '(' + d.pct + ')')); }
+      track.appendChild(bar); track.appendChild(val); row.appendChild(track);
+      list.appendChild(row);
+      vals.push({ node: num, v: d.v, i: i });
+      function on(x, y) { list.classList.add('hovering'); row.classList.add('on'); showTip(d, cfg.unit, x, y); }
+      function off() { list.classList.remove('hovering'); row.classList.remove('on'); hideTip(); }
+      row.addEventListener('pointermove', function (e) { on(e.clientX, e.clientY); });
+      row.addEventListener('pointerleave', off);
+      row.addEventListener('focus', function () { var r = bar.getBoundingClientRect(); on(r.right, r.top); });
+      row.addEventListener('blur', off);
+    });
+    var axis = el('li', 'bdf-axis'); axis.setAttribute('aria-hidden', 'true');
+    axis.appendChild(el('span'));
+    var ticks = el('span', 'ticks');
+    niceTicks(cfg.max, cfg.unit).forEach(function (t) {
+      var s = el('span', null, t.label); s.style.left = (t.t / cfg.max * 100) + '%'; ticks.appendChild(s);
+    });
+    axis.appendChild(ticks); list.appendChild(axis);
+    fig.insertBefore(list, table);
+    table.hidden = true;
+
+    toggle.addEventListener('click', function () {
+      var showTable = table.hidden;
+      table.hidden = !showTable; list.hidden = showTable;
+      toggle.textContent = showTable ? 'Chart' : 'Table';
+      toggle.setAttribute('aria-pressed', String(showTable));
+    });
+
+    var raf = 0;
+    function play() {
+      fig.classList.remove('pre');
+      if (reduce) return;
+      cancelAnimationFrame(raf);
+      var t0 = performance.now();
+      (function step(now) {
+        var done = true;
+        vals.forEach(function (o) {
+          var t = Math.min(1, Math.max(0, (now - t0 - o.i * STAGGER) / DUR));
+          o.node.textContent = fmt(o.v * (1 - Math.pow(1 - t, 3)), cfg.unit);
+          if (t < 1) done = false;
+        });
+        if (!done) raf = requestAnimationFrame(step);
+      })(t0);
+    }
+    replay.addEventListener('click', function () { fig.classList.add('pre'); void fig.offsetWidth; requestAnimationFrame(play); });
+    return play;
+  }
+
+  var figs = Array.prototype.slice.call(document.querySelectorAll('figure.bdf-chart'));
+  var io = ('IntersectionObserver' in window && !reduce) ? new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) { if (en.isIntersecting) { en.target.__play(); io.unobserve(en.target); } });
+  }, { threshold: 0.45 }) : null;
+  figs.forEach(function (fig) {
+    var play = build(fig);
+    if (!play) return;
+    fig.__play = play;
+    if (io) { fig.classList.add('pre'); io.observe(fig); }
+  });
+
+  /* Report page: put the PDF link at the bottom of the left-hand contents */
+  var toc = document.querySelector('#quarto-sidebar') || (document.querySelector('#TOC') || {}).parentElement;
+  var pdf = document.querySelector('.bdf-pdf');
+  if (toc && pdf) { toc.appendChild(pdf); pdf.hidden = false; }
+  /* Home page: interest list form.
+     Posts to the form's action URL if one is set (e.g. Formspree); otherwise opens a pre-filled email. */
+  var form = document.getElementById('interest-form');
+  if (form) {
+    var body = form.querySelector('.bdf-form-body'), done = form.querySelector('.bdf-form-done');
+    var status = form.querySelector('.status'), btn = form.querySelector('button[type=submit]');
+    function setErr(name, msg) {
+      var input = form.elements[name], field = (input.length ? input[0] : input).closest('.field');
+      var err = field.querySelector('.err');
+      field.classList.toggle('invalid', !!msg);
+      if (err) err.textContent = msg || '';
+      [].concat(input.length ? [].slice.call(input) : [input]).forEach(function (i) {
+        i.setAttribute('aria-invalid', msg ? 'true' : 'false');
+        if (err) i.setAttribute('aria-describedby', err.id);
+      });
+      return !msg;
+    }
+    function check() {
+      var ok = true, first = null;
+      var name = form.elements.name.value.trim(), email = form.elements.email.value.trim();
+      if (!setErr('name', name ? '' : 'Please add your name.')) { ok = false; first = first || form.elements.name; }
+      var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      if (!setErr('email', email ? (emailOk ? '' : 'Please check your email address.') : 'Please add your email address.')) { ok = false; first = first || form.elements.email; }
+      var role = form.querySelector('input[name=role]:checked');
+      if (!setErr('role', role ? '' : 'Please choose one.')) { ok = false; first = first || form.elements.role[0]; }
+      if (first) first.focus();
+      return ok;
+    }
+    ['name', 'email'].forEach(function (n) {
+      form.elements[n].addEventListener('input', function () { if (this.closest('.field').classList.contains('invalid')) check(); });
+    });
+    [].forEach.call(form.elements.role, function (r) { r.addEventListener('change', function () { setErr('role', ''); }); });
+    function finish(note) {
+      if (note) done.querySelector('p:last-child').textContent = note;
+      var n = form.elements.name.value.trim().split(/\s+/)[0];
+      done.querySelector('.done-name').textContent = n ? ', ' + n : '';
+      body.hidden = true; done.hidden = false; done.focus();
+    }
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      status.textContent = ''; status.classList.remove('error');
+      if (form.elements._gotcha.value) return;
+      if (!check()) return;
+      var action = form.getAttribute('action');
+      if (!action) {
+        var role = form.querySelector('input[name=role]:checked').value;
+        var lines = ['Name: ' + form.elements.name.value.trim(), 'Email: ' + form.elements.email.value.trim(),
+          'Organisation: ' + (form.elements.organisation.value.trim() || '-'), 'I am: ' + role,
+          'Keep me updated by email: ' + (form.elements.updates.checked ? 'Yes' : 'No')];
+        location.href = 'mailto:' + form.getAttribute('data-fallback-email') +
+          '?subject=' + encodeURIComponent('Better Dying Fund: register interest') + '&body=' + encodeURIComponent(lines.join('\n'));
+        finish('Your email app should now open with your details filled in. Press send and you\u2019re on the list.');
+        return;
+      }
+      btn.disabled = true; status.textContent = 'Sending…';
+      fetch(action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); finish(); })
+        .catch(function () {
+          status.classList.add('error');
+          status.textContent = 'Sorry, that didn’t send. Please try again, or email ' + form.getAttribute('data-fallback-email') + '.';
+        })
+        .then(function () { btn.disabled = false; if (!status.classList.contains('error')) status.textContent = ''; });
+    });
+  }
+})();
+</script>

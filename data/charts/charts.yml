@@ -1,0 +1,30 @@
+# One entry per live chart. The id matches the CSV file name in this folder.
+# image-sha1: fingerprint of the chart picture in the Google Doc, so the importer
+# swaps that picture for the live chart automatically. To add a new chart, add an
+# entry and a CSV, then type  [chart: your-id]  on its own line in the Google Doc.
+#
+# colour: one of health-care, social-care, social-security (Theme tokens)
+# scale-max: shared axis maximum, in the CSV's unit (keeps charts comparable)
+
+public-spend:
+  title: "Estimated public spend on people in the last year of life, UK, 2022"
+  source: "Source: Nuffield Trust, Health Economics Unit."
+  unit: bn
+  scale-max: 12
+  image-sha1: 6f0e1ce6f91c946d6fdf2b1450edd7f6d29e5df1
+
+health-care-spend:
+  title: "Estimated spend on health care in the last year of life by health care services, 2022"
+  source: "Source: Nuffield Trust, Health Economics Unit. Emergency care = unplanned care in and out of hospital; GP and community care = GP practice and community subtotals. Categories may not sum to total due to rounding."
+  unit: m
+  scale-max: 12000
+  colour: health-care
+  image-sha1: cdbd4d7d646519e3f23f3070e5093ea57827a8e6
+
+social-care-spend:
+  title: "UK estimated total spend on social care in the final year of life, 2022"
+  source: "Source: Nuffield Trust, Health Economics Unit."
+  unit: m
+  scale-max: 12000
+  colour: social-care
+  image-sha1: 4f9857a7a78f03555cf0396075e307ad9a7b69a0

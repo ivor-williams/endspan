@@ -1,0 +1,83 @@
+# Chapter 5: Taxonomy of emerging opportunities
+
+The previous chapters set out what a good death looks like (Chapter 2), why the system so rarely produces one (Chapter 3), and where money goes now and what it leaves unfunded (Chapter 4). This chapter brings those together into a shortlist: eight areas where we think coordinated philanthropic capital could change how the system works, not just sustain it.
+
+The eight areas are hypotheses, not recommendations. Each is framed as an open question, supported by evidence from the earlier chapters, with an initial view of how it could be funded. In Phase 2 we will narrow them to five or six and develop each into a proposition a coalition could fund. Each proposition will set out the problem, a theory of change, indicative cost, the type of intervention, and how progress would be measured. The ratings in this chapter are our provisional judgements, based on the evidence in this report. They are there to be tested and challenged.
+
+**How we chose the areas**
+
+We looked for areas where a coalition would add something new, not repeat what the system already funds. Each area had to meet five tests. It should:
+
+-   work across sectors, not sit within one
+
+-   build capability in non-specialists, since generalists, care workers, families and communities already provide most palliative and end-of-life care
+
+-   spread or de-risk what is already emerging, treating the spread of proven models as just as valuable as new invention
+
+-   support the whole person, including psychological, social and spiritual needs
+
+-   include shared learning, so that what works, and what doesn\'t, is visible to the field
+
+Equity is a design requirement running through all eight opportunity areas. Rather than treating underserved communities as a separate workstream, every opportunity could be addressed by designing for the people the system currently fails, on the principle that what works for those at the edges generally works better for everyone.
+
+We also ruled some things out. We have not included areas where philanthropy would:
+
+-   top up NHS funding for core services
+
+-   pay for well-established good practice, such as wider use of the Integrated Palliative Outcome Scale
+
+-   fund early-stage biomedical or technology research
+
+-   mainly fund policy campaigning, since we believe much can change within current policy
+
+Three topics are outside our scope entirely:
+
+-   **Assisted dying.** This is a question for Parliament and the public.
+
+-   **Hospital end-of-life care.** This is core NHS business. We include it only where the hospital meets the community.
+
+-   **Hospice-based care.** Hospices are central to palliative care, and much of their work already has established funding. We include hospice care where it reaches into people\'s homes and communities, which is where we think a coalition\'s money can add most.
+
+**How to read the ratings**
+
+Each area carries four ratings, which should be read together.
+
+-   **Leverage** uses Donella Meadows\' framework, introduced in Chapter 3. The most obvious places to intervene (staff numbers, budgets, capacity) usually change least. The hardest to reach (the rules a system runs on and the beliefs beneath them) change most. We group leverage into four bands:
+
+    -   *Very high*: beliefs and the system\'s capacity to organise itself
+
+    -   *High*: rules and the flow of information
+
+    -   *Moderate*: feedback loops and delays
+
+    -   *Low*: stocks and flows of resources
+
+-   **Evidence** shows how mature the models in an area are: proven, promising or still speculative.
+
+-   **Additionality** asks whether philanthropy is the right source of money: could public or commercial money do this instead, and is anyone already funding it?
+
+-   **Exit** asks whether a route out of philanthropic funding is visible from here, whether into NHS commissioning, commercial revenue, policy adoption or self-sustaining community practice.
+
+These ratings pull against each other. The areas with the greatest leverage tend to have the thinnest evidence and the least clear exit. The best-evidenced areas tend to sit lower in the system, with clearer exits. We return to what this means for a portfolio at the end of the chapter.
+
+Each area is also matched to one or more of four funding instruments, drawing on the models described in Chapter 4:
+
+-   **Pre-evidence grants** for work whose value is real but hard to put a price on, such as culture change, public understanding and community capability, over long timescales.
+
+-   **Seed and prove funding**: small, early investments to test and refine an idea until it has the evidence to scale or attract other money.
+
+-   **Outcome-based contracts**: capital invested against a defined result and repaid by a commissioner when the result is achieved. The Macmillan and Social Finance funds show both the strengths and the limits of this approach.
+
+-   **Blended and evergreen capital**: money from sources with different return expectations, combined with the aim of recycling it over the long term. Suited to work that can generate revenue or assets.
+
+Whatever the instrument, we think the exit should be designed at the start: who will sustain the work, on what evidence, and under what conditions.
+
+**Emerging opportunities**
+
+The table below sets out the five areas, each framed as a question. Taken together, the areas run from long-term work on culture and community, where leverage is greatest and evidence thinnest, through to well-evidenced changes in how services connect.
+
+[TABLE]
+
+As we develop many of these into propositions, we will explore the problem they address, what makes them timely, what already exists and what is emerging, the strength of its leverage within the system, and the philanthropic instruments and exit routes that fit it.
+
+The wider community will get the chance to participate in the development of these propositions in our next steps, described in the Conclusion.

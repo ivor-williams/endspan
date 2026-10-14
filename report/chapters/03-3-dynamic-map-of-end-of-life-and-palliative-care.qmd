@@ -1,0 +1,312 @@
+# Chapter 3: Dynamic map of end-of-life and palliative care
+
+![](media/figure-5e2b1ede9e.png)
+
+> *\"We stepped out of the NHS, in order for new ideas to flow back in.\"\
+> *--- Dame Cicely Saunders, founder of the modern hospice movement
+
+Chapter 2 set out what a good death looks like. This chapter asks why the system so rarely produces one, and where a philanthropic coalition could change that. Reform in palliative and end-of-life care has been attempted repeatedly, and much of it has not stuck. Our view is that this is because interventions have targeted single parts of a system whose feedback loops pull it back to where it started.
+
+To avoid repeating that, we mapped many of those significant feedback loops. It provides us with a way to make sense of the inter-related aspects of palliative and end-of-life care and provide a wider view of the different effects and impacts various aspects of care have on each other. This has allowed us to identify the leverage points we believe can have a disproportionate impact. Maps such as these can be tricky to 'read' because they have no 'start', but can be seen as flows that can be started anywhere, and follow through to other areas.
+
+The causal loop map underpins the rating system we use in Chapter 5 and the propositions we will develop in Phase 2. We expect this map to develop and grow over time, and should not be considered 'complete'.
+
+**How it works**\
+The nodes (circles) are factors in the system, the arrows are causal relationships between them.
+
+Many of these loops are *reinforcing*. They are what make the current system \'sticky\'. It can explain for example, why palliative and end-of-life care often defaults back to intensive, acute, medicalised treatment.
+
+Some of these loops are *balancing*. They show how certain processes or interventions result in a stable feedback loop that can have a positive effect.
+
+There are a number of named loops on the map. They represent a distillation of our research during this phase. They are incredibly varied and touch upon all aspects of the experience of caregiving, dying and death. They include:
+
+-   the denial of death
+
+-   death literacy recovery
+
+-   ritual and meaning
+
+-   islands of excellence
+
+-   professional & institutional gravity
+
+-   acute lock-in / community lock-out
+
+-   the 3-year cliff
+
+-   care homes as an unrecognised place of death
+
+-   defaulting to 999
+
+-   inequitable principles of hospice care.
+
+-   carer capacity
+
+-   system complexity and diversity
+
+Our vision is for a palliative and end-of-life care system that helps people and communities to have as good a death as possible. The map helps to interrogate why that vision doesn\'t happen -- to make the barriers, feedback loops, and lock-ins visible rather than argue them abstractly - so that our donor coalition can invest strategically and measure progress appropriately for a non-linear system.
+
+**What the map shows: two centres of gravity**
+
+Much of the map is organised around two clusters. One is cultural familiarity with death: how far people, families and communities know what dying looks like, can talk about it, and feel able to care for someone through it. The other is dependence on professional and specialist services. Most of the loops we identified feed one or the other, and the two pull against each other. The more dying is handed to professionals, the less familiar it becomes to everyone else. And the less familiar it is, the more it gets handed to professionals.
+
+For most of the past century, that pull has run one way. As death came later in life and moved into hospitals and hospices, fewer people saw it at first hand. Families became less confident, care homes grew more cautious, and clinicians became more inclined to keep treating. Each of these increases reliance on services. The result is a system whose default response to dying is to call a professional, even when the professional can add little. Meanwhile the specialist workforce it relies on is shrinking.
+
+This is part of the tension between the medical and social models from Chapter 2. Chapter 2 argued that a good death is a social experience with a medical component, and that professional, specialist care must not be devalued. The map shows why holding both is difficult. As things stand, every gap in what families and communities feel able to do becomes more demand for services, and services cannot meet it.
+
+The answer is not to replace services with communities. As Libby Sallnow puts it, specialists should be \"doing ourselves out of a job\" by supporting a wider system, with recourse to a small group of specialists when needed. What matters is the balance between the two clusters. That has three consequences for a coalition:
+
+-   **Shifting the balance has the widest reach.** Changing it touches many loops at once, which is why work on culture and community rates highest for leverage in Chapter 5. It is also the least evidenced and the hardest to exit.
+
+-   **Interventions on one side get pulled back.** Something that works on one side without addressing the other tends not to last. Training care home staff does little if the fear of legal risk still sends residents to hospital.
+
+-   **The strongest opportunities give confidence and back-up together.** They build confidence in families, communities and generalist staff while keeping specialist support within reach. The Kerala model and Compassionate Neighbours (as per below) both work this way.
+
+## Example loops
+
+Below, we describe three of the twelve loops in full. Each shows the pull between the two centres of gravity from a different angle. The first shows the pull towards professional services at work across the system. The second shows it in the setting where more and more people will die. The third shows it in the conversations between clinicians, patients and families. Each also points to an opportunity area in Chapter 5.
+
+![](media/figure-581e2906e1.png)
+
+**Professional and institutional gravity (balancing)**
+
+::: pullquote
+*\"The whole thing about palliative care is that we should be doing ourselves out of a job... supporting systems that can hold this with recourse to a small group of specialists. We can\'t have every single person dying with a specialist palliative care consultant at their bedside --- the workforce could never follow that, the money could never do that, and it\'s not needed.\"*
+
+**Dr Libby Sallnow, University College London**
+:::
+
+Most people die away from home. Hospitals absorb 81% of end-of-life spending despite decades of policy demanding a shift to community setting.[^c3-1]
+
+When that happens, fewer families experience the dying process, which reinforces the lack of confidence and increases fear of it. This results in further reliance on professionals and specialist services, which in turn builds further dependency on them and more deaths in those services.
+
+Moving dying people into specialist hospice settings \"facilitated an unintended separation of dying people\" and \"encouraged the sense that other healthcare professionals are relieved from managing this part of a patient\'s illness.\"[^c3-2]
+
+The more deaths occur in institutions, behind closed doors and out of public view, the more death becomes associated exclusively with clinical settings, further eroding the social and practical capacity to die elsewhere.
+
+An estimated 100,000 people die each year in the UK needing but not receiving palliative care --- a scale of unmet need that remains largely invisible to the public.[^c3-3] Each institutional death reinforces the conditions that make the next one more likely.
+
+::: case-study
+**Case study: Neighbourhood Network in Palliative Care, Kerala, India**
+
+The world\'s leading example of community-owned end-of-life care. Trained local volunteers, each giving around two hours a week, identify and support dying people at home, backed by trained nurses and doctors and integrated with primary care. Built from a single clinic in 1993, the model helped make Kerala (with 3% of India\'s population) the provider of roughly two-thirds of the country\'s palliative care, and in 2008 the first Indian state with a palliative care policy. It has been WHO-recognised since 1996.[^c3-4] A 2024 study found that 69.1% of beneficiaries were satisfied with home care in Kerala. [^c3-5]
+:::
+
+![](media/figure-092c90d31f.png)
+
+**Care homes as unrecognised places of dying (reinforcing)**
+
+::: pullquote
+*\"Lots of care homes do amazing things that we could all learn from, in terms of helping people to live well until they die\... let\'s value them in the system as well... \[But\] one of the big problems with care homes is that a provider will say, if this patient starts to deteriorate, we will call an ambulance and we will send them to hospital, whether or not we think they\'re dying, because they\'re worried about the risk and the risk of litigation... People beat care homes with a stick, and you just have to give them carrots. There needs to be a constant and consistent presence \[of palliative care specialists\], you can\'t just go and educate care homes and then walk away \"*
+
+**Sharon Hudson, Birmingham Community Healthcare**
+:::
+
+Care homes are becoming the place most people will die and will be on track to be the leading place of death in the UK by 2040[^c3-6], already accounting for around a fifth of deaths.[^c3-7] Yet the system does not recognise them as places of dying, and that non-recognition (not any inherent inability to care) is what creates a reinforcing loop. Care homes carry no statutory duty to provide palliative and end-of-life care. What is not recognised is not resourced. As a result, care-home palliative capability stays undeveloped -- staff often lack the training to treat general palliative care needs, recognise and manage deterioration without calling an ambulance. Often, the specific enablers of good practice (access to specialist support, clear role allocation, advance care planning built into routine, confidence to manage deterioration in place) are absent.[^c3-8] So when someone deteriorates, the safe default is to send them to hospital, and every death that happens in hospital rather than in the home confirms the original perception that care homes \'don\'t do end of life\', closing the loop. This picture varies greatly across providers, with some large chains actively engaged in palliative care as a service offer to clients.
+
+::: case-study
+**Case study: The Netherlands\' Buurtzorg model for in-home palliative care**
+
+Dutch home care had been broken into timed tasks split across staff grades, producing high turnover and sickness absence among nurses and little continuity for patients.
+
+Buurtzorg reorganised delivery around small, self-governing nurse neighbourhood teams. Nurses deliver the full range of medical and support services themselves and build relationships with the household and the surrounding neighbourhood. As a result, patients needed care for less time, regained autonomy faster, and had fewer emergency admissions and shorter stays. An Ernst and Young study found Buurtzorg met patients\' needs using 40% of authorised care hours, against a sector average near 70%. [^c3-9]
+:::
+
+::: case-study
+**Case study: Universal mandated health visiting contacts, the Healthy Child Programme, NHSE**
+
+While end-of-life care is not a statutory requirement for different care settings, elsewhere in the country there is already a universal, statutory model of care for another part of the life course. Every family with a young child is entitled by law to five health visitor reviews -- from pregnancy to age 2.5 -- with extra, targeted support layered on for those who need more. Made mandatory in 2015 and rooted in Sure Start, it embodies \"proportionate universalism\": a baseline for everyone, more for those with greater need. IFS evidence shows this design has cut child hospitalisations most in the poorest areas.
+:::
+
+![](media/figure-ef19423d19.png)
+
+**Denial of death (reinforcing)\
+**
+
+::: pullquote
+*\"There\'s now a real unwillingness on the part of society, and I include healthcare and everything in that, to tolerate sadness and distress... There\'s always one more course of antibiotics, one more bag of fluids \"*
+
+**Dr Libby Sallnow, University College London**
+:::
+
+Denial of death can be described as a personal psychological state (coined by the cultural anthropologist Ernest Becker)[^c3-10] which frames the innate human desire to avoid thinking about and engaging with death. But it is also something the larger palliative and end-of-life care system manufactures and then acts on, with direct clinical consequences. Because death now comes late in a long life and is hidden inside institutions, people often arrive at the end unprepared: \"there\'s always one more course of antibiotics, one more... you can always chuck another bag of fluids up,\" and beneath that a \"disbelief that mortality is actually real\". That disbelief has lasting impacts. It defers the conversations that make a good death possible. Almost a third of bereaved families say a professional never discussed the possibility that their relative might die,[^c3-11] and the Commission found honest conversations \"often delayed until patients were too unwell to participate\".[^c3-12]
+
+There are two interventions directly affected: Advance care planning (the sector\'s main tool for honouring wishes) is stunted. When denial defers the conversation, the plan is never made or is made too late to travel with the patient, and the evidence that ACP as currently practised changes outcomes is already weak.[^c3-13] In the vacuum left by the deferred conversation, the system reverts to its default setting: curative treatment. Two-thirds of patients on palliative chemotherapy for lung cancer, and four in five for colorectal cancer, believed the treatment was meant to cure them[^c3-14]; a £50,000/QALY threshold rewards marginal life extension;[^c3-15] and clinicians keep intervening against the trajectory. This is overtreatment \"likely to produce more harm than good\"[^c3-16], driven as much by a psychospiritual refusal to accept dying as by any clinical judgement.
+
+### Constraints
+
+The causal loop map describes how various aspects of the end-of-life system care behaves. The loops that concentrate dying in institutions, defer the difficult conversations, and pull coordination apart. Those loops are held in place by structural features that persist inequitable and undesirable outcomes. The rules, resource flows and gaps that decide what the system funds. A credible case for change has to begin by highlighting these constraints.
+
+Each constraint below also has a positive way through, where leverage can sit and highlight where philanthropic capital could unlock change. This is the case taken up in Chapter 3.
+
+#### Short term funding
+
+::: pullquote
+*\"Many innovative ideas demonstrate positive outcomes locally but end just as relationships, trust and community participation are beginning to develop\"*
+
+**Dr Katy Vigurs, DEAD GOOD**
+:::
+
+::: pullquote
+*\"\[At the hospice\] we took on lots of restricted funds for new projects for three or five years and then ran out of funding. The expectation for everyone was that the project would continue \[\...\] but there was no real long term planning of how we were going to fund that.\"*
+
+**David Burland, db associates**
+:::
+
+::: pullquote
+*\"There are often little pots of money available temporarily in the NHS and at short notice. Implementation is often very rushed so not very well done and then funding comes to an end before there is a chance for improvement or to evidence impact.\"*
+
+**Dr Lucy Pain, North London Hospice / North Middlesex University Hospital NHS Trust**
+:::
+
+Governmental support during the pandemic left hospices with the strongest balance sheets in their history; within 5 years that has been undone and most independent hospices now run at a deficit. Compounding the problem for any innovation work in that context is the fact funding is allocated with 3-5 year grants, with an unspoken expectation that the service will continue and no plan for how. Initiatives build local dependency and then disappear when the money ends.
+
+**Non-cash releasing savings**
+
+::: pullquote
+*\"The return was a reduction in bed days in hospital. But of course the hospital beds just get filled up again. That wasn\'t really translated into real money. So we were saving the system, but there wasn\'t real money being saved.\"*
+
+**Dr Bee Wee, Oxford University Hospitals NHS Trust**
+:::
+
+::: pullquote
+*\"\[A structural constraint is...\] organisational boundaries, including the inability to reinvest savings in acute care into community capacity. Acute beds will always be filled by someone else where unneeded admissions towards end of life are avoided.\"*
+
+**Mark Hazelwood, Scottish Partnership for Palliative Care**
+:::
+
+It is widely acknowledged that reducing the amount of people spending their last hours and days in a hospital is a desirable outcome. The difficulty is that reducing the amount of time spent in a hospital bed is a non-cash-releasing saving: a bed not used by someone at the end of life is used by someone else. A saving to the system never becomes releasable. Payers cannot fund a saving that does not return to their own budget.
+
+#### Ageing workforce
+
+::: pullquote
+*\"The biggest issue is really that people don\'t feel able to rely on good quality, responsive nursing care in the final weeks or months of life, they feel unsafe because professional care is not reliably available or consistently good. It isn\'t specialist care that we need more of, just good quality basic personal care and access to injectable medications available 24/7. A key part of that must be improving confidence in care homes.\"*
+
+**Dr Lucy Pain, North London Hospice / North Middlesex University Hospital NHS Trust**
+:::
+
+::: pullquote
+*\"Nurses who work at the coal face here are constantly problem solving and building workarounds. They don\'t have any pathways, processes or supporters to bring their ideas to life, much less scale.\"*
+
+**Kirra Moser, MyStand.In**
+:::
+
+It is understood that the nursing workforce in the UK is in a poor position to respond to the growing need for care. District nursing has seen a 43% decline in overall numbers since 2009[^c3-17]. Over the next 10 years approximately 33% of the consultants working in palliative medicine are likely to retire and exit the workforce[^c3-18]. It is not realistic to replace that level of specialism during that period of time. What is more realistic is the model of care itself. The leverage lies in re-distributing capability to generalists and carers who already deliver most palliative and end-of-life care (either formally or informally) rather than concentrating on the specialist core.
+
+#### Unlinked data
+
+::: pullquote
+*\"Hospice data is not linked to any other NHS data, which is a massive failing.\"*
+
+**Professor Katherine Sleeman, Kings College London**
+:::
+
+Across the UK, hospice data is not linked reliably to NHS or social care data. This means care records and other important information does not follow a person as they move from setting to setting, or connect what does, to particular outcomes. The lack of data to explain outcomes is a persistent gap that means that commissioners who may want to do things differently, are unable to prove initiatives work. The data exists, it is just often unlinked. The siloes of data remain the remit and ownership of each service, and no one is responsible for linking them, and so it never happens.
+
+#### Risk and legal responsibility
+
+::: pullquote
+*\"Professional anxiety and discomfort around perceived risks of community/home based initiatives is a really big issue\"*
+
+**Dr Lucy Pain, North London Hospice / North Middlesex University Hospital NHS Trust**
+:::
+
+::: pullquote
+*\"\[Paid carers are\] terrified of making the wrong decision because they\'ve got no protection, so they just call 999.*
+
+**Dr Libby Sallnow, University College London**
+:::
+
+::: pullquote
+*\"Institutions and organisations need to stop worrying about risk to their reputations and instead support their workforces in positive risk taking.\"*
+
+**Dr Sarah Yardley, University College London Hospitals NHS Foundation Trust**
+:::
+
+Supporting someone through the process of dying brings legal risk and responsibility. If a person dies without it being expected the police will visit the scene and a coroner\'s review will be carried out. Personal and professional unfamiliarity with death makes it more likely that dying won\'t be recognised, heightening the risk. Within acute services this might result in a person being given unnecessary medical intervention (avoiding to the doctor of complaints and potential General Medical Council referrals) or a person being stuck in hospital because social care services do not want to take on the risk of discharge. Within care homes and home care this might result in defaulting to 999 because the carer does not feel protected from legal risk associated with death. It is also a barrier to easier access to pain-relief medication at home for patients and carers.
+
+#### Lack of ownership of the whole experience
+
+::: pullquote
+*\"There is very little co-ordination between hospices, hospitals, community services, care homes etc. UK healthcare is fragmented, not a single, joined-up system.\"*
+
+**Dr Lucy Pain, North London Hospice / North Middlesex University Hospital NHS Trust**
+:::
+
+::: pullquote
+*\"Individuals or organisations \[are\] not able to \'take off their organisational hats\' to work together to deliver system change.\"*
+
+**Dr Sarah Holmes, Marie Curie**
+:::
+
+::: pullquote
+*\"\[There is\] dispersed care across 100s of hospitals and hospices all answering to different bosses and managers and funders while being stretched excruciatingly thin.\"*
+
+**Anonymous practitioner**
+:::
+
+Palliative and end-of-life care is a holistic experience that in reality is delivered by a number of different sectors and specialties. From NHS geriatric services to charity bereavement service, from family-run funeral providers to for-profit care homes. Higher leverage changes - such as improving death literacy - cut across these disparate sectors but are not owned by any institution or organisation. There are pockets of change being delivered, but there is no coordination or strategy between them.
+
+#### Natural scale of good models
+
+::: pullquote
+*\"It seems that once something is created people think it can be \'done at pace\' and \'at scale\' which ignores the vital components of ownership and co-creation.\"*
+
+**Dr Sarah Yardley, University College London Hospitals NHS Foundation Trust**
+:::
+
+::: pullquote
+*\"There is no route for spreading across multiple care homes/hospices --- there are chains but they don\'t actually do much to bring together their staff, each place is isolated.\"*
+
+**Tom Wein, IDinsight Dignity initiative**
+:::
+
+::: pullquote
+*\"What works in one area is hard to replicate due to the mixture of services/ people/ funding\... Things struggle to be sustained as they often rely on specific people (champions, knowledge brokers).\"*
+
+**Professor Erica Borgstrom, Open University**
+:::
+
+::: pullquote
+*\"A much more serious problem than \'failing to spread\' is \'inappropriate spreading\'\... There is far too much blind adoption of non-evidence based approaches in palliative care and it causes harm.\"*
+
+**Professor Katherine Sleeman, Kings College London**
+:::
+
+Many of the best community approaches work precisely because they are small and local - working at a scale where relationships and trust can do the work - and don\'t work when simply transferred elsewhere, wholesale. They also tend to rely on specific, exceptional, driven people who equally cannot be simply replicated elsewhere.
+
+[^c3-1]: [The state of end of life care: Building back better after Covid-19 \| IPPR](https://www.ippr.org/articles/the-state-of-end-of-life-care)
+
+[^c3-2]: [Lancet Commission on the Value of Death](https://www.thelancet.com/commissions-do/value-of-death)
+
+[^c3-3]: [Palliative and end of life care - POST](https://post.parliament.uk/research-briefings/post-pn-0675/)
+
+[^c3-4]: [Palliative care policy and practice in Kerala, India: Implications for Sustainable Development Goal 3---Health and well-being - PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC12149619/)
+
+[^c3-5]: [Beneficiary's Satisfaction with Primary Palliative Care Services in Kerala -- A Cross-Sectional Survey](https://www.researchgate.net/publication/378279953_Beneficiary's_Satisfaction_with_Primary_Palliative_Care_Services_in_Kerala_-_A_Cross-Sectional_Survey)
+
+[^c3-6]: Bone AE, et al. *What is the impact of population ageing on the future provision of end-of-life care? Population-based projections of place of death*. Palliative Med. (2018)
+
+[^c3-7]: O\'Donnell, S.. et al, *Changes in mortality patterns and place of death during the COVID-19 pandemic: A descriptive analysis of mortality data across four nations*, Palliative Medicine (2021)
+
+[^c3-8]: [Equity in the Provision of Palliative Care in the UK: Review of Evidence](https://researchonline.lse.ac.uk/id/eprint/61550/1/equity_in_the_provision_of_paliative_care.pdf)
+
+[^c3-9]: [Home Care by Self-Governing Nursing Teams: The Netherlands\' Buurtzorg Model](https://www.commonwealthfund.org/publications/case-study/2015/may/home-care-self-governing-nursing-teams-netherlands-buurtzorg-model)
+
+[^c3-10]: Becker, E. (1973). The denial of death. Free Press.
+
+[^c3-11]: [Better End of Life Report 2024](https://www.mariecurie.org.uk/research-and-policy/policy/better-end-life-report)
+
+[^c3-12]: Finlay, I., Richards, M., Maskell, R., et al, *Palliative Care and End-of-Life Care: Opportunities for England (Volume 2),* The Commission on Palliative and End-of-Life Care (2025)
+
+[^c3-13]: Jimenez G et al.. *Overview of Systematic Reviews of Advance Care Planning: Summary of Evidence and Global Lessons*. J Pain Symptom Manage (2018)
+
+[^c3-14]: Saiki C, et al,. *Goals-of-care discussions*. J Community Support Oncol (201)
+
+[^c3-15]: [Lancet Commission on the Value of Death](https://www.thelancet.com/commissions-do/value-of-death)
+
+[^c3-16]: [Lancet Commission on the Value of Death](https://www.thelancet.com/commissions-do/value-of-death)
+
+[^c3-17]: [District nursing: Understanding the decline and mapping the future \| Nuffield Trust](https://www.nuffieldtrust.org.uk/research/district-nursing-understanding-the-decline-and-mapping-the-future))
+
+[^c3-18]: <https://committees.parliament.uk/writtenevidence/130527/html/>

@@ -1,0 +1,92 @@
+# Chapter 1: The palliative and end-of-life care system today 
+
+Around 650,000 people die in the UK each year[^c1-1]. but most of the health and care systems that support them were not designed with their deaths in mind. Our care settings were largely built for acute, curative treatment and in that regard they often work well, but palliative and end-of-life care demands a different approach. This chapter argues that the system we have was built for patterns of illness and disease that are becoming less common, and that the way it is funded makes it hard to adapt.
+
+**What the words mean**
+
+:::::: definitions
+::: definition
+**Palliative care** manages pain and other symptoms alongside psychological, social and spiritual support. It does not depend on diagnosis or prognosis, and can run for years alongside treatment intended to prolong life.[^c1-2]
+:::
+
+::: definition
+**End-of-life care** is the part of it that applies once a person is expected to die within twelve months[^c1-3]. Both are delivered by the NHS and other health and care organisations.
+:::
+
+::: definition
+**Hospice care** is palliative care delivered by a hospice. It is an approach, often tied to a setting, rather than a separate category.[^c1-4] Hospices primarily provide specialist palliative care which is separated from generalist provision (i.e care delivered by community nurses like District Nurses) by the complexity of the need, not by nearness to death.[^c1-5]
+:::
+::::::
+
+## How dying has changed
+
+For most of the twentieth century, the biggest change in how people died was that far fewer of us died young. In 1948, the year the NHS was created, tuberculosis killed more than 20,000 people; in 2016 it killed 196[^c1-6]. Infant mortality fell from 34.5 deaths per thousand live births to 3.8. Since 1948, life expectancy at birth has risen by about 13 years, and at 65 by about seven[^c1-7].
+
+As infectious disease receded, cancer became the defining way to die, and it was cancer that shaped modern end-of-life care. Cicely Saunders, who trained as a nurse, then a medical social worker, then a doctor, opened St Christopher\'s Hospice in 1967 in response to what she had found in mid-century hospitals: pain left unrelieved, prognosis withheld from patients, and no research base behind clinical practice[^c1-8]. The model that grew from it was designed around the course cancer usually takes, with a recognisable final phase lasting months.
+
+During the mid- to late-20th century, hospices grew as charities rather than as NHS services, which was chosen rather than inherited. After its Hampstead hospital was destroyed by a bomb in 1944, Marie Curie\'s founding committee resolved to stay outside the new health service, and incorporated on 6 July 1948, one day after the NHS began.[^c1-9]
+
+That model has served the deaths it was designed for well. It fits much less well with how most people die now.
+
+## Where and how people die now
+
+The successes of the twentieth century changed what people die of. Cancer survival has roughly doubled since the 1970s, though unevenly: ten-year survival is 98% for testicular cancer and 1% for pancreatic cancer. Cancer now accounts for about a quarter of deaths. Dementia, at 13%, is the largest single cause of death, largely because people now survive the illnesses that used to kill them first[^c1-10]. Most people who die are living with several conditions at once.[^c1-11]
+
+Where people die has shifted too over the past 20 years. Of deaths in England in 2024, 42% were in hospital, 28% at home, 22% in a care home and 5.5% in a hospice[^c1-12]. This is compared to 57.9% of hospital deaths, 18.4% of home deaths, 16.8% of care home deaths and 4.8% of hospice deaths in 2004. Hospital deaths fell below half in 2012 and have kept falling. The move towards dying at home that began in the pandemic has held, but has stopped growing. As more people spend their last years in one, care homes are on track to become the most common place of death by 2040.
+
+This changes what the end of life looks like. Decline tends to follow one of three broad patterns. Some people, mostly those with cancer, stay fairly well until a clear final few months. Others, with heart or lung failure, go through repeated crises, recovering partly each time until one does not resolve. Others dwindle over years with frailty or dementia, and die after some small event. But as dementia and frailty account for more deaths, more people follow the second and third patterns, where the slow decline to low-function and death means it is hard to say when the an expected end-of-life phase begins[^c1-13]. These are ways of seeing rather than fixed categories, and most people do not fit neatly into one.
+
+The hospice model was built around the first of these patterns, where there is a recognisable final phase and a clear point at which to bring in specialist care. The other two patterns rarely offer that point. This shows up in who reaches a hospice. Of the total people who die of cancer every year (around 170,000) about 16.5% of them die in a hospice. Whereas fewer than 1% of people living with dementia die in a hospice. Given the shift of primary cause of death (from cancer to dementia), this disparity reveals where hospices consider and prioritise their efforts.
+
+The problem of an out-of-date model of care is not only with hospices. The places where dementia and frailty deaths increasingly happen were not designed for end-of-life care either. Care homes carry no statutory duty to provide palliative and end-of-life care. The community services that would support people dying at home are shrinking: the number of district nurses has fallen by 43% since 2009.
+
+None of this was intended. It is what happens when the way people die changes and the system built around the old way does not.
+
+## Why change is hard
+
+There is broad agreement about what good palliative and end-of-life care looks like, and there has been for decades. The difficulty is not that the goal is disputed or that the interventions are unknown. It is that good care cuts across parts of the system that are paid for in completely different ways, which undermines its overall effectiveness.
+
+The NHS is free at the point of use: general practice, district nursing, hospital care, and continuing healthcare for those who qualify. Integrated care boards have a statutory duty to commission palliative and end-of-life care for their populations, but no duty to fund any particular provider.
+
+Hospices are charities. Their care is free to the patient, which is why most people assume they are part of the NHS, but on average they raise around two thirds of their income themselves. Ironically, the part of a hospice that donors most often picture paying for, the in-patient unit, is typically funded by the NHS through service contracts.
+
+Care homes, where more and more people spend their final years, are means-tested and largely run for profit. In England, anyone with assets above £23,250 pays in full, and those assets usually include their home unless a partner or certain relatives still live there. The threshold has not changed since 2010. A self-funder in England pays on average £1,271 a week for residential care and £1,572 for nursing care, or roughly £66,000 and £82,000 a year.[^c1-14]
+
+Families make up the rest in time. Unpaid care across the UK is valued at £184 billion a year (compared to £89.9 billion for total staff wage bill for NHS staff in 2024/25)
+
+Each of these works to its own rules, and none can deliver good end-of-life care alone. For most people, dying involves clinical needs but should not be an emergency. We end up treating it as one because of the way funding and services are arranged. Changing that arrangement is what this report is about.
+
+**Why now\
+** The number of expected deaths has been roughly flat through the 2020s, but it is expected to rise and to keep rising into the 2060s. From mid-2026, deaths are projected to exceed births in the UK every year. By 2040, roughly 150,000 more people will need palliative care than do today.
+
+Policy is moving at the same time. The government\'s Modern Service Framework for palliative and end-of-life care in England is due in autumn 2026, following an interim version in June. Together with the 10-Year Health Plan, it points the way and provides a coherent scaffold to support the argument the sector has supported for decades: we should keep most dying people out of hospitals and have them cared for in the community.
+
+Rising need and a policy window arriving together create a rare chance to change how the system works, rather than simply asking more of it. Identifying the role that strategic philanthropy can play in that is the core intention of this report.
+
+[^c1-1]: England and Wales, 570,988 registered deaths in 2025 (ONS, *Death registration summary statistics, England and Wales: 2025*, 27 May 2026); Scotland 61,725 and Northern Ireland 17,755, both provisional.
+
+[^c1-2]: General Medical Council, Treatment and care towards the end of life, glossary: \"Palliative care is not dependent on diagnosis or prognosis, and can be provided at any stage of a patient\'s illness, not only in the last few days of life.\" Current version, September 2026; first published 2010.
+
+[^c1-3]: GMC, as above: \"Patients are \'approaching the end of life\' when they are likely to die within the next 12 months.\" Marie Curie takes the same position, and states that end-of-life care is a part of palliative care rather than the reverse. Note that NICE NG142 inverts this, treating end-of-life care as the container for palliative and supportive care; this report follows the majority usage.
+
+[^c1-4]: Hospice UK: \"This type of care is also known as palliative care, and can also be provided in other places, such as in a hospital, at home, or in a community setting.\"
+
+[^c1-5]: NICE CSG4 (2004), reproduced in NICE Clinical Knowledge Summaries as recently as July 2026: specialist services \"manage complex palliative care problems that cannot be dealt with by general services\". CSG4 has itself been formally retired. No UK policy document quantifies the split between specialist and generalist need.
+
+[^c1-6]: *Nuffield Trust, Death through the decades, 25 June 2018, from ONS 20th and 21st Century Mortality Files.* Nuffield notes that classifying 1948 causes on a modern basis is complicated by the diagnostic categories then in use.
+
+[^c1-7]: England and Wales at birth, 1948: 65.9 years (men) and 70.3 (women); 2016: 79.5 and 83.1. At sixty-five, 1950--52: 11.69 and 14.33; UK 2022--24: 18.7 and 21.2. ONS via Nuffield Trust, Facts and figures on the NHS at 70, and ONS decennial life tables.
+
+[^c1-8]: St Christopher\'s Hospice was not the first hospice. St Joseph\'s, Hackney and St Luke\'s, Bayswater both preceded it, but was the first to combine expert symptom control with teaching and clinical research.
+
+[^c1-9]: *Marie Curie, Our history.* Five members of the re-establishment committee \"decided to separate themselves from the new NHS\"; the Marie Curie International Memorial was formally established on 6 July 1948.
+
+[^c1-10]: 72,272 deaths, 12.7% of the total, England and Wales 2025 (ONS). The rise reflects competing-risk displacement, substantially better diagnosis and recording --- any mention of dementia on the death certificate rose from 5.3% to 15.4% between 2001 and 2015 (Ahmad et al., BMC Geriatrics, 2021) --- and two identifiable coding changes, in 2011 and 2014. Age-specific incidence has in fact fallen by around 20% over two decades (Matthews et al., Nature Communications, 2016).
+
+[^c1-11]: Of 299,361 people who died in Scotland between 2017 and 2021, 45.6% had two or more long-term conditions entering their last year of life (BJGP Open).
+
+[^c1-12]: *OHID/DHSC, Palliative and end of life care factsheet: Patterns of care, England 2024, version 5, 8 January 2026.* Total 530,177 deaths, neonatal excluded. No 2025 breakdown exists; OHID has paused the series pending the Modern Service Framework review.
+
+[^c1-13]: The three-trajectory account originates with Murray et al., BMJ 2005, updated by the same authors in BMJ 2024 with a fourth (multimorbidity) trajectory and considerable added caution. Gill et al., NEJM 2010, measuring disability monthly rather than assigning it by diagnosis, found that for cancer, organ failure and frailty no more than 34% of people followed any single trajectory. Only advanced dementia conformed, at 68%.
+
+[^c1-14]: [LaingBuisson, Care Homes for Older People UK Market Report, 36th edition](http://go.laingbuisson.com/care-home-report-36)

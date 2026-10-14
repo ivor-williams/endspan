@@ -86,8 +86,8 @@ html { scroll-padding-top: 96px; }
 .bdf-wrap { max-width: 1120px; margin-inline: auto; padding-inline: var(--gutter); position: relative; }
 .bdf-system { position: relative; }
 .bdf-lines { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; overflow: visible; }
-.bdf-lines path { fill: none; stroke: rgba($ink, 0.28); stroke-width: 1; stroke-linecap: round; }
-.bdf-lines path.soft { stroke: rgba($ink, 0.18); stroke-dasharray: 3 5; opacity: 0; transition: opacity 2.4s var(--ease); }
+.bdf-lines path { fill: none; stroke: rgba($ink, 0.34); stroke-width: 1.6; stroke-linecap: round; }
+.bdf-lines path.soft { stroke: rgba($ink, 0.26); stroke-width: 1.4; stroke-dasharray: 1 7; opacity: 0; transition: opacity 2.4s var(--ease); }
 .bdf-lines path.soft.on { opacity: 1; }
 
 // Hero
@@ -117,16 +117,20 @@ html { scroll-padding-top: 96px; }
 .blobs { position: absolute; inset: -8% 0; z-index: 0; pointer-events: none; }
 .blob { position: absolute; width: var(--w, 46vw); aspect-ratio: 1.15; left: var(--x); top: var(--y); border-radius: 46% 54% 58% 42% / 44% 46% 54% 56%;
   background: radial-gradient(closest-side, var(--c) 0%, var(--c) 42%, color-mix(in srgb, var(--c) 55%, transparent) 72%, transparent 100%);
-  filter: blur(12px); mix-blend-mode: multiply; opacity: 0; transform: scale(.86) rotate(var(--r, 0deg));
-  transition: opacity 3.2s var(--ease), transform 4.5s var(--ease); transition-delay: var(--d, 0s); }
-.in .blob { opacity: var(--o, .95); transform: scale(1) rotate(var(--r, 0deg)); animation: bdf-drift 26s ease-in-out infinite alternate; animation-delay: var(--d, 0s); }
-@keyframes bdf-drift { to { translate: var(--dx, 2vw) var(--dy, -2vh); rotate: 6deg; } }
+  filter: blur(var(--b, 14px)); opacity: 0; transform: translate3d(0,0,0) scale(.9) rotate(var(--r, 0deg));
+  transition: opacity 3.2s var(--ease); transition-delay: var(--d, 0s); will-change: transform; }
+.blob.l1 { --b: 34px; --o: .7; }   // back layer: big, soft, moves least
+.blob.l2 { --b: 18px; --o: .85; }  // middle
+.blob.l3 { --b: 8px;  --o: .9; }   // front: small, crisper, moves most
+.in .blob { opacity: var(--o, .9); }
 
 // Nodes and labels
 .node, .sat { position: absolute; z-index: 3; display: flex; align-items: center; gap: 10px; font-family: $font-sans; font-size: 0.68rem; font-weight: 500;
   letter-spacing: 0.16em; text-transform: uppercase; color: $ink-75; white-space: nowrap; pointer-events: none; }
-.node i, .sat i { width: 11px; height: 11px; border-radius: 50%; background: var(--c, $ink); flex: none; box-shadow: 0 0 0 4px rgba($white, .7);
+.node i, .sat i { width: 12px; height: 12px; border-radius: 50%; background: var(--c, $ink); flex: none;
   transform: scale(0); transition: transform 1.1s var(--ease); transition-delay: var(--d, .2s); }
+.sat.org i { width: 16px; height: 16px; }   // organisations
+.sat.role i { width: 9px; height: 9px; }   // roles and people
 .sat { left: var(--x); top: var(--y); opacity: 0; transition: opacity 1.6s var(--ease); transition-delay: var(--d, .3s); }
 .sat.flip { flex-direction: row-reverse; transform: translateX(-100%); }
 .in .sat { opacity: 1; }
@@ -135,7 +139,9 @@ html { scroll-padding-top: 96px; }
 .bdf-sec.right .copy > .node { left: auto; right: -34px; }
 
 // Get involved
-.bdf-involve { position: relative; padding-block: clamp(96px, 14vh, 160px) clamp(64px, 9vh, 104px); text-align: center; }
+.bdf-involve { position: relative; padding-block: 0 clamp(96px, 14vh, 160px); text-align: center; }
+.bdf-involve .box { max-width: 920px; margin: 0 auto; background: $mist; border: 1px solid $stone; border-radius: 28px;
+  padding: clamp(44px, 7vw, 96px) clamp(22px, 6vw, 80px); box-shadow: 0 30px 80px -40px rgba($ink, .18); }
 .bdf-involve .bdf-wrap { z-index: 2; }
 .bdf-involve h2 { font-size: clamp(2rem, 4.4vw, 3rem); font-weight: 500; letter-spacing: -0.015em; margin: 0 auto 20px; border: 0; max-width: 18ch; }
 .bdf-involve p.intro { color: $ink-75; font-size: 1.08rem; line-height: 1.65; max-width: 52ch; margin: 0 auto; }
@@ -155,11 +161,11 @@ html { scroll-padding-top: 96px; }
 .bdf-form .done { outline: none; }
 .bdf-form .done p { margin: 0; color: $ink-75; font-family: $font-text; font-size: 1.15rem; }
 .bdf-form .done strong { color: $ink; font-weight: 500; }
-.bdf-contact-line { margin-top: 28px; font-size: 0.92rem; color: $ink-68; }
+.bdf-contact-line { margin: 28px 0 0; font-size: 0.92rem; color: $ink-68; }
 .bdf-contact-line a { color: $terracotta; }
 
 // Press
-.bdf-press-sec { position: relative; padding-block: clamp(56px, 8vh, 96px) clamp(96px, 14vh, 160px); text-align: center; }
+.bdf-press-sec { position: relative; padding-block: clamp(96px, 14vh, 160px) clamp(72px, 10vh, 120px); text-align: center; }
 .bdf-press-sec .label { font-family: $font-sans; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: $ink-68; margin: 0 0 14px; }
 .bdf-press-sec h2 { font-size: clamp(1.9rem, 4vw, 2.7rem); font-weight: 500; letter-spacing: -0.015em; margin: 0 auto 40px; border: 0; }
 a.bdf-article { display: block; max-width: 880px; margin: 0 auto; text-decoration: none; color: $ink; }
@@ -179,6 +185,7 @@ a.bdf-article:hover .more { text-decoration: underline; text-underline-offset: 4
   .copy > .node, .bdf-sec.right .copy > .node { left: -2px; right: auto; top: -26px; }
   .sat { display: none; }
   .blob { --w: 92vw !important; }
+  .bdf-involve .box { border-radius: 20px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .blob, .copy, .sat, .node i, .sat i { transition: none !important; animation: none !important; }
@@ -254,3 +261,8 @@ a.bdf-article:hover .more { text-decoration: underline; text-underline-offset: 4
 #quarto-content .bdf-home h2 { margin-top: 0; }
 // Report page: keep the contents list clear of the floating header
 @media (min-width: 992px) { #quarto-sidebar, #quarto-margin-sidebar { top: 96px !important; } }
+
+// Arizona's alternate numerals (stylistic set 6: the alternate 1 and 4) for all serif text
+body { font-feature-settings: "ss06" 1; }
+.navbar, .btn-bdf, .bdf-form, .sat, .node, .bdf-article .meta, .bdf-article .credit, .bdf-article .more, #TOC, .sidebar,
+.bdf-chart, .bdf-report-meta, .bdf-pdf, .bdf-tip, .bdf-press-sec .label { font-feature-settings: normal; }

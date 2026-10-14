@@ -24,13 +24,18 @@
      [from, to, bend, style]. bend pushes the curve sideways (as a share of the page width);
      'soft' lines are dotted and fade in rather than draw. */
   var EDGES = [
-    ['L0', 'h-com', 0.10], ['R0', 'h-fam', -0.08, 'soft'], ['h-com', 'h-care', 0.14], ['h-fam', 'h-care', -0.06, 'soft'],
-    ['h-care', 'n1', -0.22], ['h-fam', 's1a', 0.06], ['h-com', 's2a', -0.18, 'soft'],
-    ['n1', 's1a', 0.10], ['s1a', 's1b', -0.08, 'soft'], ['s1b', 'n2', 0.16], ['n1', 's2b', 0.24], ['n1', 'n3', -0.16, 'soft'],
-    ['s2a', 'n3', -0.20], ['n2', 's3a', -0.12], ['s2b', 'n4', 0.10, 'soft'], ['L1', 's2b', 0.08],
-    ['n3', 's3b', 0.12], ['s3a', 's3b', 0.06, 'soft'], ['s3b', 'n4', 0.18], ['n3', 's4b', 0.20], ['n2', 'n4', 0.30, 'soft'],
-    ['s4a', 'n5', -0.18], ['n4', 's5a', -0.14], ['s4b', 's5b', 0.10], ['R1', 's4a', -0.10, 'soft'],
-    ['n3', 'n5', -0.26, 'soft'], ['s5a', 's5b', 0.08, 'soft'], ['s5b', 'n5', -0.10], ['L2', 'n5', 0.12]
+    // people and families at home
+    ['L0', 'car', 0.10], ['car', 'fam', -0.14, 'soft'], ['R0', 'gp', -0.08], ['car', 'dn', 0.16], ['fam', 'dou', -0.20],
+    ['gp', 'ch', 0.12], ['fam', 'n1', -0.16],
+    // care homes, nursing, hospices
+    ['dn', 'n1', 0.10], ['dn', 'cns', 0.18], ['ch', 'hosp', -0.14], ['ch', 'la', 0.20, 'soft'], ['ch', 'n2', 0.14],
+    ['hos', 'n2', -0.12], ['hos', 'cn', 0.12], ['hos', 'cns', -0.18], ['dou', 'cn', -0.10, 'soft'], ['L1', 'dou', 0.12],
+    // the system around them
+    ['hos', 'icb', 0.20, 'soft'], ['cns', 'n3', 0.12], ['icb', 'hosp', 0.12], ['icb', 'la', -0.16], ['hosp', 'n3', -0.14, 'soft'],
+    ['hos', 'fdn', -0.14], ['fdn', 'n4', 0.12], ['la', 'n4', -0.12], ['R1', 'hosp', -0.10, 'soft'],
+    // funders and the fund
+    ['fdn', 'phil', 0.18], ['phil', 'n5', -0.12], ['cn', 'vol', 0.16, 'soft'], ['vol', 'phil', -0.10],
+    ['L2', 'n5', 0.10], ['n2', 'n4', 0.20, 'soft']
   ];
   var paths = [];
 
@@ -52,10 +57,15 @@
       var a = anchor(e[0]), b = anchor(e[1]);
       if (!a || !b) return;
       if (a.y > b.y) { var t = a; a = b; b = t; }
-      var dy = b.y - a.y, k = e[2] * W;
+      // always a gentle arc, never a straight line: both control points sit on the same side of
+      // the straight path between the two nodes, so the curve bows smoothly with no hooks or kinks
+      var dx = b.x - a.x, dy = b.y - a.y, len = Math.sqrt(dx * dx + dy * dy) || 1;
+      var bend = e[2] || 0.12, mag = Math.min(Math.max(Math.abs(bend), 0.1), 0.3) * (bend < 0 ? -1 : 1);
+      var nx = -dy / len, ny = dx / len, h = mag * len * 0.9;
+      var c1x = a.x + dx * 0.3 + nx * h, c1y = a.y + dy * 0.3 + ny * h;
+      var c2x = a.x + dx * 0.7 + nx * h, c2y = a.y + dy * 0.7 + ny * h;
       var d = 'M' + a.x.toFixed(1) + ' ' + a.y.toFixed(1) +
-        ' C' + (a.x + k).toFixed(1) + ' ' + (a.y + dy * 0.55).toFixed(1) +
-        ' ' + (b.x - k).toFixed(1) + ' ' + (b.y - dy * 0.55).toFixed(1) +
+        ' C' + c1x.toFixed(1) + ' ' + c1y.toFixed(1) + ' ' + c2x.toFixed(1) + ' ' + c2y.toFixed(1) +
         ' ' + b.x.toFixed(1) + ' ' + b.y.toFixed(1);
       var p = document.createElementNS(NS, 'path');
       p.setAttribute('d', d);
@@ -82,13 +92,34 @@
       else if (!reduce) p.el.style.strokeDashoffset = (p.len * (1 - t)).toFixed(1);
     });
   }
-  function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
+  /* Watercolour shapes: three layers per section. Each drifts at its own speed (parallax)
+     and grows as its section reaches the middle of the screen, then shrinks away again. */
+  var layers = [].slice.call(document.querySelectorAll('.blob')).map(function (el) {
+    var depth = el.classList.contains('l3') ? 1 : el.classList.contains('l2') ? 0.6 : 0.3;
+    return { el: el, sec: el.closest('[data-sec]'), depth: depth, r: parseFloat(getComputedStyle(el).getPropertyValue('--r')) || 0 };
+  });
+  function shapes() {
+    var vh = window.innerHeight;
+    layers.forEach(function (o) {
+      var r = o.sec.getBoundingClientRect();
+      if (r.bottom < -vh || r.top > vh * 2) return;               // off screen: leave alone
+      var p = ((r.top + r.height / 2) - vh / 2) / vh;             // -1 above … 0 centred … 1 below
+      p = Math.max(-1.5, Math.min(1.5, p));
+      var y = -p * o.depth * 140;
+      var near = 1 - Math.min(Math.abs(p), 1);                    // 1 when centred, 0 when a screen away
+      var scale = 0.78 + 0.32 * (near * near * (3 - 2 * near));    // smooth grow and shrink
+      o.el.style.transform = 'translate3d(0,' + y.toFixed(1) + 'px,0) scale(' + scale.toFixed(3) + ') rotate(' + (p * o.depth * 8).toFixed(2) + 'deg)';
+    });
+  }
+  function frame() { update(); if (!reduce) shapes(); }
+  function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(frame); } }
 
   if (system && svg) {
     var rebuild = function () { requestAnimationFrame(build); };
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(rebuild); else rebuild();
     window.addEventListener('load', rebuild);
     window.addEventListener('scroll', onScroll, { passive: true });
+    if (!reduce) shapes();
     if ('ResizeObserver' in window) new ResizeObserver(rebuild).observe(system);
     else window.addEventListener('resize', rebuild);
   }

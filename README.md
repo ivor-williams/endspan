@@ -43,9 +43,8 @@ sources in `data/charts/charts.yml`.
 
 - The organisation name, tagline and contact are in `_variables.yml`. Change them there.
 - Colours follow the brand palette in the Figma file and are set in `assets/theme.scss`.
-- ABC Arizona needs a web licence from Dinamo. Put the `.woff2` files in `assets/fonts/` and uncomment the
-  `@font-face` lines at the top of `assets/theme.scss`. For the PDF, put the `.otf` files in the same folder.
-  Until then free fallback fonts are used.
+- ABC Arizona Text web fonts (.woff, from Dinamo) live in `assets/fonts/` and are loaded by `assets/fonts.css`. ABC Arizona Sans is not included yet; labels and buttons use Inter until licensed files are added.
+  The report PDF still uses a fallback serif: its layout engine needs .otf desktop files, which the licence keeps off public servers.
 
 ## Working on it locally (optional)
 

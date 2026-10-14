@@ -17,11 +17,11 @@ $plum: #7B6AA8;
 $ochre: #D4A24C;
 $terracotta: #C45A3C;
 
-// Type. ABC Arizona needs a web licence: drop the .woff2 files into assets/fonts and
-// uncomment the @font-face block below. Until then the free fallbacks are used.
+// Type. ABC Arizona Text is loaded from assets/fonts (see assets/fonts.css).
+// ABC Arizona Sans is not included yet (only trial files exist), so labels and buttons fall back to Inter.
 $font-text: "ABC Arizona Text", "Source Serif 4", Georgia, serif;
 $font-sans: "ABC Arizona Sans", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-$web-font-path: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap";
+$web-font-path: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap";
 
 $body-bg: $white;
 $body-color: $ink;
@@ -42,9 +42,6 @@ $toc-color: $ink-75;
 $toc-active-border: $terracotta;
 
 /*-- scss:rules --*/
-// @font-face { font-family: "ABC Arizona Text"; src: url("fonts/ABCArizonaText-Regular.woff2") format("woff2"); font-weight: 400; font-display: swap; }
-// @font-face { font-family: "ABC Arizona Text"; src: url("fonts/ABCArizonaText-Medium.woff2") format("woff2"); font-weight: 500; font-display: swap; }
-// @font-face { font-family: "ABC Arizona Sans"; src: url("fonts/ABCArizonaSans-Medium.woff2") format("woff2"); font-weight: 500; font-display: swap; }
 
 :root {
   --ink: #{$ink}; --ink-2: #{$ink-75}; --muted: #{$ink-68}; --line: #{$stone}; --strong: #{$fog};

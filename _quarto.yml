@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - assets/fonts/*.woff
   render:
     - index.qmd
     - report/index.qmd
@@ -23,6 +25,7 @@ website:
 format:
   html:
     theme: [cosmo, assets/theme.scss]
+    css: assets/fonts.css
     include-after-body: assets/site-scripts.html
     toc: false
     smooth-scroll: true

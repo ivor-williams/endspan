@@ -28,7 +28,7 @@ toc: false
     <div class="bdf-wrap">
       <div class="copy">
         <h1><span class="name">{{< var name >}}</span> <span class="claim">Building and accelerating a better palliative and end-of-life care system that works for everyone</span></h1>
-        <span class="lede">Our end-of-life care system in the UK was built for a different experience of death and dying. We are bringing philanthropic money to help shift the way communities and organisations support people and families, and meet the challenges of today, and tomorrow.</span>
+        <span class="lede">Our end-of-life care system in the UK was built for a different experience of death and dying. The {{< var name >}} will use philanthropic money to help shift the way communities and organisations support people and families, and meet the challenges of today, and tomorrow.</span>
       </div>
     </div>
   </section>
@@ -44,7 +44,7 @@ toc: false
     <div class="bdf-wrap"><div class="copy">
       <span class="node" data-a="n1" style="--c:#C45A3C"><i></i></span>
       <h2>The ways we die have changed faster than the systems built to care for us</h2>
-      <p>The patterns are clear for people caring for the sickest in society: dementia and frailty have displaced the rapid decline from cancer that the hospice movement was built around, and the final phase of life can now last years. Care homes are on track to become the most common place of death by 2040, yet they have no duty to provide end-of-life care. By then roughly 150,000 more people will need palliative care than do today, while care in the community gets harder, with district nursing numbers having fallen 43% since 2009.</p>
+      <p>The patterns are clear for people caring for people coming to the end of their lives. Dementia and frailty have displaced the rapid decline from cancer that the hospice movement was built around. The final phase of life can now last years. Care homes are on track to become the most common place of death by 2040, yet they have no duty to provide end-of-life care. By then roughly 150,000 more people will need palliative care than do today. Meanwhile care in the community is getting harder, with district nursing numbers having fallen 43% since 2009.</p>
     </div></div>
   </section>
 
@@ -59,8 +59,8 @@ toc: false
     <span class="sat role flip" data-a="cn" style="--x:36%;--y:76%;--c:#C45A3C;--d:1.20s"><i></i><span class="t">Compassionate neighbours</span></span>
     <div class="bdf-wrap"><div class="copy">
       <span class="node" data-a="n2" style="--c:#2E6F5E"><i></i></span>
-      <h2>Good care is everywhere. It just isn’t widespread</h2>
-      <p>Hospice-at-home teams, community nurses, care home staff, end-of-life doulas and compassionate neighbours are doing remarkable work up and down the country, and despite incredibly challenging conditions, the field is full of energy for change. But we have heard the same thing again and again: people hit a ceiling. A model that works stays in the place that built it, and the people who made it work move on to the next funding bid.</p>
+      <h2>Good care is in many places. It just isn’t widespread</h2>
+      <p>Hospice-at-home teams, community nurses, care home staff, end-of-life doulas and compassionate neighbours are doing remarkable work up and down the country. Despite incredibly challenging conditions, the field is full of energy for change. But we have heard the same thing again and again: people hit a ceiling. Innovations can’t scale beyond the place that built them because the conditions aren’t right elsewhere, and the people who kickstarted them have to move on to the next funding bid, whilst the wider staff get back to their busy workloads.</p>
     </div></div>
   </section>
 
@@ -76,7 +76,7 @@ toc: false
     <div class="bdf-wrap"><div class="copy">
       <span class="node" data-a="n3" style="--c:#4A6FA8"><i></i></span>
       <h2>It is difficult to get good work to grow long-term</h2>
-      <p>New approaches run out of grant money before they can produce the evidence that would justify keeping them. The benefits of better care often land in someone else’s budget, so no one has a reason to pay for it. The information that would let care follow a person from hospice to hospital to care home to home is largely missing. Every organisation can improve its own part, but no organisation is set up to fix the joins.</p>
+      <p>New approaches run out of grant money before they can produce the evidence that would justify keeping them. The benefits of improved care in one part of the system often land in someone else’s budget, so no one has a reason to pay for it. The information that would let care follow a person from home to hospice to hospital to care home is largely missing. Every organisation can improve its own part, but no organisation is set up to fix the joins.</p>
     </div></div>
   </section>
 
@@ -91,7 +91,7 @@ toc: false
     <div class="bdf-wrap"><div class="copy">
       <span class="node" data-a="n4" style="--c:#D4A24C"><i></i></span>
       <h2>There is real generosity, but almost none of it is aimed at changing how the system works</h2>
-      <p>Around £22bn of public money is spent each year on people in their last year of life. Over the past decade, major foundations have given about £92m to adult palliative care, spread across 3,500 grants, and most of it has kept existing services running. That is not a failure of the people giving it, but it is a gap. Philanthropic money is the only kind that can work across hospices, the NHS, care homes and communities at once, stay long enough for the evidence to mature, and plan its own exit. Used that way, it goes much further.</p>
+      <p>Over the past ten years, major charitable foundations have given about £92m to end-of-life care for adults, spread across 3,500 separate grants, and most of that has gone on keeping existing services running. That support matters, but it means charitable money has mostly been used to prop up today’s system rather than improve it. Philanthropy has freedoms that public money lacks. It can pay for work that crosses the boundaries between hospices, hospitals, care homes and local communities. It can stay involved for the years it takes to find out whether something works. And it can be set up from the start to hand over to others once it does. Used that way, a relatively small amount of money can change far more than its size suggests.</p>
     </div></div>
   </section>
 
@@ -106,9 +106,9 @@ toc: false
     <div class="bdf-wrap"><div class="copy">
       <span class="node" data-a="n5" style="--c:#0F2B26"><i></i></span>
       <h2>The {{< var name >}}</h2>
-      <p>We’re not here to take more of a limited supply of financial support. We work with philanthropic donors to bring a different kind of capital into end-of-life care and use it to accelerate what already works, build new approaches long enough to prove themselves, and build the shared pieces no single organisation can.</p>
-      <p>Our report maps where the system is stuck and identifies five places where we believe this money can make the biggest difference.</p>
-      <p>The fund is being built by ZIP, the social innovation agency, drawing on a track record of building and accelerating solutions to complex social challenges. It is led by Polly Mackenzie, CEO of Zinc Innovation Partners and former CEO of Demos, and Ivor Williams, end-of-life care designer and former Lead for End-of-Life Care at Imperial College London.</p>
+      <p>We are working with philanthropic donors to bring new resources into end-of-life care: a different kind of capital designed to accelerate what already works, build new approaches, and build the shared capabilities no single organisation can.</p>
+      <p>We’ve started with a major report that maps where the system is stuck and identifies five places where we believe this money can make the biggest difference.</p>
+      <p>The fund is being built by ZIP, an innovation agency with a track record of building ventures to enable healthy ageing and support the care system. We’re working in partnership with Purposeful Ventures, a major charity that backs social entrepreneurs, and Ivor Williams, end-of-life care designer and former Lead for End-of-Life Care at Imperial College London.</p>
       <a class="btn-bdf" href="report/index.html">Read the report →</a>
     </div></div>
   </section>
@@ -132,7 +132,7 @@ toc: false
 <section class="bdf-involve" id="get-involved" data-sec>
   <div class="bdf-wrap"><div class="box">
     <h2>Help shape what comes next</h2>
-    <p class="intro">Our report is a first position, not a finished plan. Over the coming months we are bringing together funders, practitioners and the wider public to test these ideas and decide what to back first. Register your interest to follow the work and find out how to take part.</p>
+    <p class="intro">Our report is the beginning of a process to co-design the investments the {{< var name >}} will make. Over the coming months we are bringing together funders, practitioners and the wider public to test these ideas and decide what to back first. Register your interest to follow the work and find out how to take part.</p>
     <!-- To collect sign-ups, paste a form endpoint (e.g. https://formspree.io/f/xxxxxxx) into action="".
          Until then, the button opens a pre-filled email to the address in data-fallback-email. -->
     <form class="bdf-form" id="interest-form" action="" method="POST" data-fallback-email="polly@zinc.vc" novalidate>

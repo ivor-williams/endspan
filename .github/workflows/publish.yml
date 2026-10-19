@@ -33,7 +33,7 @@ jobs:
         run: |
           if [ -n "$FONTS_KEY" ]; then
             KEY=$(printf '%s' "$FONTS_KEY" | tr -d '[:space:]')
-            echo "::warning::FONTS_KEY length ${#KEY}, fingerprint $(printf '%s' "$KEY" | sha256sum | cut -c1-12)"
+            echo "FONTS_KEY length ${#KEY}, fingerprint $(printf '%s' "$KEY" | sha256sum | cut -c1-12)"
             printf '%s' "$KEY" > /tmp/fontkey
             openssl enc -d -aes-256-cbc -pbkdf2 -pass file:/tmp/fontkey -in assets/fonts-pdf.tar.gz.enc -out /tmp/fonts.tgz || { echo "::warning::Could not unlock the fonts: FONTS_KEY does not match"; exit 1; }
             tar xzf /tmp/fonts.tgz -C assets || { echo "::warning::Font archive could not be unpacked"; exit 1; }

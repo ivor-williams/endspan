@@ -124,32 +124,54 @@
     else window.addEventListener('resize', rebuild);
   }
 
-  /* ---------- 3. Email sign-up ---------- */
+  /* ---------- 3. Sign-up form (HubSpot) ---------- */
   var form = document.getElementById('interest-form');
   if (form) {
-    var input = form.querySelector('input[type=email]'), err = form.querySelector('.err'),
-        status = form.querySelector('.status'), btn = form.querySelector('button[type=submit]'),
-        body = form.querySelector('.body'), done = form.querySelector('.done');
+    var err = form.querySelector('.err'), status = form.querySelector('.status'),
+        btn = form.querySelector('button[type=submit]'),
+        body = form.querySelector('.body'), done = form.querySelector('.done'),
+        el = form.elements;
     function finish() { body.hidden = true; done.hidden = false; done.focus(); }
-    function bad(msg) { err.textContent = msg; form.classList.add('invalid'); input.setAttribute('aria-invalid', 'true'); input.focus(); }
-    input.addEventListener('input', function () { if (form.classList.contains('invalid')) { err.textContent = ''; form.classList.remove('invalid'); input.removeAttribute('aria-invalid'); } });
+    function clear() { err.textContent = ''; form.classList.remove('invalid');
+      Array.prototype.forEach.call(form.querySelectorAll('[aria-invalid]'), function (x) { x.removeAttribute('aria-invalid'); }); }
+    function bad(field, msg) { err.textContent = msg; form.classList.add('invalid');
+      if (field) { field.setAttribute('aria-invalid', 'true'); field.focus(); } }
+    form.addEventListener('input', function () { if (form.classList.contains('invalid')) clear(); });
+    function cookie(n) { var m = document.cookie.match('(?:^|; )' + n + '=([^;]*)'); return m ? decodeURIComponent(m[1]) : null; }
     form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      status.textContent = '';
-      if (form.elements._gotcha.value) return;
-      var email = input.value.trim();
-      if (!email) return bad('Please add your email address.');
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return bad('Please check your email address.');
-      var action = form.getAttribute('action');
-      if (!action) {
+      e.preventDefault(); clear(); status.textContent = '';
+      if (el._gotcha.value) return;
+      var first = el.firstname.value.trim(), last = el.lastname.value.trim(),
+          email = el.email.value.trim(), company = el.company.value.trim(),
+          roles = Array.prototype.filter.call(form.querySelectorAll('input[name=role]'), function (x) { return x.checked; })
+                    .map(function (x) { return x.value; });
+      if (!first) return bad(el.firstname, 'Please add your first name.');
+      if (!last) return bad(el.lastname, 'Please add your last name.');
+      if (!email) return bad(el.email, 'Please add your email address.');
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return bad(el.email, 'Please check your email address.');
+      if (!roles.length) return bad(form.querySelector('input[name=role]'), 'Please tick at least one box under “I am”.');
+
+      var portal = form.getAttribute('data-hubspot-portal'), formId = form.getAttribute('data-hubspot-form');
+      if (!portal || !formId) {
         location.href = 'mailto:' + form.getAttribute('data-fallback-email') +
           '?subject=' + encodeURIComponent('Better Dying Fund: keep me updated') +
-          '&body=' + encodeURIComponent('Please add ' + email + ' to the Better Dying Fund update list.');
+          '&body=' + encodeURIComponent('Please add me to the Better Dying Fund update list.\n\nName: ' + first + ' ' + last +
+            '\nEmail: ' + email + '\nOrganisation: ' + (company || '-') + '\nI am: ' + roles.join(', '));
         done.querySelector('p').innerHTML = '<strong>Nearly there.</strong> Your email app should open with a message ready to send.';
         finish(); return;
       }
+      var fields = [
+        { name: 'firstname', value: first }, { name: 'lastname', value: last }, { name: 'email', value: email },
+        { name: form.getAttribute('data-hubspot-role-field') || 'bdf_role', value: roles.join(';') }
+      ];
+      if (company) fields.push({ name: 'company', value: company });
+      var ctx = { pageUri: location.href, pageName: document.title }, hutk = cookie('hubspotutk');
+      if (hutk) ctx.hutk = hutk;
       btn.disabled = true; status.textContent = 'Sending…';
-      fetch(action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
+      fetch('https://api.hsforms.com/submissions/v3/integration/submit/' + encodeURIComponent(portal) + '/' + encodeURIComponent(formId), {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ fields: fields, context: ctx })
+      })
         .then(function (r) { if (!r.ok) throw new Error(r.status); status.textContent = ''; finish(); })
         .catch(function () { status.textContent = 'Sorry, that didn’t send. Please try again, or email ' + form.getAttribute('data-fallback-email') + '.'; })
         .then(function () { btn.disabled = false; });

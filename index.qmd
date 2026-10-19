@@ -133,19 +133,42 @@ toc: false
   <div class="bdf-wrap"><div class="box">
     <h2>Help shape what comes next</h2>
     <p class="intro">Our report is the beginning of a process to co-design the investments the {{< var name >}} will make. Over the coming months we are bringing together funders, practitioners and the wider public to test these ideas and decide what to back first. Register your interest to follow the work and find out how to take part.</p>
-    <!-- To collect sign-ups, paste a form endpoint (e.g. https://formspree.io/f/xxxxxxx) into action="".
+    <!-- HubSpot: paste the Portal ID and Form ID from Zinc into data-hubspot-portal and data-hubspot-form,
+         and the internal name of the role property into data-hubspot-role-field.
          Until then, the button opens a pre-filled email to the address in data-fallback-email. -->
-    <form class="bdf-form" id="interest-form" action="" method="POST" data-fallback-email="polly@zinc.vc" novalidate>
+    <form class="bdf-form" id="interest-form" method="POST" novalidate
+          data-hubspot-portal="" data-hubspot-form="" data-hubspot-role-field="bdf_role"
+          data-fallback-email="polly@zinc.vc">
       <div class="body">
-        <div class="row">
-          <label for="f-email" class="visually-hidden">Email address</label>
-          <input id="f-email" name="email" type="email" autocomplete="email" placeholder="Your email address" required aria-describedby="f-email-err">
-          <button type="submit" class="btn-bdf">Keep me updated by email</button>
+        <div class="grid">
+          <div class="field">
+            <label for="f-first">First name</label>
+            <input id="f-first" name="firstname" type="text" autocomplete="given-name" required>
+          </div>
+          <div class="field">
+            <label for="f-last">Last name</label>
+            <input id="f-last" name="lastname" type="text" autocomplete="family-name" required>
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="f-company">Company or organisation <span class="opt">Optional</span></label>
+            <input id="f-company" name="company" type="text" autocomplete="organization">
+          </div>
         </div>
+        <fieldset class="roles">
+          <legend>I am… <span class="opt">Tick all that apply</span></legend>
+          <label class="tick"><input type="checkbox" name="role" value="Funder"><span>A funder</span></label>
+          <label class="tick"><input type="checkbox" name="role" value="Working in end-of-life care"><span>Working in end-of-life care</span></label>
+          <label class="tick"><input type="checkbox" name="role" value="Other"><span>Other</span></label>
+        </fieldset>
         <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <p class="err" id="f-email-err" role="alert"></p>
+        <p class="err" id="f-err" role="alert"></p>
         <p class="status" role="status" aria-live="polite"></p>
-        <p class="fine">We’ll only use your email to send you updates about the Better Dying Fund. Your details are held by Zinc Innovation Partners, and you can unsubscribe at any time.</p>
+        <button type="submit" class="btn-bdf">Keep me updated by email</button>
+        <p class="fine">We’ll only use your details to send you updates about the Better Dying Fund. Your details are held by Zinc Innovation Partners, and you can unsubscribe at any time.</p>
       </div>
       <div class="done" hidden tabindex="-1"><p><strong>Thank you.</strong> We’ll be in touch as the work develops.</p></div>
     </form>
@@ -153,5 +176,5 @@ toc: false
   </div></div>
 </section>
 </div>
-<script src="assets/home.js?v=1792016809" defer></script>
+<script src="assets/home.js?v=1792017100" defer></script>
 ```

@@ -146,17 +146,26 @@ html { scroll-padding-top: 96px; }
 .bdf-involve h2 { font-size: clamp(2rem, 4.4vw, 3rem); font-weight: 500; letter-spacing: -0.015em; margin: 0 auto 20px; border: 0; max-width: 18ch; }
 .bdf-involve p.intro { color: $ink-75; font-size: 1.08rem; line-height: 1.65; max-width: 52ch; margin: 0 auto; }
 .bdf-form { max-width: 560px; margin: 36px auto 0; font-family: $font-sans; font-feature-settings: normal; }
-.bdf-form .row { display: flex; gap: 10px; flex-wrap: wrap; }
-.bdf-form input[type=email] { flex: 1 1 240px; min-width: 0; font: inherit; font-size: 1rem; color: $ink; background: rgba($white, .85);
+.bdf-form { text-align: left; }
+.bdf-form .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 14px; }
+@media (max-width: 575.98px) { .bdf-form .grid { grid-template-columns: 1fr; } }
+.bdf-form .field { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.bdf-form label, .bdf-form legend { font-size: 0.85rem; font-weight: 600; color: $ink; }
+.bdf-form .opt { font-weight: 400; color: $ink-68; margin-left: 4px; }
+.bdf-form input[type=text], .bdf-form input[type=email] { width: 100%; min-width: 0; font: inherit; font-size: 1rem; color: $ink; background: rgba($white, .85);
   border: 1.5px solid $fog; border-radius: 8px; padding: 0.72em 0.95em; transition: border-color .15s, box-shadow .15s;
   &:hover { border-color: $ink-68; } &:focus { outline: none; border-color: $ink; box-shadow: 0 0 0 3px $blush; } }
-.bdf-form .btn-bdf { flex: 0 0 auto; }
+.bdf-form .roles { border: 0; padding: 0; margin: 22px 0 0; display: flex; flex-wrap: wrap; gap: 10px 22px; }
+.bdf-form .roles legend { width: 100%; margin-bottom: 10px; padding: 0; float: none; }
+.bdf-form .tick { display: inline-flex; align-items: center; gap: 9px; font-weight: 400; font-size: 0.95rem; cursor: pointer; }
+.bdf-form .tick input { width: 18px; height: 18px; margin: 0; accent-color: $ink; cursor: pointer; }
+.bdf-form .btn-bdf { margin-top: 24px; }
 .bdf-form .btn-bdf[disabled] { opacity: .6; cursor: progress; }
 .bdf-form .err, .bdf-form .status { font-size: 0.85rem; margin: 10px 0 0; text-align: left; }
 .bdf-form .err { color: $terracotta; } .bdf-form .err:empty, .bdf-form .status:empty { display: none; }
 .bdf-form .status { color: $ink-75; }
-.bdf-form .fine { margin: 14px auto 0; font-size: 0.8rem; line-height: 1.5; color: $ink-68; max-width: 50ch; }
-.bdf-form.invalid input[type=email] { border-color: $terracotta; }
+.bdf-form .fine { margin: 14px 0 0; font-size: 0.8rem; line-height: 1.5; color: $ink-68; max-width: 50ch; }
+.bdf-form [aria-invalid=true] { border-color: $terracotta !important; outline-color: $terracotta; }
 .bdf-form .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 .bdf-form .done { outline: none; }
 .bdf-form .done p { margin: 0; color: $ink-75; font-family: $font-text; font-size: 1.15rem; }

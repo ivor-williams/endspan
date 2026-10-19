@@ -10,7 +10,7 @@ project:
 
 website:
   title: "{{< var name >}}"
-  site-url: https://ivor-williams.github.io/endspan/
+  site-url: https://betterdying.fund/
   description: "{{< var tagline >}}"
   search: false
   navbar:

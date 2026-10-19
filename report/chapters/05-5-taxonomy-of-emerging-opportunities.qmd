@@ -78,6 +78,10 @@ Below we set out the five areas, each framed as a question. Taken together, the 
 
 ::: {.bdf-opps}
 ::: {.bdf-opp}
+```{=html}
+<img class="bdf-opp-img" src="https://images.unsplash.com/photo-1602152563796-29267eb24c0f?w=1400&q=70&auto=format&fit=crop" alt="" loading="lazy">
+```
+
 [Opportunity 1]{.bdf-opp-n}
 
 ### How might we give carers of dying people the preparation, peers and point of contact that new parents receive?
@@ -96,6 +100,10 @@ Below we set out the five areas, each framed as a question. Taken together, the 
 :::
 
 ::: {.bdf-opp}
+```{=html}
+<img class="bdf-opp-img" src="https://images.unsplash.com/photo-1573856631239-eb02c9fd8c1d?w=1400&q=70&auto=format&fit=crop" alt="" loading="lazy">
+```
+
 [Opportunity 2]{.bdf-opp-n}
 
 ### How might we organise care for the dying as a 3-year transition rather than a 3-day event?
@@ -112,6 +120,10 @@ Below we set out the five areas, each framed as a question. Taken together, the 
 :::
 
 ::: {.bdf-opp}
+```{=html}
+<img class="bdf-opp-img" src="https://images.unsplash.com/photo-1685657814797-83706c4e5279?w=1400&q=70&auto=format&fit=crop" alt="" loading="lazy">
+```
+
 [Opportunity 3]{.bdf-opp-n}
 
 ### How might care homes become places recognised and resourced to support dying, not only living?
@@ -128,6 +140,10 @@ Below we set out the five areas, each framed as a question. Taken together, the 
 :::
 
 ::: {.bdf-opp}
+```{=html}
+<img class="bdf-opp-img" src="https://images.unsplash.com/photo-1689613704696-2913f5067f05?w=1400&q=70&auto=format&fit=crop" alt="" loading="lazy">
+```
+
 [Opportunity 4]{.bdf-opp-n}
 
 ### How might we create an end-of-life care talent pipeline that attracted people the way Now Teach has changed teaching?
@@ -145,6 +161,10 @@ Below we set out the five areas, each framed as a question. Taken together, the 
 :::
 
 ::: {.bdf-opp}
+```{=html}
+<img class="bdf-opp-img" src="https://images.unsplash.com/photo-1746457454231-e90a27aa43a3?w=1400&q=70&auto=format&fit=crop" alt="" loading="lazy">
+```
+
 [Opportunity 5]{.bdf-opp-n}
 
 ### How might a proven end-of-life model travel with everything the next place needs to adopt it?

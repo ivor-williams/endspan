@@ -269,7 +269,8 @@ header#title-block-header { padding-top: 88px !important; margin-bottom: 0; }
 
 // Emerging opportunities (Chapter 5): one card each
 .bdf-opps { display: grid; gap: 16px; margin: 1.8rem 0; }
-.bdf-opp { background: $mist; border-radius: 10px; padding: 22px 26px;
+.bdf-opp { background: $mist; border-radius: 10px; padding: 22px 26px; overflow: hidden;
+  .bdf-opp-img { display: block; width: calc(100% + 52px); max-width: none; height: clamp(160px, 26vw, 240px); object-fit: cover; margin: -22px -26px 20px; background: $stone; }
   .bdf-opp-n { display: block; font-family: $font-sans; font-feature-settings: normal; font-size: 14px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: $terracotta; }
   h3 { margin: 8px 0 14px !important; color: $ink !important; }
   p, li { font-family: $font-sans; font-feature-settings: normal; font-size: 16px; line-height: 1.5; color: $ink-75; }
@@ -300,6 +301,7 @@ header#title-block-header { padding-top: 88px !important; margin-bottom: 0; }
 .case-study .bdf-viz p.bdf-viz-source { font-size: 13px; font-weight: 500; color: $ink-68; margin: 10px 0 0; }
 .bdf-viz-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 8px 16px; margin-bottom: 10px; }
 .bdf-viz-title { font-size: 13px; font-weight: 500; color: $ink; max-width: 46ch; }
+.bdf-viz-note { font-size: 12.5px; color: $ink-68; margin-top: 4px; max-width: 60ch; line-height: 1.45; }
 .bdf-viz-tools { display: flex; gap: 6px; }
 .bdf-viz-tools button { cursor: pointer; background: transparent; border: 1px solid $fog; border-radius: 999px; font-size: 12px; font-weight: 500; padding: 3px 10px; color: $ink-75; }
 .bdf-viz-tools button:hover, .bdf-viz-tools button[aria-pressed="true"] { background: $blush; color: $ink; }
@@ -338,8 +340,8 @@ header#title-block-header { padding-top: 88px !important; margin-bottom: 0; }
 .bdf-pdf { margin-top: auto; padding-top: 14px; border-top: 1px solid $stone; font-family: $font-sans; font-feature-settings: normal;
   p { margin: 0; }
   .label { display: block; font-size: 12px; font-weight: 600; line-height: 20px; letter-spacing: 0.07em; text-transform: uppercase; color: $ink-68; margin-bottom: 10px; }
-  a { display: inline-flex; align-items: center; gap: 8px; padding: 11px 17px; border-radius: 6px; background: $terracotta; border: 1.5px solid $terracotta; color: $white !important; font-size: 15px; font-weight: 500; line-height: 1.2; text-decoration: none; }
-  a:hover { background: darken($terracotta, 6%); border-color: darken($terracotta, 6%); } }
+  a { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 6px; background: transparent; border: 1.5px solid $terracotta; color: $terracotta !important; font-size: 15px; font-weight: 500; line-height: 1.2; text-decoration: none; }
+  a:hover { background: $blush; } }
 @media (max-width: 991.98px) { .bdf-pdf { margin-top: 16px; } }
 
 // ---------- Charts ----------
@@ -356,7 +358,7 @@ header#title-block-header { padding-top: 88px !important; margin-bottom: 0; }
 .bdf-row .lab { display: flex; align-items: center; justify-content: flex-end; text-align: right; padding-right: 10px; color: $ink-75; min-width: 0; }
 .bdf-row.total .lab { font-weight: 600; color: $ink; }
 .bdf-row .track { position: relative; margin-right: var(--reserve); display: flex; align-items: center; min-height: 40px;
-  border-left: 1px solid $fog; background-image: linear-gradient(to right, var(--chart-grid) 1px, transparent 1px); background-size: 25% 100%; background-position: -1px 0; box-shadow: 1px 0 0 var(--chart-grid); }
+  border-left: 1px solid $fog; background-image: linear-gradient(to right, var(--chart-grid) 1px, transparent 1px); background-size: 25% 100%; background-position: -1px 0; }
 .bdf-row .bar { flex: none; height: 22px; width: calc(var(--p) * 1%); min-width: 2px; border-radius: 0 4px 4px 0; background: var(--c);
   transition: width 1.8s cubic-bezier(0.2, 0.75, 0.2, 1), opacity 0.2s; transition-delay: calc(var(--i) * 180ms), 0s; }
 .bdf-row.total .bar { opacity: 0.32; }

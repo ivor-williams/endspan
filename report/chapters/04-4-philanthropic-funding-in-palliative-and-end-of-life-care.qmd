@@ -68,9 +68,7 @@ Cancer Research UK found that discoveries stalled in a specific gap: too early f
 Zinc builds commercial ventures against defined social missions, on the conviction that a mission can be both a social and a commercial opportunity. Its Later Life mission set an explicit goal of adding five high-quality years to later life. Each mission recruits a cohort of 50 to 70 entrepreneurs before there is a company to join, running a nine-month programme: three months finding a co-founder and settling on a problem, three prototyping, three preparing for investment. Zinc takes an 8% equity stake in the companies formed. Its second fund closed a first tranche at €32.9m, backing around 100 businesses, with investors including Big Society Capital and Dunhill Medical Trust. Over 300 entrepreneurs have been backed and more than 60 ventures built. The Later Life mission also created Ageing Champions, older adults who shaped products by sharing their own experience of growing older.
 :::
 
-### Philanthropic money
-
-*Patterns of funding*
+### Patterns of philanthropic funding
 
 Our analysis for this report, using the 360Giving database. found that philanthropic funding of UK palliative care amounted to approximately £92m over the last 10 years (2015-2025) across 3,494 grants.[^c4-11] This is a comparatively small amount of money - just £9.2m a year on average for a sector supporting more than 500,000 dying people a year. This is a partial assessment only of grant funders who contribute to the database.
 
@@ -105,7 +103,7 @@ Many people we spoke to as part of the research described how current philanthro
 **Lisa Kennedy, NHS Greater Glasgow and Clyde**
 :::
 
-**Grant recipients**
+### Grant recipients
 
 Looking directly at funded organisations\' accounts gives us a richer picture beyond the 360 Giving database. Our analysis of a sample of 17 hospices surfaces 262 unique named funders. Of these, only 22 (7%) appear at more than one hospice, and only 8 (2.5%) appear at four or more. Very few are on 360Giving. The pattern is predominantly one-to-one: a funder gives to one hospice. The philanthropic ecosystem is not coordinated but an aggregation of hundreds of independent bilateral relationships.
 
@@ -121,9 +119,6 @@ Our evidence surfaces almost no visible capital directed at community-based or s
 
 Geographic concentration is notable. St Christopher\'s alone names over 80 funders - more than all the non-London hospices combined. London hospices attract a distinct funder profile: major City law firms, investment banks, auction houses, and large national foundations. Regional and Scottish hospices draw almost entirely on local trusts and community foundations, with much smaller individual grant values.
 
-::: case-study
-**Donor map**
-
 ::: {.content-visible when-format="html"}
 ::: {.bdf-viz data-viz="donor-map"}
 :::
@@ -131,10 +126,10 @@ Geographic concentration is notable. St Christopher\'s alone names over 80 funde
 
 ::: {.content-visible unless-format="html"}
 ![](media/figure-f454dccc55.png)
+
+*This Donor Map plots the 10 largest funders of adult palliative and end-of-life care (2015--2025) on two axes: (horizontally) whether their grants sustain the existing system or shift it, against (vertically) how much capital they deployed, with dot area showing average grant size.*
 :::
 
-*This Donor Map (v1) plots the 10 largest funders of adult palliative and end-of-life care (2015--2025) on two axes: (horizontally) whether their grants sustain the existing system or shift it, against (vertically) how much capital they deployed, with dot area showing average grant size.*
-:::
 
 The following funder profiles are indicative of philanthropic funders that range from family trusts to national foundations.
 
@@ -187,7 +182,8 @@ Appears on 4 sampled hospices\' accounts and operates a named programme through 
 :::
 
 
-**Social finance**\
+### Social finance
+
 Repayable, social capital is also at play in the sector. There are two significant examples both run as a partnership between Macmillan and Social Finance UK, with outcomes-linked top-up support from government Commissioning Better Outcomes Fund and the Life Chances Fund: £12m Care and Wellbeing Fund; £36m Macmillan Social Investment Programme for End of Life Care (2021-present). Both funds use outcomes-based contracting to try and fix systemic issues in end of life care: spend concentrated in acute care, little capacity within the system for innovation, and poor join-up between health and social care.
 
 ::: pullquote

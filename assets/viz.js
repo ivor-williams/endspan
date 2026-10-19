@@ -29,7 +29,7 @@
   function frame(host, o) {
     var f = h('div', 'bdf-viz-frame', host);
     var head = h('div', 'bdf-viz-head', f);
-    h('div', 'bdf-viz-title', head, o.title);
+    var tw = h('div', '', head); h('div', 'bdf-viz-title', tw, o.title); if (o.note) h('div', 'bdf-viz-note', tw, o.note);
     var tools = h('div', 'bdf-viz-tools', head);
     var replay = h('button', '', tools, 'Replay'); replay.type = 'button';
     var tbtn = h('button', '', tools, 'Table'); tbtn.type = 'button'; tbtn.setAttribute('aria-pressed', 'false');
@@ -108,7 +108,8 @@
     var money = function (v) { return v >= 1e6 ? '£' + (v / 1e6).toFixed(1) + 'm' : '£' + Math.round(v / 1e3) + 'k'; };
     var F = frame(host, {
       title: 'Donor map: the 10 largest funders of adult palliative and end-of-life care, 2015–2025',
-      legend: '<span><i style="background:' + C.sky + ';border:1.5px solid ' + C.indigo + '"></i>Scored from grant-level detail</span><span><i style="background:#fff;border:1.5px dashed ' + C.muted + '"></i>Scored from the funder’s own description (provisional)</span><span>Dot area = average grant size · dots appear smallest to largest</span>',
+      note: 'Each funder is placed by whether its grants sustain the existing system or shift it (across) and how much capital it deployed (up). Hover over a dot to see its average grant and total.',
+      legend: '<span><i style="background:' + C.indigo + '"></i>Scored from grant-level detail</span><span><i style="background:' + C.ochre + ';opacity:.55;outline:1.5px dashed ' + C.ochre + ';outline-offset:-1.5px"></i>Scored from the funder’s own description (provisional)</span><span>Dot area = average grant size · dots appear smallest to largest</span>',
       source: 'Source: 360Giving GrantNav and funder reports; Better Dying Fund analysis.',
       table: tableHTML(['Funder', 'Average grant', 'Total, 2015–2025', 'Scored from'], d.slice().sort(function (a, b) { return b.t - a.t; }).map(function (r) { return [r.n, money(r.a), money(r.t), r.s === 'grant' ? 'Grant detail' : 'Self-description']; }))
     });
@@ -128,13 +129,13 @@
     var labelSide = { 'Julia Rausing': 'up', 'Postcode Care': 'left', 'Garfield Weston': 'left', 'Pears': 'down', 'Masonic': 'up' };
     var items = order.map(function (r) {
       var g = el('g', { opacity: 0 }, svg), cx = X(r.x), cy = Y(r.t), rr = rad(r.a);
-      var c = el('circle', { cx: cx, cy: cy, r: rr, fill: r.s === 'grant' ? C.sky : '#fff', 'fill-opacity': r.s === 'grant' ? .9 : .6, stroke: r.s === 'grant' ? C.indigo : C.muted, 'stroke-width': 1.5, 'stroke-dasharray': r.s === 'grant' ? null : '4 3' }, g);
-      if (r.s !== 'grant') c.removeAttribute('stroke-dasharray'), c.setAttribute('stroke-dasharray', '4 3');
+      var c = el('circle', { cx: cx, cy: cy, r: rr, fill: r.s === 'grant' ? C.indigo : C.ochre, 'fill-opacity': r.s === 'grant' ? .8 : .45, stroke: r.s === 'grant' ? '#fff' : C.ochre, 'stroke-width': 1.5 }, g);
+      if (r.s !== 'grant') c.setAttribute('stroke-dasharray', '4 3');
       var side = labelSide[r.n] || 'right', lx = cx + rr + 6, ly = cy + 4, anchor = 'start';
       if (side === 'left') { lx = cx - rr - 6; anchor = 'end'; }
       if (side === 'up') { lx = cx; ly = cy - rr - 8; anchor = 'middle'; }
       if (side === 'down') { lx = cx; ly = cy + rr + 16; anchor = 'middle'; }
-      txt(g, lx, ly, r.n, { 'font-size': 12.5, 'text-anchor': anchor, 'font-weight': 500, fill: r.s === 'grant' ? C.ink : C.ink2 });
+      txt(g, lx, ly, r.n, { 'font-size': 12.5, 'text-anchor': anchor, 'font-weight': 500, fill: C.ink });
       var hit = el('circle', { cx: cx, cy: cy, r: Math.max(rr, 12), fill: 'transparent' }, g);
       hit.addEventListener('mousemove', function (e) { showTip(e, '<b>' + r.n + '</b>Average grant ' + money(r.a) + '<br>Total ' + money(r.t) + ', 2015–2025<span class="d">' + (r.s === 'grant' ? 'Scored from grant-level detail' : 'Provisional: scored from the funder’s own description') + '</span>'); });
       hit.addEventListener('mouseleave', hideTip);
@@ -160,25 +161,23 @@
       source: 'After Bill Sharpe, Three Horizons. Illustrative, not to scale.',
       table: tableHTML(['Capital', 'Horizon', 'Relative size'], [['Household', '1', 'Medium'], ['Public funding', '1', 'Very large'], ['Philanthropy', '1', 'Small'], ['Social finance', '1–2', 'Very small'], ['Venture', '2', 'Small'], ['Philanthropy', '3', 'Very small']])
     });
-    var W = 700, H = 420, L = 120, R = 30, T = 20, B = 40;
+    var W = 700, H = 400, L = 12, R = 24, T = 20, B = 40;
     var svg = el('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img', 'aria-label': 'Most capital sits on the first horizon. Very little reaches the second horizon, the missing middle where philanthropy could shift the system.' }, F.body);
-    var band = el('rect', { x: 330, y: T, width: 210, height: H - T - B, fill: C.blush, rx: 6, opacity: 0 }, svg);
-    var bandT = txt(svg, 342, T + 22, 'Missing middle', { fill: C.terracotta, 'font-weight': 700, 'font-size': 13, opacity: 0 });
+    var band = el('rect', { x: 290, y: T, width: 230, height: H - T - B, fill: C.blush, rx: 6, opacity: 0 }, svg);
+    var bandT = txt(svg, 302, T + 22, 'Missing middle', { fill: C.terracotta, 'font-weight': 700, 'font-size': 13, opacity: 0 });
     el('line', { x1: L, x2: L, y1: T, y2: H - B, stroke: C.ink2 }, svg);
     el('line', { x1: L, x2: W - R, y1: H - B, y2: H - B, stroke: C.ink2 }, svg);
     txt(svg, L, H - B + 20, 'Today', { 'font-size': 12, fill: C.ink2 });
     txt(svg, W - R, H - B + 20, 'Time', { 'font-size': 12, fill: C.ink2, 'text-anchor': 'end' });
     var curves = {
-      h1: { d: 'M120 92 C 220 110, 300 130, 380 200 S 520 330, 660 340', c: C.indigo, label: ['Horizon 1', 'Business as usual'], ly: 92 },
-      h3: { d: 'M120 330 C 260 325, 340 300, 430 240 S 560 110, 660 100', c: C.pine, label: ['Horizon 3', 'Emerging future'], ly: 330 },
-      h2: { d: 'M120 245 C 230 245, 270 200, 320 140 C 360 90, 390 75, 420 80 C 470 90, 500 180, 540 230 C 570 265, 610 270, 660 272', c: C.ochre, label: ['Horizon 2', 'Disruptive innovation'], ly: 245 } };
+      h1: { d: 'M12 92 C 140 110, 250 130, 350 200 S 520 330, 676 340', c: C.indigo, label: ['Horizon 1', 'Business as usual'], ly: 92 },
+      h3: { d: 'M12 330 C 190 325, 300 300, 410 240 S 560 110, 676 100', c: C.pine, label: ['Horizon 3', 'Emerging future'], ly: 330 },
+      h2: { d: 'M12 245 C 150 245, 210 200, 270 140 C 320 90, 360 75, 400 80 C 460 90, 495 180, 540 230 C 580 265, 620 270, 676 272', c: C.ochre, label: ['Horizon 2', 'Disruptive innovation'], ly: 245 } };
     var dots = { h1: [[0.06, 'Household', 14, 'up'], [0.18, 'Public funding', 30, 'up'], [0.33, 'Philanthropy', 9, 'down'], [0.45, 'Social finance', 5, 'right']], h3: [[0.37, 'Philanthropy', 5, 'down']], h2: [[0.36, 'Venture', 9, 'right']] };
     var parts = {};
     ['h1', 'h3', 'h2'].forEach(function (k) {
       var cv = curves[k], g = el('g', { opacity: 0 }, svg);
       var p = el('path', { d: cv.d, fill: 'none', stroke: cv.c, 'stroke-width': 2.5, 'stroke-linecap': 'round' }, g);
-      var lt = txt(g, L - 10, cv.ly - 2, cv.label[0], { 'text-anchor': 'end', fill: C.ink2, 'font-size': 12 });
-      txt(g, L - 10, cv.ly + 13, cv.label[1], { 'text-anchor': 'end', fill: C.ink, 'font-size': 12.5, 'font-weight': 600 });
       var len = p.getTotalLength ? p.getTotalLength() : 800;
       var ds = (dots[k] || []).map(function (dd) {
         var pt = p.getPointAtLength(len * dd[0]), dg = el('g', { opacity: 0 }, g);
@@ -204,11 +203,11 @@
         P.dots.forEach(function (dg) { dg.style.transition = 'none'; dg.setAttribute('opacity', 0); });
         timers.push(setTimeout(function () {
           P.g.setAttribute('opacity', 1);
-          P.p.style.transition = reduce ? 'none' : 'stroke-dashoffset 1.1s ease'; P.p.style.strokeDashoffset = 0;
-          P.dots.forEach(function (dg, j) { timers.push(setTimeout(function () { dg.style.transition = 'opacity .4s'; dg.setAttribute('opacity', 1); }, reduce ? 0 : 700 + j * 220)); });
-        }, reduce ? 0 : i * 1500));
+          P.p.style.transition = reduce ? 'none' : 'stroke-dashoffset 2.2s ease'; P.p.style.strokeDashoffset = 0;
+          P.dots.forEach(function (dg, j) { timers.push(setTimeout(function () { dg.style.transition = 'opacity .8s'; dg.setAttribute('opacity', 1); }, reduce ? 0 : 1400 + j * 440)); });
+        }, reduce ? 0 : i * 3000));
       });
-      timers.push(setTimeout(function () { band.style.transition = bandT.style.transition = 'opacity .8s'; band.setAttribute('opacity', .85); bandT.setAttribute('opacity', 1); }, reduce ? 0 : 4700));
+      timers.push(setTimeout(function () { band.style.transition = bandT.style.transition = 'opacity 1.6s'; band.setAttribute('opacity', .85); bandT.setAttribute('opacity', 1); }, reduce ? 0 : 9400));
     }
     svg.insertBefore(band, svg.firstChild);
     F.replay.addEventListener('click', play); onView(host, play);

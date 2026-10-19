@@ -169,10 +169,12 @@
 
     var chapters = Array.prototype.slice.call(toc.querySelectorAll(':scope > ul > li'));
     var opened = null; // a chapter the reader opened by clicking
+    var navigating = false; // true while gliding to a contents link: hold the contents still
     var obs = new MutationObserver(function () { update(); });
     function watch() { obs.observe(toc, { subtree: true, attributes: true, attributeFilter: ['class'] }); }
     function update() {
       obs.disconnect();
+      if (navigating) { watch(); return; }
       var actives = toc.querySelectorAll('a.nav-link.active');
       var a = actives.length ? actives[actives.length - 1] : null;
       var cur = a ? a.closest('#TOC > ul > li') : null;
@@ -197,11 +199,13 @@
     /* Calmer scrolling when moving through the contents: slower, eased in and out */
     var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var scrollAnim = null;
+    function settle() { setTimeout(function () { navigating = false; update(); }, 120); }
     function ease(t) { return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
     function calmScrollTo(y) {
       if (scrollAnim) cancelAnimationFrame(scrollAnim);
       var start = window.scrollY, dist = y - start;
-      if (reduceMotion || Math.abs(dist) < 2) { window.scrollTo({ top: y, behavior: 'instant' }); return; }
+      navigating = true;
+      if (reduceMotion || Math.abs(dist) < 2) { window.scrollTo({ top: y, behavior: 'instant' }); settle(); return; }
       var dur = Math.min(1800, Math.max(800, Math.abs(dist) * 0.35)), t0 = null;
       document.documentElement.style.scrollBehavior = 'auto';
       function step(now) {
@@ -209,12 +213,12 @@
         var t = Math.min(1, (now - t0) / dur);
         window.scrollTo(0, start + dist * ease(t));
         if (t < 1) scrollAnim = requestAnimationFrame(step);
-        else { scrollAnim = null; document.documentElement.style.scrollBehavior = ''; }
+        else { scrollAnim = null; document.documentElement.style.scrollBehavior = ''; settle(); }
       }
       scrollAnim = requestAnimationFrame(step);
     }
     // stop the animation if the reader takes over
-    ['wheel', 'touchstart', 'keydown'].forEach(function (ev) { window.addEventListener(ev, function () { if (scrollAnim) { cancelAnimationFrame(scrollAnim); scrollAnim = null; document.documentElement.style.scrollBehavior = ''; } }, { passive: true }); });
+    ['wheel', 'touchstart', 'keydown'].forEach(function (ev) { window.addEventListener(ev, function () { if (scrollAnim) { cancelAnimationFrame(scrollAnim); scrollAnim = null; document.documentElement.style.scrollBehavior = ''; settle(); } }, { passive: true }); });
     toc.addEventListener('click', function (e) {
       var a = e.target.closest('a[href*="#"]');
       if (!a || e.metaKey || e.ctrlKey || e.shiftKey || !a.hash || a.pathname !== location.pathname) return;

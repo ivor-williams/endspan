@@ -44,8 +44,14 @@ There are a number of named loops on the map. They represent a distillation of o
 
 Our vision is for a palliative and end-of-life care system that helps people and communities to have as good a death as possible. The map helps to interrogate why that vision doesn\'t happen -- to make the barriers, feedback loops, and lock-ins visible rather than argue them abstractly - so that our donor coalition can invest strategically and measure progress appropriately for a non-linear system.
 
+::: {.content-visible when-format="html"}
 ::: {.bdf-zoom}
-![The causal loop map of palliative and end-of-life care. Drag to move around, scroll or pinch to zoom.](media/figure-5e2b1ede9e.png)
+![The causal loop map of palliative and end-of-life care. Drag to move around, scroll or pinch to zoom.](media/causal-loop-map.webp)
+:::
+:::
+
+::: {.content-visible unless-format="html"}
+![The causal loop map of palliative and end-of-life care.](media/figure-5e2b1ede9e.png)
 :::
 
 ## What the map shows: two centres of gravity

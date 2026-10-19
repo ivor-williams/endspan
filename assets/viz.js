@@ -229,7 +229,7 @@
       ty = ih < bh ? (bh - ih) / 2 : Math.min(0, Math.max(bh - ih, ty));
     }
     function reset() { fit = Math.min(box.clientWidth / img.naturalWidth, box.clientHeight / img.naturalHeight); s = fit; tx = ty = 0; clamp(); apply(); }
-    function zoomAt(f, cx, cy) { var ns = Math.min(Math.max(s * f, fit), fit * 8); tx = cx - (cx - tx) * ns / s; ty = cy - (cy - ty) * ns / s; s = ns; clamp(); apply(); }
+    function zoomAt(f, cx, cy) { var ns = Math.min(Math.max(s * f, fit), Math.max(fit * 8, 1.5)); tx = cx - (cx - tx) * ns / s; ty = cy - (cy - ty) * ns / s; s = ns; clamp(); apply(); }
     box.addEventListener('wheel', function (e) { e.preventDefault(); var r = box.getBoundingClientRect(); zoomAt(Math.exp(-e.deltaY * 0.0015), e.clientX - r.left, e.clientY - r.top); }, { passive: false });
     var pts = new Map(), last = null, pinch = 0;
     box.addEventListener('pointerdown', function (e) { if (e.target.closest('button')) return; box.setPointerCapture(e.pointerId); pts.set(e.pointerId, [e.clientX, e.clientY]); box.classList.add('dragging'); last = [e.clientX, e.clientY]; pinch = 0; });

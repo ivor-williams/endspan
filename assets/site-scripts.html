@@ -196,6 +196,37 @@
     });
     update();
 
+    /* Phones and tablets: the sidebar is hidden, so a Contents button opens it as a sheet */
+    var mobile = window.matchMedia('(max-width: 991.98px)');
+    var fab = document.createElement('button');
+    fab.type = 'button'; fab.className = 'bdf-toc-fab'; fab.setAttribute('aria-controls', 'quarto-sidebar'); fab.setAttribute('aria-expanded', 'false');
+    fab.innerHTML = '<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span>Contents</span><span class="bdf-toc-where"></span>';
+    var backdrop = document.createElement('div'); backdrop.className = 'bdf-toc-backdrop';
+    var closeBtn = document.createElement('button'); closeBtn.type = 'button'; closeBtn.className = 'bdf-toc-close'; closeBtn.setAttribute('aria-label', 'Close contents');
+    closeBtn.innerHTML = '<svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>';
+    document.body.appendChild(backdrop); document.body.appendChild(fab);
+    if (sidebar) { sidebar.style.position = sidebar.style.position || ''; sidebar.appendChild(closeBtn); sidebar.setAttribute('aria-label', 'Contents'); }
+    function setOpen(on) {
+      document.body.classList.toggle('bdf-toc-open', on);
+      fab.setAttribute('aria-expanded', on ? 'true' : 'false');
+      if (on) { var c = toc.querySelector('li.bdf-current > a.nav-link'); if (c && sidebar) sidebar.scrollTop = Math.max(0, c.offsetTop - 80); closeBtn.focus({ preventScroll: true }); }
+      else if (document.activeElement && sidebar && sidebar.contains(document.activeElement)) fab.focus({ preventScroll: true });
+    }
+    fab.addEventListener('click', function () { setOpen(true); });
+    backdrop.addEventListener('click', function () { setOpen(false); });
+    closeBtn.addEventListener('click', function () { setOpen(false); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && document.body.classList.contains('bdf-toc-open')) setOpen(false); });
+    (mobile.addEventListener ? mobile.addEventListener('change', function (m) { if (!m.matches) setOpen(false); }) : null);
+    // show which chapter you are in on the button
+    var where = fab.querySelector('.bdf-toc-where');
+    function showWhere() {
+      var c = toc.querySelector('#TOC > ul > li.bdf-current > a.nav-link');
+      var label = c ? c.textContent.trim().replace(/^(Chapter\s+\d+)\s*[:.–—-].*$/i, '$1') : '';
+      where.textContent = label ? '· ' + label : '';
+    }
+    new MutationObserver(showWhere).observe(toc, { subtree: true, attributes: true, attributeFilter: ['class'] });
+    showWhere();
+
     /* Calmer scrolling when moving through the contents: slower, eased in and out */
     var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var scrollAnim = null;
@@ -225,6 +256,7 @@
       var target = document.getElementById(decodeURIComponent(a.hash.slice(1)));
       if (!target) return;
       e.preventDefault();
+      if (document.body.classList.contains('bdf-toc-open')) setOpen(false);
       var offset = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 96;
       calmScrollTo(Math.max(0, target.getBoundingClientRect().top + window.scrollY - offset));
       if (history.pushState) history.pushState(null, '', '#' + target.id);

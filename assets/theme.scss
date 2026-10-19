@@ -344,6 +344,31 @@ header#title-block-header { padding-top: 88px !important; margin-bottom: 0; }
   a:hover { background: $blush; } }
 @media (max-width: 991.98px) { .bdf-pdf { margin-top: 16px; } }
 
+// ---------- Contents on phones and tablets: a button that opens the sidebar as a sheet ----------
+.bdf-toc-fab, .bdf-toc-backdrop, .bdf-toc-close { display: none; }
+@media (max-width: 991.98px) {
+  .bdf-toc-fab { display: inline-flex; align-items: center; gap: 8px; position: fixed; z-index: 1040; left: 50%; transform: translateX(-50%);
+    bottom: calc(16px + env(safe-area-inset-bottom)); max-width: calc(100vw - 32px); padding: 11px 18px; border: 0; border-radius: 999px;
+    background: $ink; color: $white; font-family: $font-sans; font-feature-settings: normal; font-size: 15px; font-weight: 500; line-height: 1.2;
+    box-shadow: 0 6px 20px rgba(15, 43, 38, .22); cursor: pointer; transition: opacity .2s ease;
+    svg { flex: none; }
+    .bdf-toc-where { color: rgba(255,255,255,.72); font-weight: 400; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } }
+  body.bdf-toc-open .bdf-toc-fab { opacity: 0; pointer-events: none; }
+  .bdf-toc-backdrop { position: fixed; inset: 0; z-index: 1045; background: rgba(15, 43, 38, .35); }
+  body.bdf-toc-open .bdf-toc-backdrop { display: block; }
+  body.bdf-toc-open { overflow: hidden; }
+  body.bdf-toc-open #quarto-sidebar { display: flex !important; flex-direction: column; position: fixed !important; z-index: 1050; left: 0; right: 0; bottom: 0; top: auto !important;
+    width: auto !important; max-width: none !important; max-height: 82vh !important; min-height: 0 !important; height: auto !important; overflow-y: auto; margin: 0 !important;
+    padding: 22px 20px calc(20px + env(safe-area-inset-bottom)) !important; background: $white; border-radius: 16px 16px 0 0; box-shadow: 0 -8px 30px rgba(15, 43, 38, .18);
+    #TOC { display: block !important; }
+    .bdf-pdf { display: block !important; } }
+  body.bdf-toc-open .bdf-toc-close { display: inline-flex; position: sticky; top: 0; z-index: 2; order: -1; align-self: flex-end; flex: none; margin: -8px -6px -28px 0; width: 36px; height: 36px; align-items: center; justify-content: center;
+    border: 0; border-radius: 999px; background: $mist; color: $ink; cursor: pointer; }
+  #TOC #toc-title .bdf-hint { display: none; }
+  #TOC a.nav-link { font-size: 16px; line-height: 21px; padding-top: 6px !important; padding-bottom: 6px !important; }
+  .bdf-report #quarto-document-content { padding-bottom: 72px; }
+}
+
 // ---------- Charts ----------
 .bdf-chart { background: $mist; border-radius: 10px; padding: 18px clamp(14px, 3vw, 22px); margin: 1.8rem 0; line-height: 1.35; font-family: $font-sans; font-feature-settings: normal; }
 .bdf-chart-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 8px 16px; margin-bottom: 14px; }

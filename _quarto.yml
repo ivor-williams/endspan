@@ -9,7 +9,7 @@ project:
     - report/index.qmd
 
 website:
-  title: "{{< var name >}}"
+  title: "Better Dying Fund"
   site-url: https://betterdying.fund/
   description: "{{< var tagline >}}"
   search: false

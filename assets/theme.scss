@@ -363,7 +363,8 @@ header#title-block-header { padding-top: 88px !important; margin-bottom: 0; }
     #TOC { display: block !important; }
     .bdf-pdf { display: block !important; } }
   body.bdf-toc-open .bdf-toc-close { display: inline-flex; position: sticky; top: 0; z-index: 2; order: -1; align-self: flex-end; flex: none; margin: -8px -6px -28px 0; width: 36px; height: 36px; align-items: center; justify-content: center;
-    border: 0; border-radius: 999px; background: $mist; color: $ink; cursor: pointer; }
+    padding: 0 !important; border: 0; border-radius: 999px; background: $mist; color: $ink; cursor: pointer; line-height: 0; -webkit-appearance: none; appearance: none;
+    svg { display: block; width: 14px; height: 14px; margin: 0; } }
   #TOC #toc-title .bdf-hint { display: none; }
   #TOC a.nav-link { font-size: 16px; line-height: 21px; padding-top: 6px !important; padding-bottom: 6px !important; }
   .bdf-report #quarto-document-content { padding-bottom: 72px; }

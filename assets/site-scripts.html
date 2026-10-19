@@ -193,6 +193,38 @@
       if (link && li.querySelector(':scope > ul')) link.addEventListener('click', function () { opened = li; update(); });
     });
     update();
+
+    /* Calmer scrolling when moving through the contents: slower, eased in and out */
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var scrollAnim = null;
+    function ease(t) { return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
+    function calmScrollTo(y) {
+      if (scrollAnim) cancelAnimationFrame(scrollAnim);
+      var start = window.scrollY, dist = y - start;
+      if (reduceMotion || Math.abs(dist) < 2) { window.scrollTo({ top: y, behavior: 'instant' }); return; }
+      var dur = Math.min(1800, Math.max(800, Math.abs(dist) * 0.35)), t0 = null;
+      document.documentElement.style.scrollBehavior = 'auto';
+      function step(now) {
+        if (t0 === null) t0 = now;
+        var t = Math.min(1, (now - t0) / dur);
+        window.scrollTo(0, start + dist * ease(t));
+        if (t < 1) scrollAnim = requestAnimationFrame(step);
+        else { scrollAnim = null; document.documentElement.style.scrollBehavior = ''; }
+      }
+      scrollAnim = requestAnimationFrame(step);
+    }
+    // stop the animation if the reader takes over
+    ['wheel', 'touchstart', 'keydown'].forEach(function (ev) { window.addEventListener(ev, function () { if (scrollAnim) { cancelAnimationFrame(scrollAnim); scrollAnim = null; document.documentElement.style.scrollBehavior = ''; } }, { passive: true }); });
+    toc.addEventListener('click', function (e) {
+      var a = e.target.closest('a[href*="#"]');
+      if (!a || e.metaKey || e.ctrlKey || e.shiftKey || !a.hash || a.pathname !== location.pathname) return;
+      var target = document.getElementById(decodeURIComponent(a.hash.slice(1)));
+      if (!target) return;
+      e.preventDefault();
+      var offset = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 96;
+      calmScrollTo(Math.max(0, target.getBoundingClientRect().top + window.scrollY - offset));
+      if (history.pushState) history.pushState(null, '', '#' + target.id);
+    });
   }
 })();
 </script>

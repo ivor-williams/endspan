@@ -195,7 +195,7 @@ It is widely acknowledged that reducing the amount of people spending their last
 ::: pullquote
 *\"Nurses who work at the coal face here are constantly problem solving and building workarounds. They don\'t have any pathways, processes or supporters to bring their ideas to life, much less scale.\"*
 
-**Kirra Moser, MyStand.In**
+**Kirra Moser, entrepreneur and end-of-life researcher**
 :::
 
 It is understood that the nursing workforce in the UK is in a poor position to respond to the growing need for care. District nursing has seen a 43% decline in overall numbers since 2009[^c3-17]. Over the next 10 years approximately 33% of the consultants working in palliative medicine are likely to retire and exit the workforce[^c3-18]. It is not realistic to replace that level of specialism during that period of time. What is more realistic is the model of care itself. The leverage lies in re-distributing capability to generalists and carers who already deliver most palliative and end-of-life care (either formally or informally) rather than concentrating on the specialist core.
@@ -219,7 +219,7 @@ Across the UK, hospice data is not linked reliably to NHS or social care data. T
 :::
 
 ::: pullquote
-*\"\[Paid carers are\] terrified of making the wrong decision because they\'ve got no protection, so they just call 999.*
+*\"\[Paid carers are\] terrified of making the wrong decision because they\'ve often got no protection or back up, so they just call 999.*
 
 **Dr Libby Sallnow, University College London**
 :::

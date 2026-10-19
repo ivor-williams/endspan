@@ -10,3 +10,14 @@
 @font-face { font-family: "ABC Arizona Text"; src: url("fonts/ABCArizonaText-Bold.woff") format("woff"); font-weight: 700; font-style: normal; font-display: swap; }
 @font-face { font-family: "ABC Arizona Text"; src: url("fonts/ABCArizonaText-BoldItalic.woff") format("woff"); font-weight: 700; font-style: italic; font-display: swap; }
 
+/* ABC Arizona Sans, Dinamo web fonts: labels, sidebar, tables, pull quotes, buttons. */
+@font-face { font-family: "ABC Arizona Sans"; src: url("fonts/ABCArizonaSans-Thin.woff") format("woff"); font-weight: 200; font-style: normal; font-display: swap; }
+@font-face { font-family: "ABC Arizona Sans"; src: url("fonts/ABCArizonaSans-ThinItalic.woff") format("woff"); font-weight: 200; font-style: italic; font-display: swap; }
+@font-face { font-family: "ABC Arizona Sans"; src: url("fonts/ABCArizonaSans-Light.woff") format("woff"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: "ABC Arizona Sans"; src: url("fonts/ABCArizonaSans-LightItalic.woff") format("woff"); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: "ABC Arizona Sans"; src: url("fonts/ABCArizonaSans-Regular.woff") format("woff"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "ABC Arizona Sans"; src: url("fonts/ABCArizonaSans-RegularItalic.woff") format("woff"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "ABC Arizona Sans"; src: url("fonts/ABCArizonaSans-Medium.woff") format("woff"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "ABC Arizona Sans"; src: url("fonts/ABCArizonaSans-MediumItalic.woff") format("woff"); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: "ABC Arizona Sans"; src: url("fonts/ABCArizonaSans-Bold.woff") format("woff"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "ABC Arizona Sans"; src: url("fonts/ABCArizonaSans-BoldItalic.woff") format("woff"); font-weight: 700; font-style: italic; font-display: swap; }

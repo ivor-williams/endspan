@@ -18,7 +18,7 @@ $ochre: #D4A24C;
 $terracotta: #C45A3C;
 
 // Type. ABC Arizona Text is loaded from assets/fonts (see assets/fonts.css).
-// ABC Arizona Sans is not included yet (only trial files exist), so labels and buttons fall back to Inter.
+// ABC Arizona Sans (labels, sidebar, tables, quotes, buttons) is loaded from assets/fonts too.
 $font-text: "ABC Arizona Text", "Source Serif 4", Georgia, serif;
 $font-sans: "ABC Arizona Sans", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 $web-font-path: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap";

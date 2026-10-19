@@ -6,3 +6,5 @@ __pycache__/
 
 /.quarto/
 **/*.quarto_ipynb
+
+assets/fonts-pdf/

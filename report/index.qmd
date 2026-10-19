@@ -24,7 +24,10 @@ format:
       x: 2.2cm
       y: 2.4cm
     fontsize: 10.5pt
-    font-paths: ../assets/fonts
+    mainfont: "ABC Arizona Text"
+    font-paths:
+      - ../assets/fonts-pdf
+      - assets/fonts-pdf
     include-in-header: ../assets/report-pdf.typ
     output-file: report
 ---

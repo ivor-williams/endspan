@@ -26,6 +26,20 @@ jobs:
         with:
           version: 1.6.42
 
+      - name: Unlock PDF fonts (desktop licence, kept encrypted in the repo)
+        env:
+          FONTS_KEY: ${{ secrets.FONTS_KEY }}
+        run: |
+          if [ -n "$FONTS_KEY" ]; then
+            printf '%s' "$FONTS_KEY" > /tmp/fontkey
+            openssl enc -d -aes-256-cbc -pbkdf2 -pass file:/tmp/fontkey -in assets/fonts-pdf.tar.gz.enc | tar xzf - -C assets
+            rm /tmp/fontkey
+            pip install --quiet fonttools
+            python scripts/prepare_pdf_fonts.py assets/fonts-pdf
+          else
+            echo "FONTS_KEY not set: the PDF will use fallback fonts"
+          fi
+
       - name: Render site
         run: quarto render
 

@@ -43,3 +43,9 @@
 #show table.cell.where(y: 0): set text(weight: "bold")
 #show table.cell.where(x: 0): set text(weight: "bold")
 #show table: it => block(fill: rgb("#DDEAE4"), radius: 5pt, inset: (x: 11pt, y: 5pt), width: 100%, it)
+
+// Sans text (ABC Arizona Sans): tables, captions and the contents
+#let bdf-sans = ("ABC Arizona Sans", "Inter", "Libertinus Serif")
+#show table: set text(font: bdf-sans, size: 9.5pt)
+#show outline: set text(font: bdf-sans)
+#show footnote.entry: set text(font: bdf-sans)

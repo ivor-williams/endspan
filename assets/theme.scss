@@ -253,6 +253,62 @@ header#title-block-header { padding-top: 88px !important; margin-bottom: 0; }
   tbody tr:last-child td { border-bottom: 0; }
   strong { font-weight: inherit; } }
 
+// Table variants: no bold column, or bold last column
+#quarto-content table.bdf-plain td:first-child { font-weight: 400; color: $ink-75; }
+#quarto-content table.bdf-bold-last td:first-child { font-weight: 400; color: $ink-75; }
+#quarto-content table.bdf-bold-last td:last-child { font-weight: 600; color: $ink; }
+#quarto-content table.bdf-plain td p, #quarto-content table.bdf-bold-last td p { margin: 0 0 10px; } 
+#quarto-content table.bdf-plain td p:last-child { margin-bottom: 0; }
+#quarto-content table caption:empty { display: none; }
+
+// Seven qualities: one sage square each, in the table-header type
+.qualities { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin: 1.6rem 0 2rem; counter-reset: q; }
+.quality { position: relative; background: $sage; border-radius: 10px; padding: 18px; min-height: 150px; counter-increment: q;
+  p { font-family: $font-sans; font-feature-settings: normal; font-size: 17px; font-weight: 700; line-height: 1.4; color: $ink; margin: 0; } }
+.quality::before { content: counter(q); display: block; font-family: $font-sans; font-size: 14px; font-weight: 700; letter-spacing: .08em; color: $terracotta; margin-bottom: 10px; }
+
+// Emerging opportunities (Chapter 5): one card each
+.bdf-opps { display: grid; gap: 16px; margin: 1.8rem 0; }
+.bdf-opp { background: $mist; border-radius: 10px; padding: 22px 26px;
+  .bdf-opp-n { display: block; font-family: $font-sans; font-feature-settings: normal; font-size: 14px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: $terracotta; }
+  h3 { margin: 8px 0 14px !important; color: $ink !important; }
+  p, li { font-family: $font-sans; font-feature-settings: normal; font-size: 16px; line-height: 1.5; color: $ink-75; }
+  p strong { color: $ink; }
+  ul { margin: 0; padding-left: 1.1em; } li { margin: 0 0 4px; } }
+
+// Call to action button in the report
+#quarto-content a.bdf-cta { display: inline-flex; align-items: center; margin: 8px 0 24px; padding: 12px 20px; border-radius: 6px; background: $terracotta; color: $white !important; font-family: $font-sans; font-weight: 500; font-size: 16px; text-decoration: none; }
+#quarto-content a.bdf-cta:hover { background: darken($terracotta, 6%); }
+
+// Zoomable map
+.bdf-zoom { margin: 1.8rem 0; }
+.bdf-zoom figure { margin: 0; }
+.bdf-zoomer { position: relative; height: min(78vh, 720px); background: $white; border: 1px solid $stone; border-radius: 10px; overflow: hidden; cursor: grab; touch-action: none; user-select: none; }
+.bdf-zoomer.dragging { cursor: grabbing; }
+.bdf-zoomer img { position: absolute; top: 0; left: 0; transform-origin: 0 0; max-width: none !important; width: auto; height: auto; pointer-events: none; }
+.bdf-zoom-tools { position: absolute; right: 12px; top: 12px; display: flex; gap: 6px; z-index: 2; }
+.bdf-zoom-tools button { width: 34px; height: 34px; border-radius: 8px; border: 1px solid $fog; background: rgba($white,.92); font-family: $font-sans; font-size: 18px; line-height: 1; color: $ink; cursor: pointer; }
+.bdf-zoom-tools button.wide { width: auto; padding: 0 10px; font-size: 13px; font-weight: 500; }
+.bdf-zoom-tools button:hover { background: $blush; }
+.bdf-zoom figcaption, .bdf-zoom .figure-caption { font-family: $font-sans; font-feature-settings: normal; font-size: 13px; font-weight: 500; color: $ink-68; margin-top: 10px; }
+
+// Interactive charts (assets/viz.js)
+.bdf-viz { margin: 1.4rem 0 1.8rem; font-family: $font-sans; font-feature-settings: normal; }
+.case-study .bdf-viz { margin: 10px 0 14px; }
+.bdf-viz-frame { background: $mist; border-radius: 10px; padding: 18px clamp(14px, 3vw, 22px); }
+.case-study .bdf-viz-frame { background: $white; }
+.case-study .bdf-viz p.bdf-viz-source { font-size: 13px; font-weight: 500; color: $ink-68; margin: 10px 0 0; }
+.bdf-viz-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 8px 16px; margin-bottom: 10px; }
+.bdf-viz-title { font-size: 13px; font-weight: 500; color: $ink; max-width: 46ch; }
+.bdf-viz-tools { display: flex; gap: 6px; }
+.bdf-viz-tools button { cursor: pointer; background: transparent; border: 1px solid $fog; border-radius: 999px; font-size: 12px; font-weight: 500; padding: 3px 10px; color: $ink-75; }
+.bdf-viz-tools button:hover, .bdf-viz-tools button[aria-pressed="true"] { background: $blush; color: $ink; }
+.bdf-viz svg { display: block; width: 100%; height: auto; overflow: visible; }
+.bdf-viz svg text { font-family: $font-sans; }
+.bdf-viz-source { font-size: 13px; font-weight: 500; color: $ink-68; margin: 10px 0 0; }
+.bdf-viz-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 12.5px; color: $ink-75; margin-top: 8px; }
+.bdf-viz-legend i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+
 // Footnotes (Report / Footnote)
 .footnotes { font-family: $font-sans; font-feature-settings: normal; font-size: 14px; line-height: 1.5; color: $ink-75;
   li::marker { color: $terracotta; } }

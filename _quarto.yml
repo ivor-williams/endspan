@@ -4,6 +4,7 @@ project:
   resources:
     - assets/fonts/*.woff
     - assets/home.js
+    - assets/viz.js
   render:
     - index.qmd
     - report/index.qmd

@@ -4,7 +4,7 @@ The previous chapters set out what a good death looks like (Chapter 2), why the 
 
 The eight areas are hypotheses, not recommendations. Each is framed as an open question, supported by evidence from the earlier chapters, with an initial view of how it could be funded. In Phase 2 we will narrow them to five or six and develop each into a proposition a coalition could fund. Each proposition will set out the problem, a theory of change, indicative cost, the type of intervention, and how progress would be measured. The ratings in this chapter are our provisional judgements, based on the evidence in this report. They are there to be tested and challenged.
 
-**How we chose the areas**
+## How we chose the areas
 
 We looked for areas where a coalition would add something new, not repeat what the system already funds. Each area had to meet five tests. It should:
 
@@ -38,7 +38,7 @@ Three topics are outside our scope entirely:
 
 -   **Hospice-based care.** Hospices are central to palliative care, and much of their work already has established funding. We include hospice care where it reaches into people\'s homes and communities, which is where we think a coalition\'s money can add most.
 
-**How to read the ratings**
+## How to read the ratings
 
 Each area carries four ratings, which should be read together.
 
@@ -72,11 +72,96 @@ Each area is also matched to one or more of four funding instruments, drawing on
 
 Whatever the instrument, we think the exit should be designed at the start: who will sustain the work, on what evidence, and under what conditions.
 
-**Emerging opportunities**
+## Emerging opportunities
 
-The table below sets out the five areas, each framed as a question. Taken together, the areas run from long-term work on culture and community, where leverage is greatest and evidence thinnest, through to well-evidenced changes in how services connect.
+Below we set out the five areas, each framed as a question. Taken together, the areas run from long-term work on culture and community, where leverage is greatest and evidence thinnest, through to well-evidenced changes in how services connect.
 
-[TABLE]
+::: {.bdf-opps}
+::: {.bdf-opp}
+[Opportunity 1]{.bdf-opp-n}
+
+### How might we give carers of dying people the preparation, peers and point of contact that new parents receive?
+
+**The opportunity.** Make caring for a dying person a supported, survivable and meaningful role: prepared for in advance, held by a surrounding community, and do-able with working life. Comparing support for new parents – NCT, health visiting - with support for end of life carers sets an ambition: the death of one's family is a predictable life event that should have a universally accessible support.
+
+**What could emerge**
+
+- NCT-analogue preparation: structured courses triggered by diagnosis or frailty
+- Network-based support resourcing the whole informal circle, not a single named carer
+- Respite designed for end-of-life timescales
+- Workplace infrastructure and support
+- Community bridge roles: carers → services
+- Canada's Compassionate Care Benefit and Sweden's care leave as policy benchmarks
+
+:::
+
+::: {.bdf-opp}
+[Opportunity 2]{.bdf-opp-n}
+
+### How might we organise care for the dying as a 3-year transition rather than a 3-day event?
+
+**The opportunity.** Make acknowledging, preparing for and directing one's own dying the default experience: conversations start early and continue at diagnosis and frailty milestones, legacy and meaning can be explored with enough time, improving quality of life.
+
+**What could emerge**
+
+- Medical technology for tracking health and deterioration towards active dying
+- Conversation triggers at diagnosis and frailty milestones
+- Personal health budgets as a fast-track alternative to CHC at end of life
+- Design for information imbalance and failing capacity
+
+:::
+
+::: {.bdf-opp}
+[Opportunity 3]{.bdf-opp-n}
+
+### How might care homes become places recognised and resourced to support dying, not only living?
+
+**The opportunity.** Recognise, equip and redesign care homes as primary places of dying - from strengthening today's homes to re-imagining what services and support are delivered by them.
+
+**What could emerge**
+
+- Commissioning recognition of care homes as end-of-life providers
+- Better approaches to risk management to avoid unnecessary emergency admissions
+- Blended development finance for new institutional forms: intergenerational settings mixing student accommodation and supported living
+- The care home as a community hub for living well and dying well rather than sequestered space for the old
+
+:::
+
+::: {.bdf-opp}
+[Opportunity 4]{.bdf-opp-n}
+
+### How might we create an end-of-life care talent pipeline that attracted people the way Now Teach has changed teaching?
+
+**The opportunity.** Change who enters end-of-life care and why they stay: a career that talented, compassionate people choose, with identity, cohort and progression.
+
+**What could emerge**
+
+- A graduate recruitment scheme for care work
+- Accreditation making end-of-life capability a mark of quality
+- Accommodation-linked entry roles addressing migrant realities
+- Professionalising the doula role without losing flexibility
+- Grief support and supervision as retention infrastructure
+
+:::
+
+::: {.bdf-opp}
+[Opportunity 5]{.bdf-opp-n}
+
+### How might a proven end-of-life model travel with everything the next place needs to adopt it?
+
+**The opportunity.** Fund the infrastructure rather than the interventions: the evidence, measurement and adoption muscle. Every model backed by the collaborative arrives ready for the Adult Social Care Commissioner or CFO of an NHS trust.
+
+**What could emerge**
+
+- Evaluation and peer learning offers
+- Shadow commissioning packages funded alongside every pilot
+- A non-government, non-market sector data spine
+- A good-death measure usable at patient, carer and network level
+- A population-need measurement tool for ICBs
+
+:::
+
+:::
 
 As we develop many of these into propositions, we will explore the problem they address, what makes them timely, what already exists and what is emerging, the strength of its leverage within the system, and the philanthropic instruments and exit routes that fit it.
 

@@ -76,7 +76,14 @@ Our analysis for this report, using the 360Giving database. found that philanthr
 
 Excluding a spike of grant-making by The Julia Rausing Trust in 2023, the underlying grant-making trend from 2019--2025 is flat or declining in real terms.The field is also dominated in volume by very small grants, just £3,8000 on average. A few larger grants however make up the majority of the value.
 
+::: {.content-visible when-format="html"}
+::: {.bdf-viz data-viz="grant-sizes"}
+:::
+:::
+
+::: {.content-visible unless-format="html"}
 ![](media/figure-ea74bac638.png)
+:::
 
 Geographically speaking, London and the South East dominate funding. For example, We identified £23m of grants within London over the period, compared to£3.6m for the North East and £2.8m for the West Midlands. Funding in Northern Ireland appears to have collapsed over the period to just £280k.
 
@@ -98,12 +105,14 @@ Many people we spoke to as part of the research described how current philanthro
 **Lisa Kennedy, NHS Greater Glasgow and Clyde**
 :::
 
-*Grant recipients***\
-**Looking directly at funded organisations\' accounts gives us a richer picture beyond the 360 Giving database. Our analysis of a sample of 17 hospices surfaces 262 unique named funders. Of these, only 22 (7%) appear at more than one hospice, and only 8 (2.5%) appear at four or more. Very few are on 360Giving. The pattern is predominantly one-to-one: a funder gives to one hospice. The philanthropic ecosystem is not coordinated but an aggregation of hundreds of independent bilateral relationships.
+**Grant recipients**
+
+Looking directly at funded organisations\' accounts gives us a richer picture beyond the 360 Giving database. Our analysis of a sample of 17 hospices surfaces 262 unique named funders. Of these, only 22 (7%) appear at more than one hospice, and only 8 (2.5%) appear at four or more. Very few are on 360Giving. The pattern is predominantly one-to-one: a funder gives to one hospice. The philanthropic ecosystem is not coordinated but an aggregation of hundreds of independent bilateral relationships.
 
 ::: case-study
-**Case study: Compassionate Neighbours, St Joseph\'s Hospice, London\
-**Local people were trained as \"Compassionate Neighbours\" and matched with isolated people near the end of life to build ordinary, reciprocal friendships. Begun at St Joseph\'s Hospice, Hackney, in 2014 and scaled with Nesta/DCMS funding; the 2019 evaluation counted 901 neighbours supporting 541 community members across eight hospices, now around 14. Its own evaluation found the volunteers gained as much as those they visited.
+**Case study: Compassionate Neighbours, St Joseph\'s Hospice, London**
+
+Local people were trained as \"Compassionate Neighbours\" and matched with isolated people near the end of life to build ordinary, reciprocal friendships. Begun at St Joseph\'s Hospice, Hackney, in 2014 and scaled with Nesta/DCMS funding; the 2019 evaluation counted 901 neighbours supporting 541 community members across eight hospices, now around 14. Its own evaluation found the volunteers gained as much as those they visited.
 :::
 
 The funding is dominated by small-to-medium trusts with no apparent strategic intent around EOL specifically. Many named grants fund discrete, tangible items - beds, scanners, syringe drivers, IT equipment, staff training bursaries - or core costs - rather than service models, infrastructure or innovation. This reflects funders responding to hospice asks rather than deploying capital against a theory of change.
@@ -113,46 +122,70 @@ Our evidence surfaces almost no visible capital directed at community-based or s
 Geographic concentration is notable. St Christopher\'s alone names over 80 funders - more than all the non-London hospices combined. London hospices attract a distinct funder profile: major City law firms, investment banks, auction houses, and large national foundations. Regional and Scottish hospices draw almost entirely on local trusts and community foundations, with much smaller individual grant values.
 
 ::: case-study
-**Funder profiles**
+**Donor map**
 
-The following are indicative of philanthropic funders that range from family trusts to national foundations.
+::: {.content-visible when-format="html"}
+::: {.bdf-viz data-viz="donor-map"}
+:::
+:::
 
-**National Lottery Community Foundation**
-
-TNLCF is the biggest single funder by volume. It has two giving modes: a high-frequency small grants machine (190 grants under £25k, just 10% of value), and a much smaller but more interesting innovation funder at the £300k--£500k level. The large grants (56 grants over £100k delivering 75% of value) include Compassionate Neighbours, Inside-Out Hospice, Palliative Care Coordinator for Homeless People but those programmes peaked in 2015--2019 and haven\'t returned at scale. Interestingly they funded the End of Life Care Incubator, an innovative model which received £1.88m across 3 grants from TNLCF in 2017--18.
-
-**Julia Rausing Trust**
-
-Julia Rausing Trust has two giving models - targeted grants, and then a single round of \'core costs\' funding in 2023. No grants have been made since. The 2023 grants look like a focussed sector stabilisation effort post-COVID.
-
-**Wolfson Foundation**
-
-Wolfson is the most consistent and systematic funder in the dataset. It funds a series of hospices every year across a broad geographic reach. It is largely an infrastructure and workforce funder: buildings, equipment direct to hospices, and sector-wide workforce development channelled through Hospice UK (£1.4m across three grants).
-
-**Garfield Weston Foundation**
-
-Garfield Weston has a wide reach - funding 80+ distinct organisations with a median of £25k. The one exception is a £280k grant to Cicely Saunders International - a research and policy body rather than a direct service provider.
-
-**Albert Hunt Trust**
-
-Funds 8 of the 17 hospices in the sample with no clear geographic constraint. Grant values appear to be in the £10k--£25k range.
-
-**Edward Gostling Foundation**
-
-A funder in the sample of hospice accounts making a grant explicitly designed to fund a service model (Thames Hospice\'s virtual ward, £1.5m over several years) rather than a capital item or staff cost. Also appears at Overgate\'s Big Build Appeal.
-
-**City Bridge Foundation**
-
-London-focused but making multi-year, programme-level grants (£231k over 5 years to St Christopher\'s for child bereavement therapy; £49k to St Joseph\'s for welfare benefits). Appears at 4 hospices. It gives multi-year, service-level funding.
-
-**St James\'s Place Foundation**
-
-Appears on 4 sampled hospices\' accounts and operates a named programme through Hospice UK (Dying at Home with Dignity, 14 grants in one year). This is a corporate foundation using a national intermediary to deploy at scale across the sector, rather than giving directly.\
-\
+::: {.content-visible unless-format="html"}
 ![](media/figure-f454dccc55.png)
+:::
 
 *This Donor Map (v1) plots the 10 largest funders of adult palliative and end-of-life care (2015--2025) on two axes: (horizontally) whether their grants sustain the existing system or shift it, against (vertically) how much capital they deployed, with dot area showing average grant size.*
 :::
+
+The following funder profiles are indicative of philanthropic funders that range from family trusts to national foundations.
+
+::: case-study
+**Funder profile: National Lottery Community Foundation**
+
+TNLCF is the biggest single funder by volume. It has two giving modes: a high-frequency small grants machine (190 grants under £25k, just 10% of value), and a much smaller but more interesting innovation funder at the £300k--£500k level. The large grants (56 grants over £100k delivering 75% of value) include Compassionate Neighbours, Inside-Out Hospice, Palliative Care Coordinator for Homeless People but those programmes peaked in 2015--2019 and haven\'t returned at scale. Interestingly they funded the End of Life Care Incubator, an innovative model which received £1.88m across 3 grants from TNLCF in 2017--18.
+:::
+
+::: case-study
+**Funder profile: Julia Rausing Trust**
+
+Julia Rausing Trust has two giving models - targeted grants, and then a single round of \'core costs\' funding in 2023. No grants have been made since. The 2023 grants look like a focussed sector stabilisation effort post-COVID.
+:::
+
+::: case-study
+**Funder profile: Wolfson Foundation**
+
+Wolfson is the most consistent and systematic funder in the dataset. It funds a series of hospices every year across a broad geographic reach. It is largely an infrastructure and workforce funder: buildings, equipment direct to hospices, and sector-wide workforce development channelled through Hospice UK (£1.4m across three grants).
+:::
+
+::: case-study
+**Funder profile: Garfield Weston Foundation**
+
+Garfield Weston has a wide reach - funding 80+ distinct organisations with a median of £25k. The one exception is a £280k grant to Cicely Saunders International - a research and policy body rather than a direct service provider.
+:::
+
+::: case-study
+**Funder profile: Albert Hunt Trust**
+
+Funds 8 of the 17 hospices in the sample with no clear geographic constraint. Grant values appear to be in the £10k--£25k range.
+:::
+
+::: case-study
+**Funder profile: Edward Gostling Foundation**
+
+A funder in the sample of hospice accounts making a grant explicitly designed to fund a service model (Thames Hospice\'s virtual ward, £1.5m over several years) rather than a capital item or staff cost. Also appears at Overgate\'s Big Build Appeal.
+:::
+
+::: case-study
+**Funder profile: City Bridge Foundation**
+
+London-focused but making multi-year, programme-level grants (£231k over 5 years to St Christopher\'s for child bereavement therapy; £49k to St Joseph\'s for welfare benefits). Appears at 4 hospices. It gives multi-year, service-level funding.
+:::
+
+::: case-study
+**Funder profile: St James\'s Place Foundation**
+
+Appears on 4 sampled hospices\' accounts and operates a named programme through Hospice UK (Dying at Home with Dignity, 14 grants in one year). This is a corporate foundation using a national intermediary to deploy at scale across the sector, rather than giving directly.
+:::
+
 
 **Social finance**\
 Repayable, social capital is also at play in the sector. There are two significant examples both run as a partnership between Macmillan and Social Finance UK, with outcomes-linked top-up support from government Commissioning Better Outcomes Fund and the Life Chances Fund: £12m Care and Wellbeing Fund; £36m Macmillan Social Investment Programme for End of Life Care (2021-present). Both funds use outcomes-based contracting to try and fix systemic issues in end of life care: spend concentrated in acute care, little capacity within the system for innovation, and poor join-up between health and social care.
@@ -189,7 +222,14 @@ Taken together, our analysis indicates that the majority of money active within 
 
 The best way to understand this \'messy, missing middle\' is through the three horizons systems change framework developed by Bill Sharpe.[^c4-13] All three horizons are always present at any one point in time.
 
+::: {.content-visible when-format="html"}
+::: {.bdf-viz data-viz="horizons"}
+:::
+:::
+
+::: {.content-visible unless-format="html"}
 ![](media/figure-828ec04e01.png)
+:::
 
 **The first horizon \'business as usual\'** refers to the prevailing, dominant system.This horizon is under increasing pressure and showing signs of strain because the world is changing. In the end of life care system this is the pattern of emergency A&E admissions, unmet palliative care needs, chronic under-funding of hospices, and over-burdened carers. This is what public money runs, and what legacies and donations typically go into sustaining. Much private finance is also active here, financing clinical innovation and proven products like care homes. And this is the system that individuals pay to receive care within.
 
@@ -225,6 +265,8 @@ The evidence suggests a case for a new kind of philanthropist investment in this
 | Grant funding cliff-edges | Philanthropic exit designed-in |
 | Fills public funding gaps | First-loss capital builds case for public investment |
 | Charitable-only | Blended stack of charitable, recyclable, public and private finance as needed |
+
+: {.bdf-bold-last}
 
 ::: pullquote
 *\"\[We need\] long term, 10 years plus, funding programmes that allow time for authentically building relational models and multiple cycles of innovation.\"*
@@ -265,7 +307,7 @@ Purposeful Ventures works from the premise that existing non-profits often strug
 :::
 
 ::: case-study
-**Philanthrop case study: A pooled funder platform**
+**Philanthropy case study: A pooled funder platform**
 
 The Thriving Communities Fund for National Academy for Social Prescribing brought seven national bodies: Arts Council, Sport England, Natural England, NHS England and others into a single £1.8m pot to fund community social-prescribing groups, blended with local money. It backed 37 projects reaching over 10,000 people, deliberately concentrated on the most deprived and underserved communities. The fund helped build drive the rapid uptake of social prescribing at a time when it was still a new and innovative concept for many people and was only just being written into national health policy, and had wider benefits for the connectivity of health and funder ecosystems.[^c4-14]
 :::

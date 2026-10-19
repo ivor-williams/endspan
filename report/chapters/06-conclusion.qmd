@@ -14,7 +14,7 @@ This is an argument for philanthropy, which is narrow and specific. Philanthropi
 
 It is important to note we are not proposing to do this *to* the sector, but *with* it. The models that need to scale already exist in places, and are held by the teams who built them. What they often lack is capital, patient enough to prove them and coordinated enough to move beyond the original place that created them. Equally true, is that some of what is needed does not exist yet and will need to be seeded, and built. This reinforces the need for a collaborative approach rather than a single funder.
 
-**Next steps for Phase 2**
+## Next steps for Phase 2
 
 Between September and November we will turn what has surfaced into propositions a donor collaborative could fund.
 
@@ -24,8 +24,8 @@ One challenge we bring into the next phase is that the evidence easiest to produ
 
 Beyond the immediate next phase, in the early winter we will convene sector leaders, practitioners, commissioners, funders and people who have cared for someone at the end of life, to stress-test the propositions before anything is committed. The revised thesis and map will then be published openly.
 
-**If something here is wrong, incomplete, or missing what you would fund first, we want to hear it, and we would like you included**
+If something here is wrong, incomplete, or missing what you would fund first, we want to hear it, and we would like you included.
 
-**Contact Polly Mackenzie at polly@zinc.vc**
+[Get in touch](../index.html#get-involved){.btn-bdf .bdf-cta}
 
 [^c6-1]: [10 Year Health Plan for England: fit for the future - GOV.UK](https://www.gov.uk/government/publications/10-year-health-plan-for-england-fit-for-the-future)

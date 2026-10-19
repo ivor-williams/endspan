@@ -24,23 +24,46 @@ We are aware that the term \"a good death\" is a term that is critiqued and deba
 
 We recognise that a system built around a single model of a good death risks perpetuating exclusion and marginalisation. Nevertheless we believe that a working and shared - if imperfect - description of a \'good death\' is needed to provide a unifying goal for investment and work in the sector. Without this, coordination and focus become almost impossible.
 
-### 7 defining qualities we have identified
+## 7 defining qualities we have identified
 
-Here, we set out the seven qualities we have identified in the literature and our field work that will shape the objectives of the donor coalition. Our goal is that palliative and end-of-life care with these qualities should be available to everyone regardless of diagnosis, class, ethnicity, geography, age or disability.\
+Here, we set out the seven qualities we have identified in the literature and our field work that will shape the objectives of the donor coalition. Our goal is that palliative and end-of-life care with these qualities should be available to everyone regardless of diagnosis, class, ethnicity, geography, age or disability.
 
-| Awareness of death, dying and loss is cultivated as a core competency in life | Dying and caring are social experiences, held in community |
-|----|----|
-| A person\'s agency and preferences are sustained and honoured through an ongoing, relational and family-inclusive process | Care is connected and coordinated across formal services and the informal networks around a person |
-| People experience physical comfort and safety | People experience existential and psychological peace |
-| Death is recognised as having lasting meaning and value for everyone affected |  |
+::: qualities
+::: quality
+Awareness of death, dying and loss is cultivated as a core competency in life
+:::
+
+::: quality
+Dying and caring are social experiences, held in community
+:::
+
+::: quality
+A person's agency and preferences are sustained and honoured through an ongoing, relational and family-inclusive process
+:::
+
+::: quality
+Care is connected and coordinated across formal services and the informal networks around a person
+:::
+
+::: quality
+People experience physical comfort and safety
+:::
+
+::: quality
+People experience existential and psychological peace
+:::
+
+::: quality
+Death is recognised as having lasting meaning and value for everyone affected
+:::
+
+:::
 
 Below, we set out the rationale for these choices, the tensions inherent in them, and how we will approach measuring progress against these goals during the lifetime of this donor coalition.
 
-### The tensions of a \'good death\' 
+## The tensions of a \'good death\'
 
-1.  ***A medical model vs. a social model of death***
-
-*awareness of death, dying and loss is cultivated as a core competency in life*
+### 1. A medical model vs. a social model of death
 
 ::: pullquote
 *\"Death, dying, loss and caregiving is a social issue with a medical component, not the other way around. "***Dr Julian Abel, Compassionate Communities UK**
@@ -58,9 +81,7 @@ However, there are valid critiques and pitfalls within this approach. First, it 
 
 We will navigate these tensions by seeking progress and improvements within the medical system as well as more broadly, with a particular focus on primary care, most often the bridge between health system and community.
 
-2.  ***Services vs. \'communities\'***
-
-*Dying and caring are social experiences, held in community*
+### 2. Services vs. \'communities\'
 
 ::: pullquote
 *\"For care to be impactful, it needs to tap into that 95% of time dying people spend away from services.\"*
@@ -88,9 +109,7 @@ We will navigate this tension by treating community as an asset that is unevenly
 The only UK charity dedicated to supporting people who are dying alone in hospital. It trains and supports NHS trusts to run their own teams of \'Butterfly Volunteers\' who sit with patients in their final days, and runs a free pre-bereavement helpline. Founded by Liz Pryor after her mother\'s death in 2018, it now works with over 20 healthcare organisations; by the end of 2025, more than 50,000 people have been supported.
 :::
 
-3.  ***Agency vs. relationality***
-
-> *A person\'s agency and preferences are sustained and honoured through an ongoing, relational and family-inclusive process*
+### 3. Agency vs. relationality
 
 ::: pullquote
 *\"A good death reflects so far as possible the preferences and values of each individual whilst remembering the importance of relationships with others in terms of shaping preferences.\"*
@@ -111,16 +130,12 @@ This carries risks in both directions. The language of agency can assume a ratio
 We will navigate this tension by recognising that agency is not the same as autonomy, and that including the family is not always the same as honouring the person. We will judge success by whether people\'s wishes were known and respected as they changed, not by whether a plan was completed. Models that make carers full partners in care, such as the Carers Trust\'s Triangle of Care, show what this could look like. Triangle of Care has not yet been extended to palliative care.
 
 ::: case-study
-**Case study:** **Triangle of Care, Carers Trust**
+**Case study: Triangle of Care, Carers Trust**
 
 A national standard that makes the unpaid carer a full partner alongside the patient and the professional. Developed by carers and launched in 2010, it holds providers to six \'carers included\' standards, assessed through a star-rated accreditation scheme. Now working with over 40 NHS mental health trusts and extending into dementia and acute care, but not palliative care yet.
 :::
 
-4.  ***Physical comfort vs. psycho-spriritual peace***
-
-People experience physical comfort and safety
-
-People experience existential and psychological peace
+### 4. Physical comfort vs. psycho-spiritual peace
 
 ::: pullquote
 *\"If you walk into the room and there is a sense of peace - there may be a bit of pain, there may be an aspect of information not being met - \[that is when\] you know that things are okay.\"*
@@ -140,9 +155,7 @@ This creates problems of its own. Peace is subjective and culturally specific, a
 
 We will navigate this tension by treating the balance between comfort and alertness as the dying person\'s choice, not a clinical default, and by measuring both qualities from the perspective of the person and those closest to them rather than how the death looked to others.
 
-5.  ***Trauma vs. meaning***
-
-> *Death is recognised as having lasting meaning and value for everyone affected*
+### 5. Trauma vs. meaning
 
 ::: pullquote
 *\"Loss is just at its core distressing. The idea of people who we love dying is just* *something that no amount of death café and death positivism will make better.\"*
@@ -176,15 +189,38 @@ Measures and numerical targets are particularly challenging in complex, non-line
 **Professor Katherine Sleeman, Kings College London**
 :::
 
-**What is measured now**
+### What is measured now
 
 Different approaches and metrics are currently being used to measure outcomes at end of life. Hospices UK provides an overview,[^c2-3] and our analysis suggests the most important ones are:
 
-[TABLE]
++------------------------------------------------------+------------------------------------------------------+
+| Individual and service measures                      | System measures                                      |
++======================================================+======================================================+
+| The Integrated Palliative Outcomes Scale             | The Neighbourhood Health Framework[^c2-7] is one of  |
+| (IPOS)[^c2-6] is the most widely-used measurement    | the government's headline health policies. It has a  |
+| framework - a survey of 10 questions for the dying   | named goal for end of life care 'better identify     |
+| person. It both measures the wellbeing of the        | people coming to the end of life and improve access  |
+| person, and the effectiveness of the service. It is  | to services so people can die in a place of their    |
+| validated across physical, psychological and social  | choosing', with two targets: "By March 2029, we aim  |
+| comfort and distress. While CQC requires services to | to: increase the number of people identified as      |
+| use it, it is applied inconsistently and not across  | approaching end of life by 10%; reduce non-elective  |
+| all settings.                                        | admissions and bed days of one day or over for       |
+|                                                      | people in the end of life cohort by 10%".            |
+|                                                      |                                                      |
+| Outcomes-based contracts are used by some ICBs and   | The Modern Service Framework[^c2-9] is a forthcoming |
+| hospitals to support innovation in end of life care, | NHS plan for end of life care, aiming to improve     |
+| here the primary outcome they look for is days of    | quality and consistently commission palliative care. |
+| hospital beds avoided.[^c2-8]                        | Within the framework there will be both              |
+|                                                      | patient-focused and system-level indicators, with    |
+|                                                      | the proportion of people dying in their preferred    |
+|                                                      | place as a headline system measure.                  |
++------------------------------------------------------+------------------------------------------------------+
+
+: {.bdf-plain}
 
 Alongside these headline measures, there are also research and audit programmes that review outcomes to drive best practice. The National Audit of Care at the End of Life is the most important, though the measures it provides are largely about the medical system as proxies for a good death (e.g. proportion of deaths expected by clinical staff, proportion of clinical notes with evidence that the patient had participated in personalised care conversations).[^c2-4] The National Survey of Bereaved People (VOICES) once offered a more complete population-level view of quality but no longer runs, a loss several interviewees noted.
 
-**Possible measures for learning and improvement**
+### Possible measures for learning and improvement
 
 Developing appropriate outcomes to measure a \'good death\' will require careful work and iteration, which will be a core part of how our donor coalition operates in the years to come. However, provisionally, we offer some illustrative suggestions below with the aim of clarifying what we mean and what kind of interventions may be effective.
 
@@ -207,3 +243,11 @@ Developing appropriate outcomes to measure a \'good death\' will require careful
 [^c2-4]: <https://www.nacel.nhs.uk/outputs>
 
 [^c2-5]: [Understanding death literacy across the United Kingdom \| King\'s College London](https://www.kcl.ac.uk/research/understanding-death-literacy-across-the-united-kingdom)
+
+[^c2-6]: [Palliative care Outcome Scale (POS)](https://pos-pal.org/)
+
+[^c2-7]: [Neighbourhood health framework - GOV.UK](https://www.gov.uk/government/publications/neighbourhood-health-framework/neighbourhood-health-framework)
+
+[^c2-8]: [The Care and Wellbeing Fund: End of investment report \| Social Finance](https://www.socialfinance.org.uk/evidence/the-care-and-wellbeing-fund-a-retrospective)
+
+[^c2-9]: [Modern Service Framework for Palliative Care and End-of-Life Care: interim update](https://questions-statements.parliament.uk/written-statements/detail/2026-06-04/hcws88)

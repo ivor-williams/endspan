@@ -155,7 +155,7 @@
 
   /* Case studies: "Case study: Name" becomes a label and a title */
   document.querySelectorAll('.case-study > p:first-child > strong:first-child').forEach(function (s) {
-    var m = s.textContent.match(/^\s*((?:funding\s+)?case study)\s*[:.–—-]\s*(.+)$/i);
+    var m = s.textContent.match(/^\s*((?:funding\s+|philanthropy\s+)?case study|funder profile)\s*[:.–—-]\s*(.+)$/i);
     if (!m) return;
     s.textContent = m[1];
     var ti = document.createElement('span'); ti.className = 'bdf-box-title'; ti.textContent = m[2];
@@ -196,3 +196,4 @@
   }
 })();
 </script>
+<script src="/assets/viz.js?v=1" defer></script>

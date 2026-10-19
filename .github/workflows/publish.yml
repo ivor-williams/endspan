@@ -27,6 +27,7 @@ jobs:
           version: 1.6.42
 
       - name: Unlock PDF fonts (desktop licence, kept encrypted in the repo)
+        continue-on-error: true
         env:
           FONTS_KEY: ${{ secrets.FONTS_KEY }}
         run: |
@@ -37,11 +38,17 @@ jobs:
             pip install --quiet fonttools
             python scripts/prepare_pdf_fonts.py assets/fonts-pdf
           else
-            echo "FONTS_KEY not set: the PDF will use fallback fonts"
+            echo "::warning::FONTS_KEY not set: the PDF will use fallback fonts"
+            exit 1
           fi
 
       - name: Render site
         run: quarto render
+
+      - name: Check the PDF uses Arizona
+        continue-on-error: true
+        run: |
+          if grep -a -q "ABCArizonaText" _site/report/report.pdf; then echo "PDF fonts OK"; else echo "::warning::PDF is using fallback fonts"; exit 1; fi
 
       - uses: actions/configure-pages@v5
 

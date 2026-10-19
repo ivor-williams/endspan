@@ -1,6 +1,7 @@
 ---
-title: "Better Dying Fund Report"
-subtitle: "Where philanthropy can change the system"
+title: "Better Dying Fund"
+pagetitle: "Better Dying Fund Report"
+subtitle: "Report on where philanthropy can change the system"
 author: "Polly Mackenzie, Ivor Williams and Matilda Agace"
 metadata-files:
   - _version.yml
@@ -8,8 +9,9 @@ format:
   html:
     toc: true
     toc-location: left
-    toc-depth: 3
+    toc-depth: 2
     toc-title: Contents
+    body-classes: bdf-report
     number-sections: false
     format-links: false
     anchor-sections: true

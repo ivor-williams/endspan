@@ -129,9 +129,70 @@
     if (io) { fig.classList.add('pre'); io.observe(fig); }
   });
 
-  /* Report page: put the PDF link at the bottom of the left-hand contents */
-  var toc = document.querySelector('#quarto-sidebar') || (document.querySelector('#TOC') || {}).parentElement;
+  /* ---------- Report page ---------- */
+  var toc = document.getElementById('TOC');
+  var sidebar = document.querySelector('#quarto-sidebar') || (toc || {}).parentElement;
+
+  /* PDF button at the bottom of the left-hand contents */
   var pdf = document.querySelector('.bdf-pdf');
-  if (toc && pdf) { toc.appendChild(pdf); pdf.hidden = false; }
+  if (sidebar && pdf) { sidebar.appendChild(pdf); pdf.hidden = false; }
+
+  /* Date sits with the authors in the title block */
+  var meta = document.querySelector('.bdf-report-meta'), tmeta = document.querySelector('.quarto-title-meta');
+  if (meta && tmeta) tmeta.appendChild(meta);
+
+  /* Chapter headings: "Chapter 1: Title" becomes a label above the title */
+  document.querySelectorAll('section.level1 > h1').forEach(function (h) {
+    var t = h.firstChild;
+    if (!t || t.nodeType !== 3) return;
+    var m = t.nodeValue.match(/^\s*(Chapter\s+\d+)\s*[:.–—-]\s*/i);
+    if (!m) return;
+    t.nodeValue = t.nodeValue.slice(m[0].length);
+    var lab = document.createElement('span');
+    lab.className = 'bdf-chapter-label'; lab.textContent = m[1]; lab.setAttribute('aria-hidden', 'true');
+    h.parentNode.insertBefore(lab, h);
+  });
+
+  /* Case studies: "Case study: Name" becomes a label and a title */
+  document.querySelectorAll('.case-study > p:first-child > strong:first-child').forEach(function (s) {
+    var m = s.textContent.match(/^\s*((?:funding\s+)?case study)\s*[:.–—-]\s*(.+)$/i);
+    if (!m) return;
+    s.textContent = m[1];
+    var ti = document.createElement('span'); ti.className = 'bdf-box-title'; ti.textContent = m[2];
+    s.parentNode.insertBefore(ti, s.nextSibling);
+  });
+
+  if (toc) {
+    /* "(click to explore)" next to Contents */
+    var tt = document.getElementById('toc-title');
+    if (tt && !tt.querySelector('.bdf-hint')) { var hint = document.createElement('span'); hint.className = 'bdf-hint'; hint.textContent = '(click to explore)'; tt.appendChild(hint); }
+
+    var chapters = Array.prototype.slice.call(toc.querySelectorAll(':scope > ul > li'));
+    var opened = null; // a chapter the reader opened by clicking
+    var obs = new MutationObserver(function () { update(); });
+    function watch() { obs.observe(toc, { subtree: true, attributes: true, attributeFilter: ['class'] }); }
+    function update() {
+      obs.disconnect();
+      var actives = toc.querySelectorAll('a.nav-link.active');
+      var a = actives.length ? actives[actives.length - 1] : null;
+      var cur = a ? a.closest('#TOC > ul > li') : null;
+      chapters.forEach(function (li) {
+        li.classList.toggle('bdf-current', li === cur);
+        li.classList.toggle('bdf-open', li === cur || li === opened);
+      });
+      toc.querySelectorAll('a.bdf-active').forEach(function (x) { x.classList.remove('bdf-active'); });
+      if (a && cur) {
+        // the section you are in: the second-level link that is (or contains) the active one
+        var sec = a.closest('#TOC > ul > li > ul > li');
+        if (sec) sec.querySelector(':scope > a.nav-link').classList.add('bdf-active');
+      }
+      watch();
+    }
+    chapters.forEach(function (li) {
+      var link = li.querySelector(':scope > a.nav-link');
+      if (link && li.querySelector(':scope > ul')) link.addEventListener('click', function () { opened = li; update(); });
+    });
+    update();
+  }
 })();
 </script>

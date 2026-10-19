@@ -25,3 +25,21 @@
   #v(6pt)
   #text(size: 7.5pt, fill: rgb("#5C6F6B"))[#source]
 ]
+
+// Report styles from Figma: a thin rule above each chapter, tables as sage cards
+#show heading.where(level: 1): it => {
+  v(1.2em)
+  line(length: 100%, stroke: 0.6pt + rgb("#C7CDD1"))
+  v(0.9em)
+  it
+}
+#show heading.where(level: 2): set text(size: 14.5pt)
+#show heading.where(level: 3): set text(size: 13pt, weight: "regular", fill: rgb("#4B605C"))
+#set table(
+  fill: none,
+  inset: (left: 0pt, right: 10pt, y: 6pt),
+  stroke: (x, y) => if y == 0 { (bottom: 1pt + rgb("#0F2B26")) } else { (bottom: 0.6pt + white) },
+)
+#show table.cell.where(y: 0): set text(weight: "bold")
+#show table.cell.where(x: 0): set text(weight: "bold")
+#show table: it => block(fill: rgb("#DDEAE4"), radius: 5pt, inset: (x: 11pt, y: 5pt), width: 100%, it)

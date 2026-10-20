@@ -369,9 +369,9 @@ header#title-block-header { padding-top: 88px !important; margin-bottom: 0; }
   body.bdf-toc-open #quarto-sidebar { display: flex !important; flex-direction: column; position: fixed !important; z-index: 1050; left: 0; right: 0; bottom: 0; top: auto !important;
     width: auto !important; max-width: none !important; max-height: 82vh !important; min-height: 0 !important; height: auto !important; overflow-y: auto; margin: 0 !important;
     padding: 22px 20px calc(20px + env(safe-area-inset-bottom)) !important; background: $white; border-radius: 16px 16px 0 0; box-shadow: 0 -8px 30px rgba(15, 43, 38, .18);
-    #TOC { display: block !important; }
+    #TOC { display: block !important; position: static !important; z-index: auto !important; }
     .bdf-pdf { display: block !important; } }
-  body.bdf-toc-open .bdf-toc-close { display: inline-flex; position: sticky; top: 0; z-index: 2; order: -1; align-self: flex-end; flex: none; margin: -8px -6px -28px 0; width: 36px; height: 36px; align-items: center; justify-content: center;
+  body.bdf-toc-open .bdf-toc-close { display: inline-flex; position: sticky; top: 0; z-index: 5; order: -1; align-self: flex-end; flex: none; margin: -8px -6px 4px 0; width: 36px; height: 36px; align-items: center; justify-content: center;
     padding: 0 !important; border: 0; border-radius: 999px; background: $mist; color: $ink; cursor: pointer; line-height: 0; -webkit-appearance: none; appearance: none;
     svg { display: block; width: 14px; height: 14px; margin: 0; } }
   #TOC #toc-title .bdf-hint { display: none; }

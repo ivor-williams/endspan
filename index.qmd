@@ -134,11 +134,12 @@ toc: false
   <div class="bdf-wrap"><div class="box">
     <h2>Help shape what comes next</h2>
     <p class="intro">Our report is the beginning of a process to co-design the investments the {{< var name >}} will make. Over the coming months we are bringing together funders, practitioners and the wider public to test these ideas and decide what to back first. Register your interest to follow the work and find out how to take part.</p>
-    <!-- HubSpot: paste the Portal ID and Form ID from Zinc into data-hubspot-portal and data-hubspot-form,
-         and the internal name of the role property into data-hubspot-role-field.
-         Until then, the button opens a pre-filled email to the address in data-fallback-email. -->
+    <!-- HubSpot (Zinc). Still to add when Zinc sends them:
+         data-hubspot-role-field = internal name of the "Role" checkbox property (role answers are not sent until then)
+         data-hubspot-subscription = ID of the "Better Dying Fund updates" subscription type -->
     <form class="bdf-form" id="interest-form" method="POST" novalidate
-          data-hubspot-portal="" data-hubspot-form="" data-hubspot-role-field="bdf_role"
+          data-hubspot-portal="19602412" data-hubspot-form="f8a13b36-e6e0-4bc8-b30b-5197a32434ec"
+          data-hubspot-role-field="" data-hubspot-subscription=""
           data-fallback-email="polly@zinc.vc">
       <div class="body">
         <div class="grid">

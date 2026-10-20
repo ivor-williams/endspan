@@ -162,16 +162,23 @@
         finish(); return;
       }
       var fields = [
-        { name: 'firstname', value: first }, { name: 'lastname', value: last }, { name: 'email', value: email },
-        { name: form.getAttribute('data-hubspot-role-field') || 'bdf_role', value: roles.join(';') }
+        { name: 'firstname', value: first }, { name: 'lastname', value: last }, { name: 'email', value: email }
       ];
       if (company) fields.push({ name: 'company', value: company });
+      var roleField = form.getAttribute('data-hubspot-role-field');
+      if (roleField) fields.push({ name: roleField, value: roles.join(';') });
       var ctx = { pageUri: location.href, pageName: document.title }, hutk = cookie('hubspotutk');
       if (hutk) ctx.hutk = hutk;
+      var payload = { fields: fields, context: ctx };
+      var sub = form.getAttribute('data-hubspot-subscription'), fine = form.querySelector('.fine');
+      if (sub) payload.legalConsentOptions = { consent: {
+        consentToProcess: true, text: fine ? fine.textContent.trim() : '',
+        communications: [{ value: true, subscriptionTypeId: Number(sub), text: 'Keep me updated by email about the Better Dying Fund.' }]
+      } };
       btn.disabled = true; status.textContent = 'Sending…';
       fetch('https://api.hsforms.com/submissions/v3/integration/submit/' + encodeURIComponent(portal) + '/' + encodeURIComponent(formId), {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ fields: fields, context: ctx })
+        body: JSON.stringify(payload)
       })
         .then(function (r) { if (!r.ok) throw new Error(r.status); status.textContent = '';
           if (window.bdfTrack) bdfTrack('signup', { role: roles.join(', ') }); finish(); })

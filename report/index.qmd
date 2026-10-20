@@ -41,7 +41,7 @@ format:
 ::: {.bdf-pdf hidden=""}
 [Other formats]{.label}
 
-[Download PDF](report.pdf)
+[Download PDF](report.pdf){download="Building the Better Dying Fund.pdf"}
 :::
 :::
 

@@ -1,5 +1,6 @@
 // PDF styling and the static chart used by the chart shortcode.
 // ABC Arizona is used when its font files are in assets/fonts; otherwise Libertinus Serif (built into Typst).
+#set document(title: "Building the Better Dying Fund: Why end-of-life care needs a new kind of philanthropy", author: ("Polly Mackenzie", "Ivor Williams", "Matilda Agace"))
 #set text(font: ("ABC Arizona Text", "Libertinus Serif"), fill: rgb("#0F2B26"))
 #show heading: set text(font: ("ABC Arizona Text", "Libertinus Serif"), weight: "medium")
 #show heading.where(level: 1): set text(size: 19pt)

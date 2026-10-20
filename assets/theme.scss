@@ -117,10 +117,10 @@ html { scroll-padding-top: 96px; }
   background: radial-gradient(closest-side, var(--c) 0%, var(--c) 42%, color-mix(in srgb, var(--c) 55%, transparent) 72%, transparent 100%);
   filter: blur(var(--b, 14px)); opacity: 0; transform: translate3d(0,0,0) scale(.9) rotate(var(--r, 0deg));
   transition: opacity 3.2s var(--ease); transition-delay: var(--d, 0s); will-change: transform; }
-.blob.l1 { --b: 34px; --o: .7; }   // back layer: big, soft, moves least
-.blob.l2 { --b: 18px; --o: .85; }  // middle
-.blob.l3 { --b: 8px;  --o: .9; }   // front: small, crisper, moves most
-.in .blob { opacity: var(--o, .9); }
+.blob.l1 { --b: 34px; --o: .32; }   // back layer: big, soft, moves least
+.blob.l2 { --b: 18px; --o: .42; }  // middle
+.blob.l3 { --b: 8px;  --o: .52; }   // front: small, crisper, moves most
+.in .blob { opacity: var(--o, .5); }
 
 // Nodes and labels
 .node, .sat { position: absolute; z-index: 3; display: flex; align-items: center; gap: 10px; font-family: $font-sans; font-feature-settings: normal; font-size: 0.68rem; font-weight: 500;

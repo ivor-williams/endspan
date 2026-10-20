@@ -158,6 +158,7 @@
           '&body=' + encodeURIComponent('Please add me to the Better Dying Fund update list.\n\nName: ' + first + ' ' + last +
             '\nEmail: ' + email + '\nOrganisation: ' + (company || '-') + '\nI am: ' + roles.join(', '));
         done.querySelector('p').innerHTML = '<strong>Nearly there.</strong> Your email app should open with a message ready to send.';
+        if (window.bdfTrack) bdfTrack('signup-email', { role: roles.join(', ') });
         finish(); return;
       }
       var fields = [
@@ -172,7 +173,8 @@
         method: 'POST', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ fields: fields, context: ctx })
       })
-        .then(function (r) { if (!r.ok) throw new Error(r.status); status.textContent = ''; finish(); })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); status.textContent = '';
+          if (window.bdfTrack) bdfTrack('signup', { role: roles.join(', ') }); finish(); })
         .catch(function () { status.textContent = 'Sorry, that didn’t send. Please try again, or email ' + form.getAttribute('data-fallback-email') + '.'; })
         .then(function () { btn.disabled = false; });
     });

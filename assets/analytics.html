@@ -1,0 +1,61 @@
+<!-- Umami analytics: cookieless, so no consent banner is needed. Only counts visits on betterdying.fund
+     (local previews are ignored). Visitors can opt out on the privacy page, which sets umami.disabled. -->
+<script defer src="https://cloud.umami.is/script.js"
+        data-website-id="f5fe4b85-6331-4376-be5d-2e03a8812a4b"
+        data-domains="betterdying.fund"
+        data-do-not-track="true"></script>
+<script>
+/* Better Dying Fund: funnel events.
+   report-link   a click from the home page through to the report (data: label)
+   chapter-view  a report chapter crossed the middle of the screen (data: chapter), once per chapter per visit to the page
+   pdf-download  a click on the PDF link (data: page)
+   signup        the sign-up form was sent to HubSpot (data: role)
+   signup-email  the form fell back to opening an email (HubSpot not connected yet) */
+(function () {
+  'use strict';
+  var queue = [];
+  function send(name, data) {
+    if (window.umami && typeof umami.track === 'function') umami.track(name, data);
+    else queue.push([name, data]);
+  }
+  window.bdfTrack = send;
+  var tries = 0, flush = setInterval(function () {
+    if (window.umami && typeof umami.track === 'function') {
+      queue.splice(0).forEach(function (q) { umami.track(q[0], q[1]); });
+      clearInterval(flush);
+    } else if (++tries > 40) clearInterval(flush);
+  }, 250);
+
+  function clean(s) { return (s || '').replace(/\s+/g, ' ').replace(/[→↓]/g, '').trim().slice(0, 80); }
+
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    var href = a.getAttribute('href');
+    if (/\.pdf(\?|#|$)/i.test(href)) {
+      send('pdf-download', { page: location.pathname.indexOf('/report') > -1 ? 'report' : 'home' });
+    } else if (/(^|\/)report\/(index\.html)?(#|$)/.test(href) && location.pathname.indexOf('/report') === -1) {
+      send('report-link', { label: clean(a.textContent) || 'link' });
+    }
+  }, true);
+
+  document.addEventListener('DOMContentLoaded', function () {
+    if (location.pathname.indexOf('/report') === -1 || !('IntersectionObserver' in window)) return;
+    var seen = {};
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        var sec = en.target, h = sec.querySelector(':scope > h1');
+        var label = sec.querySelector(':scope > .bdf-chapter-label');
+        var name = clean((label ? label.textContent + ': ' : '') + (h ? h.textContent : sec.id));
+        if (seen[name]) return;
+        seen[name] = true;
+        io.unobserve(en.target);
+        send('chapter-view', { chapter: name });
+      });
+    }, { rootMargin: '-50% 0px -50% 0px' });
+    /* a chapter counts as viewed when it crosses the middle of the screen */
+    document.querySelectorAll('section.level1').forEach(function (s) { io.observe(s); });
+  });
+})();
+</script>

@@ -8,6 +8,7 @@ project:
   render:
     - index.qmd
     - report/index.qmd
+    - privacy.qmd
 
 website:
   title: "Better Dying Fund"
@@ -22,11 +23,14 @@ website:
         href: report/index.qmd
       - text: Stay updated
         href: index.qmd#get-involved
+  page-footer:
+    center: "[Privacy](/privacy.qmd)"
 
 format:
   html:
     theme: [cosmo, assets/theme.scss]
     css: assets/fonts.css
+    include-in-header: assets/analytics.html
     include-after-body: assets/site-scripts.html
     toc: false
     smooth-scroll: true

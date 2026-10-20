@@ -168,12 +168,12 @@ toc: false
         <p class="err" id="f-err" role="alert"></p>
         <p class="status" role="status" aria-live="polite"></p>
         <button type="submit" class="btn-bdf">Keep me updated by email</button>
-        <p class="fine">We’ll only use your details to send you updates about the Better Dying Fund. Your details are held by Zinc Innovation Partners, and you can unsubscribe at any time.</p>
+        <p class="fine">We’ll only use your details to send you updates about the Better Dying Fund. Your details are held by Zinc Innovation Partners, and you can unsubscribe at any time. <a href="privacy.html">Privacy notice</a>.</p>
       </div>
       <div class="done" hidden tabindex="-1"><p><strong>Thank you.</strong> We’ll be in touch as the work develops.</p></div>
     </form>
   </div></div>
 </section>
 </div>
-<script src="assets/home.js?v=1792017100" defer></script>
+<script src="assets/home.js?v=1792017200" defer></script>
 ```

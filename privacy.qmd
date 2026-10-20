@@ -1,0 +1,47 @@
+---
+title: "Privacy"
+pagetitle: "Privacy · {{< var name >}}"
+toc: false
+---
+
+This page explains what information the {{< var name >}} website collects, and why.
+
+## Visitor statistics
+
+We use [Umami](https://umami.is) to count visits to this website and to understand how it is used: how many people visit, which pages and report chapters they read, how long they stay, whether they download the report, and which websites they came from.
+
+Umami does not use cookies and does not store anything on your device. It does not collect your name, email address or IP address, and it cannot identify you or follow you across other websites. We use these statistics only to understand how the website and report are being read, and we do not share them with anyone for advertising.
+
+If your browser sends a "Do Not Track" signal, you are not counted. You can also turn off counting for this browser below.
+
+::: {#bdf-optout .bdf-optout}
+<p class="state" aria-live="polite"></p>
+<button type="button" class="btn-bdf ghost">Turn off visitor statistics</button>
+:::
+
+## Signing up for updates
+
+If you use the form on the home page, your name, email address, organisation and the boxes you tick are sent to Zinc Innovation Partners, who hold the list. We use them only to send you updates about the {{< var name >}}. Every email includes a link to unsubscribe, or you can ask to be removed at any time.
+
+## Contact
+
+For any question about your information, or to ask us to remove it, email {{< var contact-name >}} at [{{< var contact-email >}}](mailto:{{< var contact-email >}}).
+
+```{=html}
+<script>
+(function () {
+  var box = document.getElementById('bdf-optout'); if (!box) return;
+  var state = box.querySelector('.state'), btn = box.querySelector('button');
+  function off() { try { return localStorage.getItem('umami.disabled') === '1'; } catch (e) { return false; } }
+  function render() {
+    state.textContent = off() ? 'Visitor statistics are turned off for this browser.' : 'Visitor statistics are on for this browser.';
+    btn.textContent = off() ? 'Turn visitor statistics back on' : 'Turn off visitor statistics';
+  }
+  btn.addEventListener('click', function () {
+    try { off() ? localStorage.removeItem('umami.disabled') : localStorage.setItem('umami.disabled', '1'); } catch (e) {}
+    render();
+  });
+  render();
+})();
+</script>
+```

@@ -1,8 +1,8 @@
 ---
-title: "Better Dying Fund"
-pagetitle: "Better Dying Fund Report"
+title: "Building the Better Dying Fund"
+pagetitle: "Building the Better Dying Fund"
 image: ../assets/img/og-report.png
-subtitle: "Report on where philanthropy can change the system"
+subtitle: "Why end-of-life care needs a new kind of philanthropy"
 author: "Polly Mackenzie, Ivor Williams and Matilda Agace, with input from Michael Clark and Nigel Ball"
 metadata-files:
   - _version.yml

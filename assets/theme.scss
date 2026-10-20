@@ -455,3 +455,6 @@ body { font-feature-settings: "ss06" 1; }
   .navbar-nav .nav-item:last-child .nav-link { padding: 0.38rem 0.42rem !important; }
 }
 
+
+// Home page: the sign-up form carries the privacy link, so hide the site footer there
+body:has(.bdf-home) footer.footer { display: none; }

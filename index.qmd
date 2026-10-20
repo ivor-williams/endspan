@@ -172,7 +172,6 @@ toc: false
       </div>
       <div class="done" hidden tabindex="-1"><p><strong>Thank you.</strong> We’ll be in touch as the work develops.</p></div>
     </form>
-    <p class="bdf-contact-line">Or write to Polly Mackenzie at <a href="mailto:polly@zinc.vc">polly@zinc.vc</a></p>
   </div></div>
 </section>
 </div>

@@ -1,12 +1,12 @@
 # Chapter 5: Taxonomy of emerging opportunities
 
-The previous chapters set out what a good death looks like (Chapter 2), why the system so rarely produces one (Chapter 3), and where money goes now and what it leaves unfunded (Chapter 4). This chapter brings those together into a shortlist: eight areas where we think coordinated philanthropic capital could change how the system works, not just sustain it.
+The previous chapters set out what a good death looks like (Chapter 2), why the system so rarely produces one (Chapter 3), and where money goes now and what it leaves unfunded (Chapter 4). This chapter brings those together into a shortlist: five areas where we think coordinated philanthropic capital could change how the system works, not just sustain it.
 
-The eight areas are hypotheses, not recommendations. Each is framed as an open question, supported by evidence from the earlier chapters, with an initial view of how it could be funded. In Phase 2 we will narrow them to five or six and develop each into a proposition a coalition could fund. Each proposition will set out the problem, a theory of change, indicative cost, the type of intervention, and how progress would be measured. The ratings in this chapter are our provisional judgements, based on the evidence in this report. They are there to be tested and challenged.
+The five areas are hypotheses, not recommendations. Each is framed as an open question, supported by evidence from the earlier chapters, with an initial view of how it could be funded. We are developing these into propositions that could be supported by the {{< var name >}}. Each proposition will set out the problem, a theory of change, indicative cost, the type of intervention, and how progress would be measured.
 
 ## How we chose the areas
 
-We looked for areas where a coalition would add something new, not repeat what the system already funds. Each area had to meet five tests. It should:
+We looked for areas where the {{< var name >}} would add something new, not repeat what the system already funds. Each area had to meet five tests. It should:
 
 -   work across sectors, not sit within one
 
@@ -18,7 +18,7 @@ We looked for areas where a coalition would add something new, not repeat what t
 
 -   include shared learning, so that what works, and what doesn\'t, is visible to the field
 
-Equity is a design requirement running through all eight opportunity areas. Rather than treating underserved communities as a separate workstream, every opportunity could be addressed by designing for the people the system currently fails, on the principle that what works for those at the edges generally works better for everyone.
+Equity is a design requirement running through all five opportunity areas. Rather than treating underserved communities as a separate workstream, every opportunity could be addressed by designing for the people the system currently fails, on the principle that what works for those at the edges generally works better for everyone.
 
 We also ruled some things out. We have not included areas where philanthropy would:
 
@@ -36,7 +36,7 @@ Three topics are outside our scope entirely:
 
 -   **Hospital end-of-life care.** This is core NHS business. We include it only where the hospital meets the community.
 
--   **Hospice-based care.** Hospices are central to palliative care, and much of their work already has established funding. We include hospice care where it reaches into people\'s homes and communities, which is where we think a coalition\'s money can add most.
+-   **Hospice-based care.** Hospices are central to palliative care, and much of their work already has established funding. We include hospice care where it reaches into people\'s homes and communities, which is where we think the Fund\'s money can add most.
 
 ## How to read the ratings
 
@@ -169,7 +169,7 @@ Below we set out the five areas, each framed as a question. Taken together, the 
 
 ### How might a proven end-of-life model travel with everything the next place needs to adopt it?
 
-**The opportunity.** Fund the infrastructure rather than the interventions: the evidence, measurement and adoption muscle. Every model backed by the collaborative arrives ready for the Adult Social Care Commissioner or CFO of an NHS trust.
+**The opportunity.** Fund the infrastructure rather than the interventions: the evidence, measurement and adoption muscle. Every model backed by the Fund arrives ready for the Adult Social Care Commissioner or CFO of an NHS trust.
 
 **What could emerge**
 
@@ -183,6 +183,6 @@ Below we set out the five areas, each framed as a question. Taken together, the 
 
 :::
 
-As we develop many of these into propositions, we will explore the problem they address, what makes them timely, what already exists and what is emerging, the strength of its leverage within the system, and the philanthropic instruments and exit routes that fit it.
+As we develop these into propositions, we will explore the problem they address, what makes them timely, what already exists and what is emerging, the strength of its leverage within the system, and the philanthropic instruments and exit routes that fit it.
 
 The wider community will get the chance to participate in the development of these propositions in our next steps, described in the Conclusion.

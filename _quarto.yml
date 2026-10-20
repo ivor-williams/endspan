@@ -14,6 +14,10 @@ website:
   title: "Better Dying Fund"
   site-url: https://betterdying.fund/
   description: "{{< var tagline >}}"
+  image: assets/img/og-home.png
+  open-graph: true
+  twitter-card:
+    card-style: summary_large_image
   search: false
   navbar:
     collapse: false

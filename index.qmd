@@ -1,5 +1,6 @@
 ---
 pagetitle: "{{< var name >}}"
+description: "New money for a palliative and end-of-life care system that works for everyone"
 page-layout: custom
 section-divs: false
 toc: false

@@ -1,6 +1,7 @@
 ---
 title: "Better Dying Fund"
 pagetitle: "Better Dying Fund Report"
+image: ../assets/img/og-report.png
 subtitle: "Report on where philanthropy can change the system"
 author: "Polly Mackenzie, Ivor Williams and Matilda Agace, with input from Michael Clark and Nigel Ball"
 metadata-files:

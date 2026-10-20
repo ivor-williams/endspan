@@ -104,12 +104,6 @@ The world\'s leading example of community-owned end-of-life care. Trained local 
 
 ![](media/figure-092c90d31f.png)
 
-::: pullquote
-*\"Lots of care homes do amazing things that we could all learn from, in terms of helping people to live well until they die\... let\'s value them in the system as well... \[But\] one of the big problems with care homes is that a provider will say, if this patient starts to deteriorate, we will call an ambulance and we will send them to hospital, whether or not we think they\'re dying, because they\'re worried about the risk and the risk of litigation... People beat care homes with a stick, and you just have to give them carrots. There needs to be a constant and consistent presence \[of palliative care specialists\], you can\'t just go and educate care homes and then walk away\"*
-
-**Sharon Hudson, Birmingham Community Healthcare**
-:::
-
 Care homes are becoming the place most people will die and will be on track to be the leading place of death in the UK by 2040[^c3-6], already accounting for around a fifth of deaths.[^c3-7] Yet the system does not recognise them as places of dying, and that non-recognition (not any inherent inability to care) is what creates a reinforcing loop. Care homes carry no statutory duty to provide palliative and end-of-life care. What is not recognised is not resourced. As a result, care-home palliative capability stays undeveloped -- staff often lack the training to treat general palliative care needs, recognise and manage deterioration without calling an ambulance. Often, the specific enablers of good practice (access to specialist support, clear role allocation, advance care planning built into routine, confidence to manage deterioration in place) are absent.[^c3-8] So when someone deteriorates, the safe default is to send them to hospital, and every death that happens in hospital rather than in the home confirms the original perception that care homes \'don\'t do end of life\', closing the loop. This picture varies greatly across providers, with some large chains actively engaged in palliative care as a service offer to clients.
 
 ::: case-study
@@ -154,21 +148,9 @@ Each constraint below also has a positive way through, where leverage can sit an
 **Dr Katy Vigurs, DEAD GOOD**
 :::
 
-::: pullquote
-*\"There are often little pots of money available temporarily in the NHS and at short notice. Implementation is often very rushed so not very well done and then funding comes to an end before there is a chance for improvement or to evidence impact.\"*
-
-**Dr Lucy Pain, North London Hospice / North Middlesex University Hospital NHS Trust**
-:::
-
 Governmental support during the pandemic left hospices with the strongest balance sheets in their history; within 5 years that has been undone and most independent hospices now run at a deficit. Compounding the problem for any innovation work in that context is the fact funding is allocated with 3-5 year grants, with an unspoken expectation that the service will continue and no plan for how. Initiatives build local dependency and then disappear when the money ends.
 
 ### Non-cash releasing savings
-
-::: pullquote
-*\"The return was a reduction in bed days in hospital. But of course the hospital beds just get filled up again. That wasn\'t really translated into real money. So we were saving the system, but there wasn\'t real money being saved.\"*
-
-**Dr Bee Wee, Oxford University Hospitals NHS Trust**
-:::
 
 ::: pullquote
 *\"\[A structural constraint is...\] organisational boundaries, including the inability to reinvest savings in acute care into community capacity. Acute beds will always be filled by someone else where unneeded admissions towards end of life are avoided.\"*
@@ -179,12 +161,6 @@ Governmental support during the pandemic left hospices with the strongest balanc
 It is widely acknowledged that reducing the amount of people spending their last hours and days in a hospital is a desirable outcome. The difficulty is that reducing the amount of time spent in a hospital bed is a non-cash-releasing saving: a bed not used by someone at the end of life is used by someone else. A saving to the system never becomes releasable. Payers cannot fund a saving that does not return to their own budget.
 
 ### Ageing workforce
-
-::: pullquote
-*\"The biggest issue is really that people don\'t feel able to rely on good quality, responsive nursing care in the final weeks or months of life, they feel unsafe because professional care is not reliably available or consistently good. It isn\'t specialist care that we need more of, just good quality basic personal care and access to injectable medications available 24/7. A key part of that must be improving confidence in care homes.\"*
-
-**Dr Lucy Pain, North London Hospice / North Middlesex University Hospital NHS Trust**
-:::
 
 ::: pullquote
 *\"Nurses who work at the coal face here are constantly problem solving and building workarounds. They don\'t have any pathways, processes or supporters to bring their ideas to life, much less scale.\"*
@@ -207,38 +183,20 @@ Across the UK, hospice data is not linked reliably to NHS or social care data. T
 ### Risk and legal responsibility
 
 ::: pullquote
-*\"Professional anxiety and discomfort around perceived risks of community/home based initiatives is a really big issue\"*
-
-**Dr Lucy Pain, North London Hospice / North Middlesex University Hospital NHS Trust**
-:::
-
-::: pullquote
-*\"\[Paid carers are\] terrified of making the wrong decision because they\'ve often got no protection or back up, so they just call 999.*
+*\"\[Paid carers are\] terrified of making the wrong decision because they\'ve often got no protection or back up, so they just call 999.\"*
 
 **Dr Libby Sallnow, University College London**
 :::
 
 ::: pullquote
-*\"Institutions and organisations need to stop worrying about risk to their reputations and instead support their workforces in positive risk taking.\"*
+*\"Institutions and organisations need to stop primarily focusing on potential risk to themselves and instead support their workforces in positive risk taking.\"*
 
-**Dr Sarah Yardley, University College London Hospitals NHS Foundation Trust**
+**Dr Sarah Yardley, Associate Professor of Palliative Medicine, University College London**
 :::
 
 Supporting someone through the process of dying brings legal risk and responsibility. If a person dies without it being expected the police will visit the scene and a coroner\'s review will be carried out. Personal and professional unfamiliarity with death makes it more likely that dying won\'t be recognised, heightening the risk. Within acute services this might result in a person being given unnecessary medical intervention (avoiding to the doctor of complaints and potential General Medical Council referrals) or a person being stuck in hospital because social care services do not want to take on the risk of discharge. Within care homes and home care this might result in defaulting to 999 because the carer does not feel protected from legal risk associated with death. It is also a barrier to easier access to pain-relief medication at home for patients and carers.
 
 ### Lack of ownership of the whole experience
-
-::: pullquote
-*\"There is very little co-ordination between hospices, hospitals, community services, care homes etc. UK healthcare is fragmented, not a single, joined-up system.\"*
-
-**Dr Lucy Pain, North London Hospice / North Middlesex University Hospital NHS Trust**
-:::
-
-::: pullquote
-*\"Individuals or organisations \[are\] not able to \'take off their organisational hats\' to work together to deliver system change.\"*
-
-**Dr Sarah Holmes, Marie Curie**
-:::
 
 ::: pullquote
 *\"\[There is\] dispersed care across 100s of hospitals and hospices all answering to different bosses and managers and funders while being stretched excruciatingly thin.\"*
@@ -251,21 +209,15 @@ Palliative and end-of-life care is a holistic experience that in reality is deli
 ### Natural scale of good models
 
 ::: pullquote
-*\"It seems that once something is created people think it can be \'done at pace\' and \'at scale\' which ignores the vital components of ownership and co-creation.\"*
+*\"It seems that once something is created people think it can be \'done at pace\' and \'at scale\' which ignores the vital components of contextualisation, ownership and co-creation.\"*
 
-**Dr Sarah Yardley, University College London Hospitals NHS Foundation Trust**
+**Dr Sarah Yardley, Associate Professor of Palliative Medicine, University College London**
 :::
 
 ::: pullquote
 *\"There is no route for spreading across multiple care homes/hospices --- there are chains but they don\'t actually do much to bring together their staff, each place is isolated.\"*
 
 **Tom Wein, IDinsight Dignity initiative**
-:::
-
-::: pullquote
-*\"What works in one area is hard to replicate due to the mixture of services/ people/ funding\... Things struggle to be sustained as they often rely on specific people (champions, knowledge brokers).\"*
-
-**Professor Erica Borgstrom, Open University**
 :::
 
 ::: pullquote

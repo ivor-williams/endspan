@@ -97,12 +97,6 @@ Many people we spoke to as part of the research described how current philanthro
 **Dr Katy Vigurs, DEAD GOOD**
 :::
 
-::: pullquote
-*\"The model of what we do \[in the NHS\] has not changed and is not open to change because \[philanthropic funders\] like what third sector do, so this then suppresses change \[elsewhere\]. Palliative care delivered by hospices could be so much more ambitious but funding concerns do not allow for it.\"*
-
-**Lisa Kennedy, NHS Greater Glasgow and Clyde**
-:::
-
 ### Grant recipients
 
 Looking directly at funded organisations\' accounts gives us a richer picture beyond the 360 Giving database. Our analysis of a sample of 17 hospices surfaces 262 unique named funders. Of these, only 22 (7%) appear at more than one hospice, and only 8 (2.5%) appear at four or more. Very few are on 360Giving. The pattern is predominantly one-to-one: a funder gives to one hospice. The philanthropic ecosystem is not coordinated but an aggregation of hundreds of independent bilateral relationships.
@@ -186,12 +180,6 @@ Appears on 4 sampled hospices\' accounts and operates a named programme through 
 
 Repayable, social capital is also at play in the sector. There are two significant examples both run as a partnership between Macmillan and Social Finance UK, with outcomes-linked top-up support from government Commissioning Better Outcomes Fund and the Life Chances Fund: £12m Care and Wellbeing Fund; £36m Macmillan Social Investment Programme for End of Life Care (2021-present). Both funds use outcomes-based contracting to try and fix systemic issues in end of life care: spend concentrated in acute care, little capacity within the system for innovation, and poor join-up between health and social care.
 
-::: pullquote
-*\"Without that social investment, we couldn\'t do it \[RIPEL\], because the social investment gave us the additional workforce, it gave us the head space. It also gave us the permission to fail, we could design something and modify it as we went along, rather than most grants where you have to decide what you\'re going to deliver upfront.\"*
-
-**Dr Bee Wee, Oxford University Hospitals NHS Trust**
-:::
-
 The Care and Wellbeing Fund\'s evaluation provides a useful insight into the successes and challenges of the model. It has produced sector-leading initiatives (see box-out). However, financially, it did not deliver the return investors were promised: against an original projection of 4% annual returns, it was tracking toward an IRR of -11% a year once all costs were accounted for.[^c4-12] Outcomes-based contracts cap the returns at the value of the underlying contract, so a handful of successful projects cannot make up for the losses that innovative, higher-risk work will produce. Three-to-five year contracts rarely generate enough return to fund the full cost of innovation on their own. Top-up philanthropic funding, layered on from outcomes-linked government programmes, helped offset this.
 
 Social finance approaches work relatively well for interventions with a bankable, near-term outcome, something like a single point of access service or advance care planning at scale, where a reduction in bed-days can be measured and, in principle, repaid. It is a more challenging fit for paradigm-level, community-infrastructure and death-literacy work because that work rarely produces contractable, cash-releasing savings for a single organisation. Indeed, while the Care and Wellbeing fund initially set out to support innovative social enterprises in this space, it found its best strategic opportunities lay in primary care instead.
@@ -267,13 +255,7 @@ The evidence suggests a case for a new kind of philanthropist investment in this
 ::: pullquote
 *\"\[We need\] long term, 10 years plus, funding programmes that allow time for authentically building relational models and multiple cycles of innovation.\"*
 
-**Dr Sarah Yardley, University College London Hospitals NHS Foundation Trust**
-:::
-
-::: pullquote
-*\"Investing in the capability to develop and spread innovation is likely to have a greater long-term impact than funding individual innovations in isolation\"*
-
-**Dr Lucy Pollock, Somerset NHS Foundation Trust**
+**Dr Sarah Yardley, Associate Professor of Palliative Medicine, University College London**
 :::
 
 ::: pullquote

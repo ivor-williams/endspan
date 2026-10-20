@@ -66,11 +66,13 @@ Below, we set out the rationale for these choices, the tensions inherent in them
 ### 1. A medical model vs. a social model of death
 
 ::: pullquote
-*\"Death, dying, loss and caregiving is a social issue with a medical component, not the other way around. "***Dr Julian Abel, Compassionate Communities UK**
+*\"Death, dying, loss and caregiving is a social issue with a medical component, not the other way around.\"*
+
+**Dr Julian Abel, Compassionate Communities UK**
 :::
 
 ::: pullquote
-*\"People do die in hospitals, and actually sometimes that\'s okay. Not everybody is able to die at home. \"*
+*\"People do die in hospitals, and actually sometimes that\'s okay. Not everybody is able to die at home.\"*
 
 **Sharon Hudson, Birmingham Community Healthcare**
 :::
@@ -138,12 +140,6 @@ A national standard that makes the unpaid carer a full partner alongside the pat
 ### 4. Physical comfort vs. psycho-spiritual peace
 
 ::: pullquote
-*\"If you walk into the room and there is a sense of peace - there may be a bit of pain, there may be an aspect of information not being met - \[that is when\] you know that things are okay.\"*
-
-**Professor Katherine Sleeman, Kings College London**
-:::
-
-::: pullquote
 *\"I would say a good death is actually one that just aligns with how people want their death to be, and that might be that somebody\'s priorities are to be in a bit of discomfort, but to be able to have conversations.\"*
 
 **Dr Emma Clare, End of Life Doula UK**
@@ -186,7 +182,7 @@ Measures and numerical targets are particularly challenging in complex, non-line
 ::: pullquote
 *\"Thank you cards are not an adequate way of demonstrating the good that is done in any sector. We need to have a much more structured, robust way of collecting information about what was good and what was not good, and what improved and what didn\'t.\"*
 
-**Professor Katherine Sleeman, Kings College London**
+**Professor Katherine Sleeman, King\'s College London**
 :::
 
 ### What is measured now

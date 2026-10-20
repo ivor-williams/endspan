@@ -105,7 +105,7 @@ The world\'s leading example of community-owned end-of-life care. Trained local 
 ![](media/figure-092c90d31f.png)
 
 ::: pullquote
-*\"Lots of care homes do amazing things that we could all learn from, in terms of helping people to live well until they die\... let\'s value them in the system as well... \[But\] one of the big problems with care homes is that a provider will say, if this patient starts to deteriorate, we will call an ambulance and we will send them to hospital, whether or not we think they\'re dying, because they\'re worried about the risk and the risk of litigation... People beat care homes with a stick, and you just have to give them carrots. There needs to be a constant and consistent presence \[of palliative care specialists\], you can\'t just go and educate care homes and then walk away \"*
+*\"Lots of care homes do amazing things that we could all learn from, in terms of helping people to live well until they die\... let\'s value them in the system as well... \[But\] one of the big problems with care homes is that a provider will say, if this patient starts to deteriorate, we will call an ambulance and we will send them to hospital, whether or not we think they\'re dying, because they\'re worried about the risk and the risk of litigation... People beat care homes with a stick, and you just have to give them carrots. There needs to be a constant and consistent presence \[of palliative care specialists\], you can\'t just go and educate care homes and then walk away\"*
 
 **Sharon Hudson, Birmingham Community Healthcare**
 :::
@@ -131,7 +131,7 @@ While end-of-life care is not a statutory requirement for different care setting
 ![](media/figure-ef19423d19.png)
 
 ::: pullquote
-*\"There\'s now a real unwillingness on the part of society, and I include healthcare and everything in that, to tolerate sadness and distress... There\'s always one more course of antibiotics, one more bag of fluids \"*
+*\"There\'s now a real unwillingness on the part of society, and I include healthcare and everything in that, to tolerate sadness and distress... There\'s always one more course of antibiotics, one more bag of fluids\"*
 
 **Dr Libby Sallnow, University College London**
 :::
@@ -152,12 +152,6 @@ Each constraint below also has a positive way through, where leverage can sit an
 *\"Many innovative ideas demonstrate positive outcomes locally but end just as relationships, trust and community participation are beginning to develop\"*
 
 **Dr Katy Vigurs, DEAD GOOD**
-:::
-
-::: pullquote
-*\"\[At the hospice\] we took on lots of restricted funds for new projects for three or five years and then ran out of funding. The expectation for everyone was that the project would continue \[\...\] but there was no real long term planning of how we were going to fund that.\"*
-
-**David Burland, db associates**
 :::
 
 ::: pullquote
@@ -203,9 +197,9 @@ It is understood that the nursing workforce in the UK is in a poor position to r
 ### Unlinked data
 
 ::: pullquote
-*\"Hospice data is not linked to any other NHS data, which is a massive failing.\"*
+*\"Hospice data is not routinely linked to NHS data, which is a massive limitation.\"*
 
-**Professor Katherine Sleeman, Kings College London**
+**Professor Katherine Sleeman, King\'s College London**
 :::
 
 Across the UK, hospice data is not linked reliably to NHS or social care data. This means care records and other important information does not follow a person as they move from setting to setting, or connect what does, to particular outcomes. The lack of data to explain outcomes is a persistent gap that means that commissioners who may want to do things differently, are unable to prove initiatives work. The data exists, it is just often unlinked. The siloes of data remain the remit and ownership of each service, and no one is responsible for linking them, and so it never happens.
@@ -277,7 +271,7 @@ Palliative and end-of-life care is a holistic experience that in reality is deli
 ::: pullquote
 *\"A much more serious problem than \'failing to spread\' is \'inappropriate spreading\'\... There is far too much blind adoption of non-evidence based approaches in palliative care and it causes harm.\"*
 
-**Professor Katherine Sleeman, Kings College London**
+**Professor Katherine Sleeman, King\'s College London**
 :::
 
 Many of the best community approaches work precisely because they are small and local - working at a scale where relationships and trust can do the work - and don\'t work when simply transferred elsewhere, wholesale. They also tend to rely on specific, exceptional, driven people who equally cannot be simply replicated elsewhere.

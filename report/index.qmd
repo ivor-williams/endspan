@@ -3,7 +3,9 @@ title: "Building the Better Dying Fund"
 pagetitle: "Building the Better Dying Fund"
 image: ../assets/img/og-report.png
 subtitle: "Why end-of-life care needs a new kind of philanthropy"
-author: "Polly Mackenzie, Ivor Williams and Matilda Agace, with input from Michael Clark and Nigel Ball"
+author: |-
+  Authors: Polly Mackenzie, Matilda Agace (Zinc Innovation Partners), Ivor Williams (Living Practice) with input from Nigel Ball (Purposeful Ventures)\
+  Advisor: Michael Clark (Chief Executive, Purposeful Ventures)
 metadata-files:
   - _version.yml
 format:

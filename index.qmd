@@ -109,7 +109,7 @@ toc: false
       <h2>The {{< var name >}}</h2>
       <p>We are working with philanthropic donors to bring new resources into end-of-life care: a different kind of capital designed to accelerate what already works, build new approaches, and build the shared capabilities no single organisation can.</p>
       <p>We’ve started with a major report that maps where the system is stuck and identifies five places where we believe this money can make the biggest difference.</p>
-      <p>The fund is being built by ZIP, an innovation agency with a track record of building ventures to enable healthy ageing and support the care system. We’re working in partnership with Purposeful Ventures, a major charity that backs social entrepreneurs, and Ivor Williams, end-of-life care designer and former Lead for End-of-Life Care at Imperial College London.</p>
+      <p>The fund is being built by ZIP, an innovation agency with a track record of building ventures to enable healthy ageing and support the care system. We’re working in partnership with Purposeful Ventures, a non-profit that partners with social entrepreneurs and philanthropists, and Ivor Williams, end-of-life care designer and former Lead for End-of-Life Care at Imperial College London.</p>
       <a class="btn-bdf" href="report/index.html">Read the report →</a>
     </div></div>
   </section>
